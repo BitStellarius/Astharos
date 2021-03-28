@@ -1,1 +1,157 @@
 /* CSS File: TTRPG-Bereich */
+@font-face {
+    font-family: "BreathFire";
+    src: url("/assets/Fonts/Breathe\ Fire\ II.otf") format("opentype");
+}
+@font-face{
+    font-family: "PerpetuaTitlingMT";
+    src: url("/assets/Fonts/Perpetua\ Titling\ MT\ Std.otf") format("opentype");
+}
+@font-face{
+    font-family: "PerpetuaTitlingMT";
+    src: url("/assets/Fonts/Perpetua\ Titling\ MT\ Std.otf") format("opentype");
+}
+@font-face{
+    font-family: "Montserrat";
+    src: url("/assets/Fonts/Montserrat/Montserrat-Regular.otf") format("opentype");
+}
+h1 {
+    font-size: 4em;
+    color: black;
+    text-align: center;
+    font-family: BreathFire;
+}
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: PerpetuaTitlingMT;
+}
+p{
+    font-family: Montserrat;
+}
+
+/* Erster Teil: Navigation */
+#ttrpgNav{
+    background-image: url("/assets/backgroundAnimated.svg");
+    margin-top: 0px;   
+    position: relative; 
+    min-height: 650px;
+}
+#ttrpgNav h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#sprechblase{
+    height: 200px;
+    width: auto;
+    position: absolute;
+    left: 25%;
+    top: 200px;
+    background-image: url("/assets/ttrpg/Intro TTRPG_Textbox.svg");
+    background-repeat: no-repeat;
+
+}
+#sprechblase p{
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 12px;
+    padding-top: 15px;
+    max-width: 45%;
+}
+#ttrpgNavbar{
+    position: absolute;
+    top: 410px;
+    width: 80%;
+    min-height: 120px;
+    margin-left: 10%;
+    background-image: url("/assets/ttrpg/Intro\ TTRPG_NavBar.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;    
+}
+.questionBox{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    font-family: PerpetuaTitlingMT;
+}
+.questionBox p{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.questionBox:nth-child(1){
+    left: 0px;
+}
+.questionBox:nth-child(2){
+    left: 25%;
+}
+.questionBox:nth-child(3){
+    left: 50%;
+}
+.questionBox:nth-child(4){
+    left: 75%;
+}
+.navbarQuestionsImg{
+    height: 120%;
+    visibility: hidden;
+}
+
+/* Zweiter Teil: Was ist ein TTRPG? */
+
+/* Zweiter Teil: Wie funktioniert ein TTRPG? */
+
+/* Zweiter Teil: Was Brauche Ich */
+#wasBraucheIch{
+    height: 100vh;
+    /*background-image: url("../assets/ttrpg/Intro\ TTRPG_2_Background_Zeichenfläche\ 1.svg");
+    background-size: 100%;*/
+    background-color: #754D24;
+    border: solid 5px black;
+    position: relative;
+}
+#questionsFrame{
+    height: 70%;
+    width: 20%;
+    position: absolute;
+    top: 20%;
+    left: 100px;
+    background-image: url("../assets/ttrpg/Intro\ TTRPG_2_Textbox_2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#questions p{
+    font-size: 1.3em;
+}
+#questions{
+    padding-top: 50px;
+    margin: auto;
+    width: 60%;
+}
+#house{
+    position: absolute;
+    height: 70%;
+    bottom: 10px;
+    right: 0px;
+}
+
+/* Zweiter Teil: Welche Aufgaben hat der Spielmeister */
+
+/* Dritter Teil: Video */
+#ttrpgVideo{
+    height: 100vh;
+    /*background-image: url("../assets/ttrpg/Intro\ TTRPG_2_Background_Zeichenfläche\ 1.svg");
+    background-size: 100%;*/
+    background-color: #754D24;
+    border: solid 5px black;
+    position: relative;
+}
+#videoFrame{
+    height: 60%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
