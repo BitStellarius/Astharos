@@ -1,19 +1,15 @@
 /* CSS File: TTRPG-Bereich */
 @font-face {
     font-family: "BreathFire";
-    src: url("/assets/Fonts/Breathe\ Fire\ II.otf") format("opentype");
+    src: url("../assets/Fonts/Breathe\ Fire\ II.otf") format("opentype");
 }
 @font-face{
     font-family: "PerpetuaTitlingMT";
-    src: url("/assets/Fonts/Perpetua\ Titling\ MT\ Std.otf") format("opentype");
-}
-@font-face{
-    font-family: "PerpetuaTitlingMT";
-    src: url("/assets/Fonts/Perpetua\ Titling\ MT\ Std.otf") format("opentype");
+    src: url("../assets/Fonts/Perpetua\ Titling\ MT\ Std.otf") format("opentype");
 }
 @font-face{
     font-family: "Montserrat";
-    src: url("/assets/Fonts/Montserrat/Montserrat-Regular.otf") format("opentype");
+    src: url("../assets/Fonts/Montserrat/Montserrat-Regular.otf") format("opentype");
 }
 h1 {
     font-size: 4em;
@@ -32,7 +28,7 @@ p{
 
 /* Erster Teil: Navigation */
 #ttrpgNav{
-    background-image: url("/assets/backgroundAnimated.svg");
+    background-image: url("../assets/backgroundAnimated.svg");
     margin-top: 0px;   
     position: relative; 
     min-height: 650px;
@@ -48,7 +44,7 @@ p{
     position: absolute;
     left: 25%;
     top: 200px;
-    background-image: url("/assets/ttrpg/Intro TTRPG_Textbox.svg");
+    background-image: url("../assets/ttrpg/Intro TTRPG_Textbox.svg");
     background-repeat: no-repeat;
 
 }
@@ -65,7 +61,7 @@ p{
     width: 80%;
     min-height: 120px;
     margin-left: 10%;
-    background-image: url("/assets/ttrpg/Intro\ TTRPG_NavBar.svg");
+    background-image: url("../assets/ttrpg/Intro\ TTRPG_NavBar.svg");
     background-repeat: no-repeat;
     background-size: 100%;    
 }
