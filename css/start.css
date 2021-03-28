@@ -1,3 +1,5 @@
+/* CSS File: Startseite */
+
 #startframe {
   width: 100%;
   height: 100vh;
@@ -12,7 +14,7 @@
 }
 
 #startframeLogo img {
-  margin-top: 5%;
+  margin-top: 15%;
   width: 75vh;
 }
 
