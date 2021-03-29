@@ -95,12 +95,8 @@ p{
     visibility: hidden;
 }
 
-/* Zweiter Teil: Was ist ein TTRPG? */
-
-/* Zweiter Teil: Wie funktioniert ein TTRPG? */
-
-/* Zweiter Teil: Was Brauche Ich */
-#wasBraucheIch{
+/* Zweiter Teil */
+.ttrpgUnterseite{
     height: 100vh;
     /*background-image: url("../assets/ttrpg/Intro\ TTRPG_2_Background_Zeichenfläche\ 1.svg");
     background-size: 100%;*/
@@ -108,6 +104,17 @@ p{
     border: solid 5px black;
     position: relative;
 }
+.ttrpgUnterseite p {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
+}
+
+/* Zweiter Teil: Was ist ein TTRPG? */
+
+/* Zweiter Teil: Wie funktioniert ein TTRPG? */
+
+/* Zweiter Teil: Was Brauche Ich */
 #questionsFrame{
     height: 70%;
     width: 20%;
@@ -120,6 +127,8 @@ p{
 }
 #questions p{
     font-size: 1.3em;
+    margin: 0;
+    margin-top: 20px;
 }
 #questions{
     padding-top: 50px;
