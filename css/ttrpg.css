@@ -97,7 +97,7 @@ p{
 
 /* Zweiter Teil */
 .ttrpgUnterseite{
-    height: 100vh;
+    height: calc(100vh - 46px);
     /*background-image: url("../assets/ttrpg/Intro\ TTRPG_2_Background_Zeichenfläche\ 1.svg");
     background-size: 100%;*/
     background-color: #754D24;
