@@ -1,3 +1,15 @@
+/* Smooth scrollen von a href */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+/* *********************************************************************** */
+
+/* Deklaration Variablen für TTRPG Navigation */
 var wasIst = document.getElementsByClassName("questionBox")[0];
 var wie = document.getElementsByClassName("questionBox")[1];
 var wasBraucht = document.getElementsByClassName("questionBox")[2];
@@ -21,7 +33,9 @@ function hideAllBoxes(){
     wasBrauchtBox.style.display = "none";
     welcheBox.style.display = "none";
 }
+/* *********************************************************************** */
 
+/* Event Listener der Navigation in TTRPG */
 wasIst.addEventListener("click", function(){
     console.log("wasIst");
     hideAll();
@@ -29,6 +43,7 @@ wasIst.addEventListener("click", function(){
 
     hideAllBoxes();
     wasIstBox.style.display = "block";
+    wasIstBox.querySelector(".anchor").scrollIntoView({ behavior: 'smooth', block: 'start'});
 });
 
 wie.addEventListener("click", function(){
@@ -38,6 +53,7 @@ wie.addEventListener("click", function(){
 
     hideAllBoxes();
     wieBox.style.display = "block";
+    wieBox.querySelector(".anchor").scrollIntoView({ behavior: 'smooth', block: 'start'});
 });
 
 wasBraucht.addEventListener("click", function(){
@@ -47,6 +63,7 @@ wasBraucht.addEventListener("click", function(){
 
     hideAllBoxes();
     wasBrauchtBox.style.display = "block";
+    wasBrauchtBox.querySelector(".anchor").scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
 welche.addEventListener("click", function(){
@@ -56,8 +73,11 @@ welche.addEventListener("click", function(){
 
     hideAllBoxes();
     welcheBox.style.display = "block";
+    welcheBox.querySelector(".anchor").scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
+/* *********************************************************************** */
 
+/* Onload */
 window.onload = function(){
     hideAll();
     wasIst.children[0].style.visibility = "visible";
@@ -66,3 +86,4 @@ window.onload = function(){
     wasBrauchtBox.style.display = "none";
     welcheBox.style.display = "none";
 }
+/* *********************************************************************** */
