@@ -169,3 +169,11 @@ p{
     left: 50%;
     transform: translateX(-50%);
 }
+#videoTTRPG{
+    height: 45%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 130px;
+    border: solid 5px black;
+}
