@@ -89,6 +89,34 @@ welche.addEventListener("click", function(){
 });
 /* *********************************************************************** */
 
+/* Change Picture in "Was brauche ich für ein TTRPG?" */
+var housePicture = document.getElementById("housePicture");
+document.getElementById("regelwerk").addEventListener("click", function(){
+    housePicture.src = "../assets/PlatzhalterBlau.png";
+});
+document.getElementById("charakterboegen").addEventListener("click", function(){
+    housePicture.src = "../assets/PlatzhalterRot.png";
+});
+document.getElementById("wuerfel").addEventListener("click", function(){
+    housePicture.src = "../assets/PlatzhalterGruen.png";
+});
+document.getElementById("papier").addEventListener("click", function(){
+    housePicture.src = "../assets/PlatzhalterBlau.png";
+});
+document.getElementById("sichtschutz").addEventListener("click", function(){
+    housePicture.src = "../assets/PlatzhalterRot.png";
+});
+document.getElementById("geschichte").addEventListener("click", function(){
+    housePicture.src = "../assets/PlatzhalterGruen.png";
+});
+document.getElementById("leiter").addEventListener("click", function(){
+    housePicture.src = "../assets/PlatzhalterBlau.png";
+});
+document.getElementById("multiplayer").addEventListener("click", function(){
+    housePicture.src = "../assets/PlatzhalterRot.png";
+});
+/* *********************************************************************** */
+
 /* Onload */
 window.onload = function(){
     hideAll();
