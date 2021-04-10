@@ -2,8 +2,9 @@
 
 #navbar {
   margin: 0;
-  padding: 0;
   font-family: 'Montserrat';
+  padding: 30px 0;
+  transition: 0.4s;
 }
 
 ul {
