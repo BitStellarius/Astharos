@@ -13,6 +13,11 @@
     transform: translateX(-50%);
     top: -5rem;
 }
+.anchors{
+    position: absolute;
+    left: 0;
+    top: 67px;
+}
 #sprechblase{
     height: 200px;
     width: auto;
@@ -29,6 +34,13 @@
     padding-left: 12px;
     padding-top: 15px;
     max-width: 45%;
+}
+#crowTTRPG{
+    height: 200px;
+    position: absolute;
+    right: -25px;
+    bottom: -40px;
+    z-index: 10;
 }
 #ttrpgNavbar{
     position: absolute;
@@ -140,6 +152,28 @@
 }
 #house{
     height: 100%;
+}
+#sprechblaseHouse{
+    height: 200px;
+    width: auto;
+    position: absolute;
+    top: -50px;
+    left: 200px;
+    background-image: url("../assets/ttrpg/Intro TTRPG_Textbox.svg");
+    background-repeat: no-repeat;
+}
+#sprechblaseHousePara{
+    font-size: 1.5em;
+    text-align: center;
+    width: 220px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#crowWasBraucheIch{
+    height: 200px;
+    position: absolute;
+    right: -280px;
+    top: 30px;
 }
 #housePicture{
     height: 50%;

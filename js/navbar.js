@@ -20,15 +20,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 /* *********************************************************************** */
-
-/* Anker anpassen anhand der height der Navbar um nicht zu weit zu scrollen */
-var navbarHeight = document.getElementById("navbar").clientHeight;
-function setAnchors(){
-    var anchors = document.getElementsByClassName("anchor");
-    for(var i = 0; i < anchors.length; i++){
-        anchors[i].style.position = "absolute";
-        anchors[i].style.left = "0";
-        anchors[i].style.top = "-" + navbarHeight + "px";
-    }
-}
-/* *********************************************************************** */
