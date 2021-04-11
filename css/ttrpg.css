@@ -7,16 +7,16 @@
     position: relative; 
     min-height: 650px;
 }
-#ttrpgNav h1{
+#ttrpgNav > h1{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: -5rem;
 }
-.anchors{
+.anchor{
     position: absolute;
     left: 0;
-    top: 67px;
+    top: -67px;
 }
 #sprechblase{
     height: 200px;
@@ -28,7 +28,7 @@
     background-repeat: no-repeat;
 
 }
-#sprechblase p{
+#sprechblase > p{
     font-size: 1.5em;
     text-align: center;
     padding-left: 12px;
@@ -63,7 +63,7 @@
     font-family: PerpetuaTitlingMT;
     cursor: pointer;
 }
-.questionBox p{
+.questionBox > p{
     position: absolute;
     top: 10px;
     left: 50%;
@@ -88,7 +88,7 @@
 
 /* Zweiter Teil */
 .ttrpgUnterseite{
-    height: calc(100vh - 46px);
+    height: calc(100vh - 67px);
     max-width: 1400px;
     width: 100%;
     position: absolute;

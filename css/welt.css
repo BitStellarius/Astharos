@@ -1,1 +1,143 @@
 /* CSS File: Welt-Bereich */
+#welt{
+    border: solid 5px black; /* Nur zum veranschaulichen da */
+}
+#ttrpg {
+    border: solid 5px red; /* Nur zum veranschaulichen da */
+}
+#weltStart{
+    height: calc(100vh - 67px); /* gesamte Höhe Minus die Höhe der Navbar */
+    position: relative;
+}
+#weltStart h1{
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5rem;
+}
+#weltAnimationsfilmTafel{
+    height: calc(95vh - 67px); /* gesamte Höhe Minus die Höhe der Navbar */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+}
+#weltBook{
+    height: calc(100vh - 67px); /* gesamte Höhe Minus die Höhe der Navbar */
+    width: 1400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /*background-image: url("../assets/ttrpg/Intro\ TTRPG_2_Background_Zeichenfläche\ 1.svg");
+    background-size: 100%;*/
+    background-color: #754D24;
+}
+
+#weltbookFrame{
+    width: 1200px;
+    height: calc(80vh - 87px); /* gesamte Höhe Minus die Höhe der Navbar - Höhe Margin top and bottom */
+    border: 4px solid black;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #333333;
+    position: relative;
+}
+#vl1{
+    border-left: 3px solid #754D24;
+    border-top: 3px solid #754D24;
+    border-bottom: 3px solid #754D24;
+    height: calc(80vh - 127px);
+    width: 580px;
+    margin-top: 20px;
+    position: absolute;
+    left: 20px;
+    background: linear-gradient(to left, #000000 0%, #CBBBA0 40%);
+}
+#vl2{
+    border-right: 3px solid #754D24;
+    border-top: 3px solid #754D24;
+    border-bottom: 3px solid #754D24;
+    height: calc(80vh - 127px);
+    width: 580px;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    background: linear-gradient(to right, #000000 0%, #CBBBA0 40%);
+}
+#bookPathSvg{
+    position: absolute;
+    width: 1160px;
+    top: 21px;
+    left: 22px;
+}
+#bookPath{
+    stroke: #754D24;
+    stroke-width: 2; 
+    fill: #908673;
+}
+#leftBookSide{
+    width: 574px;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+}
+#leftBookSide h2{
+    text-align: center;
+}
+#leftBookSide p{
+    margin-left: 130px;
+    font-size: 20px;
+}
+
+#rightBookSide{
+    width: 574px;
+    position: absolute;
+    left: 596px;
+    top: 80px;
+}
+#rightBookSideIconsBox{
+    height: 100px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#rightBookSideIconsBox img{
+    height: 100%;
+    margin-left: 10px;
+    position: absolute;
+}
+.iconsBoxIcons:nth-child(1){
+    left: 0px;
+}
+.iconsBoxIcons:nth-child(2){
+    left: 25%;
+}
+.iconsBoxIcons:nth-child(3){
+    left: 50%;
+}
+.iconsBoxIcons:nth-child(4){
+    left: 75%;
+}
+#elementBox{
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#elementBox h2{
+    margin-top: 120px;
+    font-size: 40px;
+}
+#elementIcon{
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#elementBox p{
+    margin-top: 150px;
+}
