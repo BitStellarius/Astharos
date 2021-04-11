@@ -2,7 +2,9 @@
 
 #navbar {
   margin: 0;
-  padding: 0;
+  font-family: 'Montserrat';
+  padding: 30px 0;
+  transition: 0.4s;
 }
 
 ul {
@@ -25,5 +27,5 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  color: black;
+  color: white;
 }
