@@ -1,6 +1,7 @@
 /* CSS File: Navigationsleiste */
 
 #navbar {
+  height: calc(var(--height-Navbar) - 10px);
   margin: 0;
   font-family: 'Montserrat';
   font-size: 20px;

@@ -1,5 +1,9 @@
 /* Main CSS File */
 
+:root {
+  --height-Navbar: 62px;
+}
+
 body {
   margin: 0;
   padding: 0;

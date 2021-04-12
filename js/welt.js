@@ -1,4 +1,12 @@
 /* Change Side in "Magie" */
+/* Funktionen */
+function hideLeftBookSide(){
+    document.getElementById("indexLeft").style.display = "none";
+    document.getElementById("rassenLeft").style.display = "none";
+    document.getElementById("religionLeft").style.display = "none";
+    document.getElementById("elementarmagieLeft").style.display = "none";
+}
+
 function hideRightSideBoxes(){
     var boxes = document.getElementsByClassName("rightSideBox");
     for(var i = 0; i < boxes.length; i++){
@@ -6,83 +14,188 @@ function hideRightSideBoxes(){
     }
 }
 
-document.getElementById("element").addEventListener("click", function(){
-    console.log("Element");
+function hideBoxesAndShowBox(id){
     hideRightSideBoxes();
-    document.getElementsByClassName("rightSideBox")[0].style.display = "block";
+    console.log(id);
+    document.getElementById(id).style.display = "block";
+}
+
+function allIconsWhite(){
+    document.getElementById("infoIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_Info_w.svg";
+    document.getElementById("rassenIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_Rassen_w.svg";
+    document.getElementById("religionIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_religion_w.svg";
+    document.getElementById("magieIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_magie_w.svg";
+}
+
+function showIndex(){
+    hideRightSideBoxes();
+
+    hideLeftBookSide();
+    document.getElementById("indexLeft").style.display = "block";
+    allIconsWhite();
+    document.getElementById("infoIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_Info_r.svg";
+}
+function showReligion(){
+    hideRightSideBoxes();
+    hideBoxesAndShowBox("thyrosRight");
+    hideLeftBookSide();
+    document.getElementById("religionLeft").style.display = "block";
+    allIconsWhite();
+    document.getElementById("religionIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_religion_r.svg";
+}
+function showRassen(){
+    hideRightSideBoxes();
+    hideBoxesAndShowBox("orksRight");
+    hideLeftBookSide();
+    document.getElementById("rassenLeft").style.display = "block";
+    allIconsWhite();
+    document.getElementById("rassenIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_Rassen_r.svg";
+}
+function showMagie(){
+    hideRightSideBoxes();
+    hideBoxesAndShowBox("elementRight");
+    hideLeftBookSide();
+    document.getElementById("elementarmagieLeft").style.display = "block";
+    allIconsWhite();
+    document.getElementById("magieIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_magie_r.svg";
+}
+/* *********************************************************************** */
+
+/* Rassen Click Listener */
+document.getElementById("indexRassen").addEventListener("click", function(){
+    showRassen();
+});
+document.getElementById("indexReligion").addEventListener("click", function(){
+    showReligion();
+});
+document.getElementById("indexMagie").addEventListener("click", function(){
+    showMagie();
+});
+/* *********************************************************************** */
+
+/* Rassen Click Listener */
+document.getElementById("orks").addEventListener("click", function(){
+    hideBoxesAndShowBox("orksRight");
+});
+document.getElementById("elben").addEventListener("click", function(){
+    hideBoxesAndShowBox("elbenRight");
+});
+document.getElementById("halbElben").addEventListener("click", function(){
+    hideBoxesAndShowBox("halbElbenRight");
+});
+document.getElementById("halbling").addEventListener("click", function(){
+    hideBoxesAndShowBox("halblingRight");
+});
+document.getElementById("zwerge").addEventListener("click", function(){
+    hideBoxesAndShowBox("zwergeRight");
+});
+document.getElementById("katzenmenschen").addEventListener("click", function(){
+    hideBoxesAndShowBox("katzenmenschenRight");
+});
+document.getElementById("mischwesen").addEventListener("click", function(){
+    hideBoxesAndShowBox("mischwesenRight");
+});
+/* *********************************************************************** */
+
+/* Religion Click Listener */
+document.getElementById("thyros").addEventListener("click", function(){
+    hideBoxesAndShowBox("thyrosRight");
+});
+document.getElementById("aris").addEventListener("click", function(){
+    hideBoxesAndShowBox("arisRight");
+});
+document.getElementById("begrend").addEventListener("click", function(){
+    hideBoxesAndShowBox("begrendRight");
+});
+document.getElementById("arphen").addEventListener("click", function(){
+    hideBoxesAndShowBox("arphenRight");
+});
+document.getElementById("trendir").addEventListener("click", function(){
+    hideBoxesAndShowBox("trendirRight");
+});
+document.getElementById("gilith").addEventListener("click", function(){
+    hideBoxesAndShowBox("gilithRight");
+});
+document.getElementById("trados").addEventListener("click", function(){
+    hideBoxesAndShowBox("tradosRight");
+});
+document.getElementById("koshka").addEventListener("click", function(){
+    hideBoxesAndShowBox("koshkaRight");
+});
+document.getElementById("seonora").addEventListener("click", function(){
+    hideBoxesAndShowBox("seonoraRight");
+});
+document.getElementById("ferrumtis").addEventListener("click", function(){
+    hideBoxesAndShowBox("ferrumtisRight");
+});
+document.getElementById("fanuin").addEventListener("click", function(){
+    hideBoxesAndShowBox("fanuinRight");
+});
+document.getElementById("varrakis").addEventListener("click", function(){
+    hideBoxesAndShowBox("varrakisRight");
+});
+document.getElementById("dandulein").addEventListener("click", function(){
+    hideBoxesAndShowBox("danduleinRight");
+});
+/* *********************************************************************** */
+
+/* Magie Click Listener */
+document.getElementById("element").addEventListener("click", function(){
+    hideBoxesAndShowBox("elementRight");
 });
 document.getElementById("natur").addEventListener("click", function(){
-    console.log("natur");
-    hideRightSideBoxes();
-    document.getElementsByClassName("rightSideBox")[1].style.display = "block";
+    hideBoxesAndShowBox("naturRight");
 });
 document.getElementById("schutz").addEventListener("click", function(){
-    console.log("schutz");
-    hideRightSideBoxes();
-    document.getElementsByClassName("rightSideBox")[2].style.display = "block";
+    hideBoxesAndShowBox("schutzRight");
 });
 document.getElementById("beschwoer").addEventListener("click", function(){
-    console.log("beschwoer");
-    hideRightSideBoxes();
-    document.getElementsByClassName("rightSideBox")[3].style.display = "block";
+    hideBoxesAndShowBox("beschwoerRight");
 });
 document.getElementById("illusion").addEventListener("click", function(){
-    console.log("illusion");
-    hideRightSideBoxes();
-    document.getElementsByClassName("rightSideBox")[4].style.display = "block";
+    hideBoxesAndShowBox("illusionRight");
 });
 document.getElementById("wiederher").addEventListener("click", function(){
-    console.log("wiederher");
-    hideRightSideBoxes();
-    document.getElementsByClassName("rightSideBox")[5].style.display = "block";
+    hideBoxesAndShowBox("wiederherRight");
 });
 document.getElementById("bannmagie").addEventListener("click", function(){
-    console.log("bannmagie");
-    hideRightSideBoxes();
-    document.getElementsByClassName("rightSideBox")[6].style.display = "block";
+    hideBoxesAndShowBox("bannmagieRight");
 });
 document.getElementById("fortbewegung").addEventListener("click", function(){
-    console.log("fortbewegung");
-    hideRightSideBoxes();
-    document.getElementsByClassName("rightSideBox")[7].style.display = "block";
+    hideBoxesAndShowBox("fortbewegungRight");
 });
 document.getElementById("wissens").addEventListener("click", function(){
-    console.log("wissens");
-    hideRightSideBoxes();
-    document.getElementsByClassName("rightSideBox")[8].style.display = "block";
+    hideBoxesAndShowBox("wissensRight");
 });
 document.getElementById("veraenderung").addEventListener("click", function(){
-    console.log("veraenderung");
-    hideRightSideBoxes();
-    document.getElementsByClassName("rightSideBox")[9].style.display = "block";
+    hideBoxesAndShowBox("veraenderungRight");
 });
 document.getElementById("dunkle").addEventListener("click", function(){
-    console.log("dunkle");
-    hideRightSideBoxes();
-    document.getElementsByClassName("rightSideBox")[10].style.display = "block";
+    hideBoxesAndShowBox("dunkleRight");
 });
 /* *********************************************************************** */
 
 /* Right Side Icons Change */
 document.getElementById("infoIcon").addEventListener("click", function(){
-    console.log("infoIcon");
+    showIndex();
 });
 document.getElementById("rassenIcon").addEventListener("click", function(){
-    console.log("rassenIcon");
+    showRassen();
 });
 document.getElementById("religionIcon").addEventListener("click", function(){
-    console.log("religionIcon");
+    showReligion();
 });
 document.getElementById("magieIcon").addEventListener("click", function(){
-    console.log("magieIcon");
+    showMagie();
 });
-/* *********************************************************************** */
-
-/* */
 /* *********************************************************************** */
 
 /* Onload */
 function loadWelt(){
-    document.getElementsByClassName("rightSideBox")[0].style.display = "block";
+    console.log("Onload Welt.js")
+    hideRightSideBoxes();
+    hideLeftBookSide();
+    document.getElementById("indexLeft").style.display = "block";
+    document.getElementById("infoIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_Info_r.svg";
 }
 /* *********************************************************************** */
