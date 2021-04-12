@@ -95,7 +95,7 @@ document.getElementById("multiplayer").addEventListener("click", function(){
 /* *********************************************************************** */
 
 /* Onload */
-window.onload = function(){
+function loadTTRPG(){
     hideAll();
     wasIst.children[0].style.visibility = "visible";
 

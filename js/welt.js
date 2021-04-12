@@ -1,6 +1,4 @@
 /* Change Side in "Magie" */
-
-
 function hideRightSideBoxes(){
     var boxes = document.getElementsByClassName("rightSideBox");
     for(var i = 0; i < boxes.length; i++){
@@ -53,8 +51,8 @@ document.getElementById("wissens").addEventListener("click", function(){
     hideRightSideBoxes();
     document.getElementsByClassName("rightSideBox")[8].style.display = "block";
 });
-document.getElementById("verstaerkung").addEventListener("click", function(){
-    console.log("verstaerkung");
+document.getElementById("veraenderung").addEventListener("click", function(){
+    console.log("veraenderung");
     hideRightSideBoxes();
     document.getElementsByClassName("rightSideBox")[9].style.display = "block";
 });
@@ -83,6 +81,8 @@ document.getElementById("magieIcon").addEventListener("click", function(){
 /* */
 /* *********************************************************************** */
 
-window.onload = function(){
+/* Onload */
+function loadWelt(){
     document.getElementsByClassName("rightSideBox")[0].style.display = "block";
 }
+/* *********************************************************************** */

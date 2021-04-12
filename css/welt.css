@@ -85,9 +85,10 @@
 #leftBookSide h2{
     text-align: center;
 }
-#leftBookSide p{
+#BookPoints p{
     margin-left: 130px;
     font-size: 20px;
+    cursor: pointer;
 }
 /* Rechte Buchseite */
 #rightBookSide{
@@ -108,6 +109,9 @@
     height: 100%;
     margin-left: 10px;
     position: absolute;
+}
+.iconsBoxIcons{
+    cursor: pointer;
 }
 .iconsBoxIcons:nth-child(1){
     left: 0px;
@@ -176,9 +180,41 @@
     font-size: 36px;
 }
 #abenteuerEinstieg{
-    width: 1200px;
-    height: 70vh;
+    width: 1000px;
+    height: 60vh;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+#firstRedBox{
+    margin-top: 100px;
+}
+.yellowBoxPara{
+    margin: 50px;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: justify;
+}
+#weltHochTief{
+    margin-top: calc(100vh - 67px);
+    height: calc(100vh - 67px); /* gesamte Höhe Minus die Höhe der Navbar */
+    width: 1400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /*background-image: url("../assets/ttrpg/Intro\ TTRPG_2_Background_Zeichenfläche\ 1.svg");
+    background-size: 100%;*/
+    background-color: #754D24;
+    border: 2px solid red;
+}
+#weltHochTief h2{
+    font-size: 36px;
+}
+#hoehenUndTiefen{
+    width: 950px;
+    height: 75vh;
+    margin-left: 50px;
+}
+#secondRedBox{
+    margin-top: 50px;
 }

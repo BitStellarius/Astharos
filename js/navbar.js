@@ -20,3 +20,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 /* *********************************************************************** */
+
+/* Gesamte Onload Funktionen */
+window.onload = function(){
+  loadTTRPG();
+  loadWelt();
+}
+/* *********************************************************************** */
