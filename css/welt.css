@@ -1,1 +1,220 @@
 /* CSS File: Welt-Bereich */
+/* Welt Startseite */
+#weltStart{
+    height: calc(100vh - 67px); /* gesamte Höhe Minus die Höhe der Navbar */
+    position: relative;
+}
+#weltStart h1{
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5rem;
+}
+#weltAnimationsfilmTafel{
+    height: calc(95vh - 67px); /* gesamte Höhe Minus die Höhe der Navbar */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+}
+/* BuchBox */
+#weltBook{
+    height: calc(100vh - 67px); /* gesamte Höhe Minus die Höhe der Navbar */
+    width: 1400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /*background-image: url("../assets/ttrpg/Intro\ TTRPG_2_Background_Zeichenfläche\ 1.svg");
+    background-size: 100%;*/
+    background-color: #754D24;
+}
+/* Buchrahmen */
+#weltbookFrame{
+    width: 1200px;
+    height: calc(80vh - 87px); /* gesamte Höhe Minus die Höhe der Navbar - Höhe Margin top and bottom */
+    border: 4px solid black;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #333333;
+    position: relative;
+}
+/* Buch */
+#vl1{
+    border-left: 3px solid #754D24;
+    border-top: 3px solid #754D24;
+    border-bottom: 3px solid #754D24;
+    height: calc(80vh - 127px);
+    width: 580px;
+    margin-top: 20px;
+    position: absolute;
+    left: 20px;
+    background: linear-gradient(to left, #000000 0%, #CBBBA0 40%);
+}
+#vl2{
+    border-right: 3px solid #754D24;
+    border-top: 3px solid #754D24;
+    border-bottom: 3px solid #754D24;
+    height: calc(80vh - 127px);
+    width: 580px;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    background: linear-gradient(to right, #000000 0%, #CBBBA0 40%);
+}
+#bookPathSvg{
+    position: absolute;
+    width: 1160px;
+    top: 21px;
+    left: 22px;
+}
+#bookPath{
+    stroke: #754D24;
+    stroke-width: 2; 
+    fill: #908673;
+}
+/* Linke Buchseite */
+#leftBookSide{
+    width: 574px;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+}
+#leftBookSide h2{
+    text-align: center;
+}
+#BookPoints p{
+    margin-left: 130px;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Rechte Buchseite */
+#rightBookSide{
+    width: 574px;
+    position: absolute;
+    left: 596px;
+    top: 80px;
+}
+#rightBookSideIconsBox{
+    height: 120px;
+    width: 400px;
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#rightBookSideIconsBox img{
+    height: 100%;
+    margin-left: 10px;
+    position: absolute;
+}
+.iconsBoxIcons{
+    cursor: pointer;
+}
+.iconsBoxIcons:nth-child(1){
+    left: 0px;
+}
+.iconsBoxIcons:nth-child(2){
+    left: 25%;
+}
+.iconsBoxIcons:nth-child(3){
+    left: 50%;
+}
+.iconsBoxIcons:nth-child(4){
+    left: 75%;
+}
+.rightSideBox{
+    display: none;
+    width: 400px;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.rightSideBox h2{
+    text-align: center;
+    font-size: 36px;
+    width: 400px;
+}
+.rightSideBox p{
+    margin-top: 150px;
+    width: 400px;
+    font-size: 20px;
+    text-align: justify;
+}
+.rightSideBoxIcon{
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.rightSideBox:nth-child(1){
+    display: block;
+}
+/* Welt Einstieg */
+#weltEinstieg{
+    height: calc(100vh - 67px); /* gesamte Höhe Minus die Höhe der Navbar */
+    width: 1400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /*background-image: url("../assets/ttrpg/Intro\ TTRPG_2_Background_Zeichenfläche\ 1.svg");
+    background-size: 100%;*/
+    background-color: #754D24;
+    border: 2px solid red;
+}
+.redFrame{
+    border: 5px solid #823E36;
+    width: 100%;
+    height: 100%;
+}
+.yellowFrame{
+    border: 5px solid #CC8F22;
+    background-color: #CBC2B0;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+}
+#weltEinstieg h2{
+    font-size: 36px;
+}
+#abenteuerEinstieg{
+    width: 1000px;
+    height: 60vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#firstRedBox{
+    margin-top: 100px;
+}
+.yellowBoxPara{
+    margin: 50px;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: justify;
+}
+#weltHochTief{
+    margin-top: calc(100vh - 67px);
+    height: calc(100vh - 67px); /* gesamte Höhe Minus die Höhe der Navbar */
+    width: 1400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /*background-image: url("../assets/ttrpg/Intro\ TTRPG_2_Background_Zeichenfläche\ 1.svg");
+    background-size: 100%;*/
+    background-color: #754D24;
+    border: 2px solid red;
+}
+#weltHochTief h2{
+    font-size: 36px;
+}
+#hoehenUndTiefen{
+    width: 950px;
+    height: 75vh;
+    margin-left: 50px;
+}
+#secondRedBox{
+    margin-top: 50px;
+}

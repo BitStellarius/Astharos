@@ -18,12 +18,21 @@
 
     <nav>
       <ul id="navbar">
-        <li><a id="navItem" href="#startframe">Home</a></li>
-        <li><a id="navItem" href="#ttrpg">TTRPG</a></li>
-        <li><a id="navItem" href="">Welt</a></li>
-        <li><a id="navItem" href="">Karte</a></li>
-        <li><a id="navItem" href="">Tools</a></li>
-        <li><a id="navItem" href="">Downloads</a></li>
+<<<<<<< HEAD
+        <li><a href="#startframe">Home</a></li>
+        <li><a href="#ttrpg">TTRPG</a></li>
+        <li><a href="#welt">Welt</a></li>
+        <li><a href="">Karte</a></li>
+        <li><a href="">Tools</a></li>
+        <li><a href="">Downloads</a></li>
+=======
+        <li><a href="#startframe">Home</a></li>
+        <li><a href="#ttrpg">TTRPG</a></li>
+        <li><a href="#welt">Welt</a></li>
+        <li><a href="">Karte</a></li>
+        <li><a href="">Tools</a></li>
+        <li><a href="">Downloads</a></li>
+>>>>>>> 04353aa4b0c24ad9694df59e7e0183f563d40aa8
       </ul>
     </nav>
 
@@ -47,9 +56,12 @@
       <section id="ttrpg">
         <div id="ttrpgNav">
           <h1>TTRPG</h1>
-          <div id="sprechblase">
-            <p>Frag mich einfach wenn du Hilfe brauchst, Kräh!</p>
-          </div>  
+          <div>
+            <div id="sprechblase">
+              <p>Frag mich einfach wenn du Hilfe brauchst, Kräh!</p>
+              <img id="crowTTRPG" src="assets/Copy of crow-v2_sit.png">
+            </div>             
+          </div>     
 
           <div id="ttrpgNavbar">
             <div class="questionBox">
@@ -95,6 +107,8 @@
             oder scheitert, entscheidet sich durch deren 
             Talente und das geworfene Würfelergebnis.
           </p>
+          <object id="videoFrame" data="assets/ttrpg/Intro TTRPG_3.svg" type="image/svg+xml"></object>
+          <object id="videoTTRPG" data="assets/backgroundAnimated.svg" type="image/svg+xml"></object>
         </div>
 
         <div id="wieFunktioniert" class="ttrpgUnterseite">
@@ -138,7 +152,11 @@
             </div>  
           </div>    
           <div id="houseContainer">
-            <object id="house" data="assets/ttrpg/Intro TTRPG_2_Haus.svg" type="image/svg+xml"></object>
+            <img id="house" src="assets/ttrpg/Intro TTRPG_2_Haus.svg">
+            <div id="sprechblaseHouse">
+              <p id="sprechblaseHousePara">Ich verrate dir was du alles für ein einfaches Abenteuer brauchst, Kräh!</p>
+              <img id="crowWasBraucheIch" src="assets/Copy of crow-v2_sit.png">
+            </div>
             <img id="housePicture" src="assets/PlatzhalterGruen.png">
           </div>  
         </div>
@@ -169,14 +187,242 @@
             abzuheben. Der hat ja ziemlich viel zu tun…
           </p>
         </div>
-
-        <div id="ttrpgVideo">
-          <object id="videoFrame" data="assets/ttrpg/Intro TTRPG_3.svg" type="image/svg+xml"></object>
-          <object id="videoTTRPG" data="assets/backgroundAnimated.svg" type="image/svg+xml"></object>
-        </div>
       </section>
     <!-- Bereich: Welt -->
       <section id="welt">
+        <div id="weltStart">
+          <h1>Die Welt von Astharos</h1>
+          <img id="weltAnimationsfilmTafel" src="assets/introWelt/Intro Welt_1.svg">
+        </div>  
+
+        <div id="weltBook">
+          <div id="weltbookFrame">
+            <div id="vl1"></div>
+            <div id="vl2"></div>    
+            <svg id="bookPathSvg">
+              <path id="bookPath" d="M 0 0 C 500 -1 500 30 580 0 C 660 30 660 -1 1160 0" />
+            </svg>   
+            
+            <div id="leftBookSide">
+              <h2>Magie</h2>
+              <div id="BookPoints">
+                <p id="element">1. Elementarmagie</p>
+                <p id="natur">2. Naturmagie</p>
+                <p id="schutz">3. Schutz & Verstärkungsmagie</p>
+                <p id="beschwoer">4. Beschwörungsmagie</p>
+                <p id="illusion">5. Illusionsmagie</p>
+                <p id="wiederher">6. Wiederherstellungsmagie</p>
+                <p id="bannmagie">7. Bannmagie & Flüche</p>
+                <p id="fortbewegung">8. Fortbewegungsmagie</p>
+                <p id="wissens">9. Erkenntnismagie</p>
+                <p id="veraenderung">10. Veränderungsmagie</p>
+                <p id="dunkle">11. Dunkle Magie</p>
+              </div>
+            </div>
+            <div id="rightBookSide">
+              <div id="rightBookSideIconsBox">
+                <img id="infoIcon" class="iconsBoxIcons" src="assets/introWelt/Intro Welt_3_Lesezerichen_Info_w.svg">
+                <img id="rassenIcon" class="iconsBoxIcons" src="assets/introWelt/Intro Welt_3_Lesezerichen_Rassen_w.svg">
+                <img id="religionIcon" class="iconsBoxIcons" src="assets/introWelt/Intro Welt_3_Lesezerichen_religion_w.svg">
+                <img id="magieIcon" class="iconsBoxIcons" src="assets/introWelt/Intro Welt_3_Lesezerichen_magie_w.svg">
+              </div>              
+
+              <div class="rightSideBox">
+                <h2>Elementarmagie</h2>
+                <img class="rightSideBoxIcon" src="assets/introWelt/Magie/Elementar.svg">
+                <p>
+                  Eine der einfachsten Magiearten ist das 
+                  Beherrschen der Elemente. Dazu gehört das 
+                  Beherrschen von Feuer, Wasser, Luft und Erde. 
+                  Anders als andere Zauber, ist das Erlernen eines 
+                  neuen Elements äußerst schwierig und wird nur 
+                  von wenigen erreicht. Wenn die Zauber stärker 
+                  sein sollen, muss man sich in der Nähe des 
+                  zugehörigen Elementes befinden. So können 
+                  beispielsweise manche Zauber nicht einfach so 
+                  gewirkt werden.
+                </p>
+              </div>
+
+            <div class="rightSideBox">
+              <h2>Natur<wbr>magie</h2>
+              <img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
+              <p>
+                Die Naturmagie umschreibt alle Zauber und 
+                Rituale, welche die Natur beeinflussen. Darunter 
+                fallen allerlei Pflanzen und Tiere, Gifte und 
+                Extrakte und dem Verändern von Holz.
+              </p>
+            </div>
+
+            <div class="rightSideBox">
+              <h2>Schutz- & Verstärkungs<wbr>magie</h2>
+              <img class="rightSideBoxIcon" src="assets/introWelt/Magie/Schutz und Verstärkung.svg">
+              <p>
+                Schutz vor Magieangriffen oder normalen 
+                Angrffen und das Verstärken des Körpers bilden 
+                den Hauptteil des dieser Magie-Art.
+              </p>
+            </div>
+
+            <div class="rightSideBox">
+              <h2>Beschwörungs<wbr>magie</h2>
+              <img class="rightSideBoxIcon" src="assets/introWelt/Magie/Beschwörungsmagie.svg">
+              <p>
+                Zu der Beschwörungsmagie gehören das 
+                Beschwören von allerlei Geisterwesen, Untoten, 
+                Tierewesen, Feen oder sogar Waffen.
+              </p>
+            </div>
+
+            <div class="rightSideBox">
+              <h2>Illusions<wbr>magie</h2>
+              <img class="rightSideBoxIcon" src="assets/introWelt/Magie/Illusionsmagie.svg">
+              <p>
+                Illusionen, Unsichtbarkeit, Beeinflussen von 
+                geistigen Prozessen oder Geräusche vermindern 
+                sind Bestandteil der Illusionsmagie. Nicht jeder 
+                kann und will diese Art von Magie verstehen 
+                und erklärt sich manchmal sogar als Göttliche 
+                Fügung.
+              </p>
+            </div>
+
+            <div class="rightSideBox">
+              <h2>Wieder<wbr>herstellungs<wbr>magie</h2>
+              <img class="rightSideBoxIcon" src="assets/introWelt/Magie/Wiederherstellungsmagie.svg">
+              <p>
+                Eine Vielzahl an Heilzaubern und 
+                Heilungen gehören zu dem Repertoire der 
+                Wiederherstellungsmagie.
+                Wie die Elementarmagie, ist auch diese Art der 
+                Magie leicht zu erlernen. 
+              </p>
+            </div>
+
+            <div class="rightSideBox">
+              <h2>Bannmagie und Flüche</h2>
+              <img class="rightSideBoxIcon" src="assets/introWelt/Magie/Bannmagie und Flüche.svg">
+              <p>
+                Das Werfen, Brechen und Annullieren von 
+                Flüchen, Bannkreisen und anderen Zauber sind 
+                Teil der Bann- und Fluchmagie.
+              </p>
+            </div>
+
+            <div class="rightSideBox">
+              <h2>Fort<wbr>bewegungs<wbr>magie</h2>
+              <img class="rightSideBoxIcon" src="assets/introWelt/Magie/Fortbewegungsmagie.svg">
+              <p>
+                Mit diesen Zaubersprüchen kann die Bewegung 
+                von jeglichen Lebewesen erhöht werden. 
+                Ebenfalls können die Ausdauer und Sprungkraft 
+                erhöht werden.
+              </p>
+            </div>
+
+            <div class="rightSideBox">
+              <h2>Erkenntnis<wbr>magie</h2>
+              <img class="rightSideBoxIcon" src="assets/introWelt/Magie/Wissensmagie.svg">
+              <p>
+                Rätsel und Unerklärliches sind Teil der 
+                Erkenntnismagie. Mit dieser Art der Magie 
+                lassen sich Magische Sprachen und Runen 
+                entschlüsseln, Inschriften lesen und Telepathie 
+                nutzen. 
+              </p>
+            </div>
+
+            <div class="rightSideBox">
+              <h2>Veränderungs<wbr>magie</h2>
+              <img class="rightSideBoxIcon" src="assets/introWelt/Magie/Veränderungsmagie.svg">
+              <p>
+
+              </p>
+            </div>
+
+            <div class="rightSideBox">
+              <h2>Dunkle Magie</h2>
+              <img class="rightSideBoxIcon" src="assets/introWelt/Magie/Dunkle Magie.svg">
+              <p>
+                Dunkle Magie gehört in Astharos und den 
+                anderen Kontinenten zu dem verbotenen Zauber. 
+                Jegliche Zauber werden gesetzlich geahndet, 
+                weswegen die meisten Zauberer davon ablassen 
+                oder ein Leben in Dunkelheit führen.
+              </p>
+            </div>
+
+          </div>
+        </div> 
+        
+        <div id="weltEinstieg">
+          <div id="abenteuerEinstieg">
+            <h2>Dann wollen wir mal in das Abenteuer einsteigen</h2>
+            <div id="firstRedBox" class="redFrame">
+              <div class="yellowFrame">
+                <p class="yellowBoxPara">
+                  Astharos ist ein Fantasy TTRPG Abenteuer, 
+                  welches eigens entwickelt wurde. Dabei wurden 
+                  verschiedene Welten und Geschichten als 
+                  Inspiration genutzt um eine umfangreiche und 
+                  interessante Welt zu erschaffen.<br>
+                  Der Kontinent Astharos gilt als der reichste 
+                  Kontinent der bekannten Welt. Fruchtbares 
+                  Land, erzreiche Gebirge und eine Vielzahl an 
+                  Lebewesen zieren die Welt von Astharos. Hier 
+                  leben viele verschiedene Rassen, darunter 
+                  Menschen, Orgrosh, die Orks, Arondal, die Elben, 
+                  Helban, die Halblinge, Taragdul, die Zwerge, 
+                  Felica, die Katzenmenschen und die Pessmos, 
+                  Mischwesen aus Tier und Mensch, sowie anderen 
+                  Wesen.
+                  Astharos ist aufgeteilt in mehrere Fürstentümer 
+                  wie Caelndil, Terrascall, Mithrand, Seedeheim, 
+                  Auurus – Erandal, Bühlenbrügge und der Insel 
+                  Ihlfheim.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="weltHochTief">
+          <div id="hoehenUndTiefen">
+            <h2>Die Höhen und Tiefen Astahros</h2>
+            <div id="secondRedBox" class="redFrame">
+              <div class="yellowFrame">
+                <p class="yellowBoxPara">
+                  Die Höhen und Tiefen Astharos – Teil 1, soll der 
+                  Einstieg in die Welt von Astharos sein und 
+                  diejenigen Nutzer ansprechen, welche nicht 
+                  viel Erfahrung mit Pen & Paper besitzen. Egal 
+                  ob Spieler oder Spielmeister, die Erklärungen 
+                  und die Komplexität sind sehr einfach gehalten, 
+                  sodass ein simpler Einstieg für jeden möglich ist. 
+                  Es werden in diesem viele Freiheiten eingeräumt 
+                  um das erste Abenteuer leicht zu gestalten.
+                  <br>
+                  Im ersten Teil von „Die Höhen und Tiefen Astharos“ 
+                  treffen sich, die bis dato noch unbekannten 
+                  ,Charaktere (Spieler) in einer Taverne und 
+                  werden Zeuge eines skrupellosen Verbrechens. 
+                  Entscheiden sich die Spieler, diesem Verbrechen 
+                  und dem Hintergrund dahinter nachzugehen, 
+                  erwartet sie ein eindrucksvolles Abenteuer in der 
+                  Welt von Ashtaros. Es führt sie über das Hochland-Gebiet von Mithrand bis über und unter die 
+                  Berge des Terrascall-Gebirges. Dabei begegnen 
+                  sie allerlei Personen und Wesen und kommen 
+                  an verschiedenen Orten vorbei. Wie genau sie 
+                  die Welt entdecken, wird dem Spielmeister und 
+                  dessen Fantasie und den Spielern und deren 
+                  Handlungen überlassen.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
 
       </section>
     <!-- Bereich: Karte -->
@@ -194,5 +440,6 @@
     </main>
     <script src="js/ttrpg.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/welt.js"></script>
   </body>
 </html>
