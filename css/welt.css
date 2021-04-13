@@ -20,7 +20,7 @@
 }
 /* ******************* */
 .backgroundWood{
-    background-color: #754D24;
+    background-image: url("../assets/platzhalterBackgroundWood.png");
     width: 100vw;
     position: relative;
 }
@@ -134,7 +134,7 @@
 }
 .BookPoints p{
     margin-left: 130px;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
 }
 
@@ -183,13 +183,13 @@
 }
 .rightSideBox h2{
     text-align: center;
-    font-size: 36px;
+    font-size: 32px;
     width: 400px;
 }
 .rightSideBox p{
     margin-top: 150px;
     width: 400px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
 }
 .rightSideBoxIcon{
@@ -220,4 +220,15 @@
 }
 #secondRedBox{
     margin-top: 50px;
+}
+#weltHochTiefCrowBox{
+    position: absolute;
+    right: -80px;
+    top: 300px;
+}
+#weltHochTiefCrow{
+    height: 150px;
+}
+#weltHochTiefSpeechBubble{
+    height: 150px;
 }
