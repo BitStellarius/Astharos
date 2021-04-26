@@ -1,1 +1,87 @@
 /* CSS File: Interaktive Karte */
+/* Karte */
+#kartenDiv{
+    height: calc(100vh - var(--height-Navbar));
+    width: 100vw;
+}
+#karteBild{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#kartePNG{
+    max-width: 100vw;
+    max-height: calc(100vh - var(--height-Navbar));
+}
+
+.kartenIcons{
+    width: 20vw;
+    position: absolute;
+}
+/* Icons Positionen */
+#iconAsthos{
+    top: 15%;
+    left: 12%;
+}
+#iconFlostapor{
+    top: 45%;
+    left: 12%;
+}
+#iconGlarius{
+    top: 65%;
+    left: 12%;
+}
+#iconHerbanas{
+    top: 85%;
+    left: 12%;
+}
+#iconMiratan{
+    top: 15%;
+    left: 62%;
+}
+#iconNuberios{
+    top: 45%;
+    left: 62%;
+}
+#iconThondbaren{
+    top: 75%;
+    left: 62%;
+}
+/* ******************* */
+/* Städte */
+.stadtDiv{
+    display: none;
+    position: relative;
+}
+#stadtMauerLinks{
+    height: calc(100vh - var(--height-Navbar));
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#stadtMauerRechts{
+    height: calc(100vh - var(--height-Navbar));
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.backToMap{
+    position: absolute;
+    right: 20vw;
+    top: 70vh;
+}
+.stadtTextBox{
+    height: 80vh;
+    width: 40vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10vh;
+}
+.stadtText{
+    margin: 50px;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: justify;
+}
+/* ******************* */
