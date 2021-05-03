@@ -86,6 +86,11 @@
 }
 
 /* Zweiter Teil */
+
+.ttrpgUnterseite p {
+    color: white;
+}
+
 .ttrpgUnterseite{
     height: calc(100vh - 67px);
     max-width: 1400px;
