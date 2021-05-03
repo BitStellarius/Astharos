@@ -232,3 +232,18 @@
 #weltHochTiefSpeechBubble{
     height: 150px;
 }
+
+/*Buch Typo*/
+#weltBook h2{
+    color: rgb(0, 0, 0);
+}
+#leftBookSide p {
+    color: rgb(0, 0, 0);
+    transition-duration: .5s;
+    }
+
+/*Hover Effekt*/
+#leftBookSide p:hover {
+    color: rgba(0, 0, 0, 0.527);
+    padding-left: 1rem;
+}
