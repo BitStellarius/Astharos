@@ -1,1 +1,16 @@
 /* CSS File: Tools-Bereich */
+
+#toolsSpeechOne{
+    height: 20vh;
+    width: 60vw;
+}
+#toolsCrow{
+    height: 20vh;
+}
+#toolsSpeechTwo{
+    height: 20vh;
+}
+#test1{
+    height: 100%;
+    width: 100%;
+}
