@@ -81,26 +81,26 @@
     position: relative;
 }
 .bookLeftBack{
-    border-left: 3px solid #754D24;
-    border-top: 3px solid #754D24;
-    border-bottom: 3px solid #754D24;
+    border-left: 3px solid var(--woodBrown);
+    border-top: 3px solid var(--woodBrown);
+    border-bottom: 3px solid var(--woodBrown);
     height: calc(80vh - 127px);
     width: 580px;
     margin-top: 20px;
     position: absolute;
     left: 20px;
-    background: linear-gradient(to left, #000000 0%, #CBBBA0 20%);
+    background: linear-gradient(to left, #000000 0%, var(--pergamentWhite) 20%);
 }
 .bookRightBack{
-    border-right: 3px solid #754D24;
-    border-top: 3px solid #754D24;
-    border-bottom: 3px solid #754D24;
+    border-right: 3px solid var(--woodBrown);
+    border-top: 3px solid var(--woodBrown);
+    border-bottom: 3px solid var(--woodBrown);
     height: calc(80vh - 127px);
     width: 580px;
     margin-top: 20px;
     position: absolute;
     left: 50%;
-    background: linear-gradient(to right, #000000 0%, #CBBBA0 20%);
+    background: linear-gradient(to right, #000000 0%, var(--pergamentWhite) 20%);
 }
 .bookFrame h2, .bookFrame h3{
     color: black;

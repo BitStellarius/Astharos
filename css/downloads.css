@@ -1,1 +1,23 @@
 /* CSS File: Downloadbereich */
+#downloadKachelBox{
+    height: calc(100vh - var(--height-Navbar));
+    width: 1400px;
+    position: absolute;
+    left: 50%;
+    top: 15vh;
+    transform: translateX(-50%);
+}
+.kachel{
+    width: calc(25% - 50px);
+    margin: 25px;
+    float: left; 
+}
+.kachel img{
+    margin: 10px auto;
+}
+.kachel p{
+    text-align: center;
+}
+.kachel h3{
+    color: black;
+}
