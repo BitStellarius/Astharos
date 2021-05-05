@@ -110,26 +110,26 @@
     left: 50%;
     background: linear-gradient(to right, #000000 0%, #CBBBA0 20%);
 }
-#bookPathSvg{
+.bookPathSvg{
     position: absolute;
     width: 1160px;
     top: 21px;
     left: 22px;
 }
-#bookPath{
+.bookPath{
     stroke: #754D24;
     stroke-width: 2; 
     fill: #908673;
 }
 
 /* Linke Buchseite */
-#leftBookSide{
+.leftBookSide{
     width: 574px;
     position: absolute;
     left: 20px;
     top: 50px;
 }
-#leftBookSide h2{
+.leftBookSide h2{
     text-align: center;
 }
 .BookPoints p{
@@ -139,7 +139,7 @@
 }
 
 /* Rechte Buchseite */
-#rightBookSide{
+.rightBookSide{
     width: 574px;
     position: absolute;
     left: 596px;
