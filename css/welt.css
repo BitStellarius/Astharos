@@ -42,7 +42,7 @@
 }
 .yellowFrame{
     border: 5px solid #CC8F22;
-    background-color: #CBC2B0;
+    background-color: var(--pergamentWhite);
     width: calc(100% - 10px);
     height: calc(100% - 10px);
 }
@@ -89,47 +89,47 @@
 }
 /* Buch */
 #vl1{
-    border-left: 3px solid #754D24;
-    border-top: 3px solid #754D24;
-    border-bottom: 3px solid #754D24;
+    border-left: 3px solid var(--woodBrown);
+    border-top: 3px solid var(--woodBrown);
+    border-bottom: 3px solid var(--woodBrown);
     height: calc(80vh - 127px);
     width: 580px;
     margin-top: 20px;
     position: absolute;
     left: 20px;
-    background: linear-gradient(to left, #000000 0%, #CBBBA0 20%);
+    background: linear-gradient(to left, #000000 0%, var(--pergamentWhite) 20%);
 }
 #vl2{
-    border-right: 3px solid #754D24;
-    border-top: 3px solid #754D24;
-    border-bottom: 3px solid #754D24;
+    border-right: 3px solid var(--woodBrown);
+    border-top: 3px solid var(--woodBrown);
+    border-bottom: 3px solid var(--woodBrown);
     height: calc(80vh - 127px);
     width: 580px;
     margin-top: 20px;
     position: absolute;
     left: 50%;
-    background: linear-gradient(to right, #000000 0%, #CBBBA0 20%);
+    background: linear-gradient(to right, #000000 0%, var(--pergamentWhite) 20%);
 }
-#bookPathSvg{
+.bookPathSvg{
     position: absolute;
     width: 1160px;
     top: 21px;
     left: 22px;
 }
-#bookPath{
-    stroke: #754D24;
+.bookPath{
+    stroke: var(--woodBrown);
     stroke-width: 2; 
     fill: #908673;
 }
 
 /* Linke Buchseite */
-#leftBookSide{
+.leftBookSide{
     width: 574px;
     position: absolute;
     left: 20px;
     top: 50px;
 }
-#leftBookSide h2{
+.leftBookSide h2{
     text-align: center;
 }
 .BookPoints p{
@@ -139,7 +139,7 @@
 }
 
 /* Rechte Buchseite */
-#rightBookSide{
+.rightBookSide{
     width: 574px;
     position: absolute;
     left: 596px;

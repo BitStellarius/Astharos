@@ -26,5 +26,6 @@ window.onload = function(){
   loadTTRPG();
   loadWelt();
   loadKarte();
+  loadTools();
 }
 /* *********************************************************************** */

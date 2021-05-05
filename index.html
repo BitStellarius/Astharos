@@ -213,10 +213,10 @@
 					<div id="weltbookFrame">
 						<div id="vl1"></div>
 						<div id="vl2"></div>
-						<svg id="bookPathSvg">
-							<path id="bookPath" d="M 0 0 C 500 -1 500 30 580 0 C 660 30 660 -1 1160 0" />
+						<svg class="bookPathSvg">
+							<path class="bookPath" d="M 0 0 C 500 -1 500 30 580 0 C 660 30 660 -1 1160 0" />
 						</svg>
-						<div id="leftBookSide">
+						<div class="leftBookSide">
 							<div id="indexLeft">
 								<h2>Index</h2>
 								<div class="BookPoints">
@@ -272,7 +272,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="rightBookSide">
+						<div class="rightBookSide">
 							<div id="rightBookSideIconsBox">
 								<img id="infoIcon" class="iconsBoxIcons" src="assets/introWelt/Intro Welt_3_Lesezerichen_Info_w.svg">
 								<img id="rassenIcon" class="iconsBoxIcons" src="assets/introWelt/Intro Welt_3_Lesezerichen_Rassen_w.svg">
@@ -985,18 +985,155 @@
 				<div class="sectionStart">
 					<h1>Tools</h1>
 					<div>
-						<svg id="toolsSpeechOne" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306.74 200.06"><defs><style>.cls-1{fill:#cbbba0;stroke:#7d4e24;stroke-miterlimit:10;stroke-width:4px;}</style></defs>
-							<path id="test1" class="cls-1" d="M755.72,351.37V504.22l24,14.52-24,15.84v12.64h-277V351.37Z" transform="translate(-476.74 -349.37)"/>
-						</svg>
-						<img id="toolsCrow" src="assets/Copy of crow-v2_sit.png">
-						<img id="toolsSpeechTwo" src="assets/ttrpg/Intro TTRPG_Textbox.svg">
+						<div id="toolsSpeechOne">
+							<p>
+								Falls du Hilfe brauchst und ein immersiven 
+								Charakter bauen willst, dann kann ich dir hier 
+								helfen deinen sekundären Werte auszurechnen. 
+								Falls du es dem Glück überlassen willst, dann lass 
+								es deinen Spielmeister übernehmen.
+							</p>
+						</div>	
+						<img id="toolsCrow" src="assets/Copy of crow-v2_sit.png">	
+						<div id="toolsSpeechTwo">
+							<p>
+								Als Beispiel nehmen wir mal meine primären 
+								Werte <br /><br />
+								- Stärke [ST]: 13<br />
+								- Ausdauer [AU]: 11<br />
+								- Geschicklichkeit [GE]: 11<br /> 
+								- Intelligenz [IN]: 8<br />
+								- Charisma [CH]: 8<br />
+								- Mentale Belastbarkeit [MB]: 11<br />
+								- Magie [MA]: 7
+							</p>
+						</div>					
 					 </div>
+				</div>
+				<div id="werterechner" class="backgroundWood">
+					<div id="werteRechnerBeschreibungsBox" class="redFrame">
+						<div class="yellowFrame">
+							<p>
+								Ziemlich simpel bis jetzt oder? Gebe ich 
+								jetzt diese Werte in die “Asphax Brandideins 
+								Werterechner” ein, so spuckt er mir automatisch 
+								meine sekundären Werte aus, ohne dass ich das 
+								mühselig im Taschenrechner eingeben muss.
+							</p>
+						</div>
+					</div>
+					<div class="bookDiv">
+						<div class="bookFrame">
+							<div class="bookLeftBack"></div>
+							<div class="bookRightBack"></div>
+							<svg class="bookPathSvg">
+								<path class="bookPath" d="M 0 0 C 500 -1 500 30 580 0 C 660 30 660 -1 1160 0" />
+							</svg>
+							<div class="leftBookSide">
+								<div>
+									<h2>ASPHAX BRANDIDEINS WERTERECHNER</h2>
+									<h3>Primärwerte</h3>
+									<div id="inputContainer">
+										<div id="ST" class="inputBox">
+											<label>ST</label>
+											<input type="number" value="12">
+											</div>
+											<div id="AU" class="inputBox">
+											<label>AU</label>
+											<input type="number" value="11">
+											</div>
+											<div id="GE" class="inputBox">
+											<label>GE</label>
+											<input type="number" value="11">
+											</div>
+											<div id="IN" class="inputBox">
+											<label>IN</label>
+											<input type="number" value="8">
+											</div>
+											<div id="CH" class="inputBox">
+											<label>CH</label>
+											<input type="number" value="8">
+											</div>
+											<div id="MB" class="inputBox">
+											<label>MB</label>
+											<input type="number" value="11">
+											</div>
+											<div id="MA" class="inputBox">
+											<label>MA</label>
+											<input type="number" value="7">
+											</div>
+									</div>
+								</div>
+							</div>
+							<div class="rightBookSide">
+								<div>
+									<h3>Sekundärwerte</h3>
+									<div id="statsDescription">
+										<p>Attacke Nahkampf: </p>
+										<p>Attacke Distanz:</p>
+										<p>Parade:</p>
+										<p>Initiative:</p>
+										<p>Lebensenergie:</p>
+										<p>Mentale Gesundheit:</p>
+										<p>Mentale Kraft:</p>
+									</div>
+						
+									<div id="statsContainer">
+										<p id="AtkNah"></p>
+										<p id="AtkDist"></p>
+										<p id="Parade"></p>
+										<p id="Initiative"></p>
+										<p id="Lebensenergie"></p>
+										<p id="MentaleGesundheit"></p>
+										<p id="MentaleKraft"></p> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- Bereich: Downloads -->
 			<section id="downloads">
 				<div class="sectionStart">
 					<h1>Downloads</h1>
+					<div id="downloadKachelBox">
+						<div class="kachel">
+							<img src="assets/downloads/svg/Downloadbereich_Karte.svg">
+							<h3>Welt</h3>
+							<p>
+								Hier kannst du aktuellen Stand der Welt 
+								downloaden.
+							</p>
+						</div>
+						<div class="kachel">
+							<img src="assets/downloads/svg/Downloadbereich_Regelwerk.svg">
+							<h3>Regelwerk</h3>
+							<p>
+								Du willst die Regeln wissen und 
+								verstehen? - Dann brauchst du nur dieses 
+								Dokument.
+							</p>
+						</div>
+						<div class="kachel">
+							<img src="assets/downloads/svg/Downloadbereich_Story.svg">
+							<h3>Story</h3>
+							<p>
+								Hier findest du alles zur aktuellen 
+								Geschichte!
+
+							</p>
+						</div>
+						<div class="kachel">
+							<img src="assets/downloads/svg/Downloadbereich_Charakterbogen.svg">
+							<h3>Charakterbögen</h3>
+							<p>
+								Hiermit kannst du deinen 
+								individuellen Charakter erstellen.
+							</p>
+						</div>
+												
+					</div>					
 				</div>
 			</section>
 		</main>
@@ -1026,5 +1163,6 @@
 		<script src="js/welt.js"></script>
 		<script src="js/karte.js"></script>
 		<script src="js/sounds.js"></script>
+		<script src="js/tools.js"></script>
 	</body>
 </html>
