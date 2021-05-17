@@ -173,6 +173,11 @@
 .iconsBoxIcons:nth-child(4){
     left: 75%;
 }
+#infoIcon{
+    height: 140px !important;
+    top: -15px;
+    left: -15px;
+}
 .rightSideBox{
     display: none;
     width: 400px;
@@ -187,10 +192,13 @@
     width: 400px;
 }
 .rightSideBox p{
-    margin-top: 150px;
+    margin-top: 50px;
     width: 400px;
     font-size: 18px;
     text-align: justify;
+}
+.iconMarginMagie {
+    margin-top: 150px !important;
 }
 .rightSideBoxIcon{
     height: 100px;

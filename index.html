@@ -17,17 +17,18 @@
 		</header>
 		<nav>
 			<ul id="navbar">
-				<li><a href="#startframe">Home</a></li>
-				<li><a href="#ttrpg">TTRPG</a></li>
-				<li><a href="#welt">Welt</a></li>
-				<li><a href="#karte">Karte</a></li>
-				<li><a href="#tools">Tools</a></li>
-				<li><a href="#downloads">Downloads</a></li>
+				<li><a href="#startFrameHrefAnchor">Home</a></li>
+				<li><a href="#ttrpgHrefAnchor">TTRPG</a></li>
+				<li><a href="#weltHrefAnchor">Welt</a></li>
+				<li><a href="#karteHrefAnchor">Karte</a></li>
+				<li><a href="#toolsHrefAnchor">Tools</a></li>
+				<li><a href="#downloadsHrefAnchor">Downloads</a></li>
 			</ul>
 		</nav>
 		<main>
 			<!-- Bereich: Startframe -->
-			<section id="startframe">
+			<section id="startframe" class="posRelative">
+				<div id="startFrameHrefAnchor"></div>
 				<div id="startframeDecoLeft">
 					<img class="startframeRahmen" src="assets/start/Mauerwerk_links.svg">
 				</div>
@@ -41,7 +42,8 @@
 				</div>
 			</section>
 			<!-- Bereich: TTRRPG -->
-			<section id="ttrpg">
+			<section id="ttrpg" class="posRelative">
+				<div id="ttrpgHrefAnchor"></div>
 				<div id="ttrpgNav">
 					<h1>TTRPG</h1>
 					<div>
@@ -173,7 +175,8 @@
 				</div>
 			</section>
 			<!-- Bereich: Welt -->
-			<section id="welt">
+			<section id="welt" class="posRelative">
+				<div id="weltHrefAnchor"></div>
 				<div id="weltStart" class="sectionStart">
 					<h1>Die Welt von Astharos</h1>
 					<img id="weltAnimationsfilmTafel" src="assets/introWelt/Intro Welt_1.svg">
@@ -283,7 +286,6 @@
 							<div id="rassenLeft">
 								<div id="orksRight" class="rightSideBox">
 									<h2>Orgrosh – Orks</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Die Orgrosh sind eine der furchteinflößenden 
 										Völker von Astharos. Viele von ihnen sind getrieben 
@@ -303,7 +305,6 @@
 								</div>
 								<div id="elbenRight" class="rightSideBox">
 									<h2>Arondal – Elben</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Eines der edelsten Geschöpfe in dieser Welt 
 										sind die Arondal. Sie haben ein langes Leben 
@@ -322,7 +323,6 @@
 								</div>
 								<div id="halbElbenRight" class="rightSideBox">
 									<h2>Halb-Elben</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Halb-Elben sind das Ergebnis zwischen Menschen 
 										und Elben. Der Grund wieso die Menschen von 
@@ -339,7 +339,6 @@
 								</div>
 								<div id="halblingRight" class="rightSideBox">
 									<h2>Helban – Halbling</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Das von Natur aus friedlichste Volk sind die 
 										Helban. Sie haben eine eher optimistische und 
@@ -355,7 +354,6 @@
 								</div>
 								<div id="zwergeRight" class="rightSideBox">
 									<h2>Taragdul – Zwerge</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										In der Welt von Astharos gelten die Taragdul als 
 										ein merkwürdiges Volk. Sie gelten als ein gierig 
@@ -370,7 +368,6 @@
 								</div>
 								<div id="katzenmenschenRight" class="rightSideBox">
 									<h2>Felica – Katzenmenschen</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Die Felica sind das wohl sonderbarste Volk der 
 										Welt. Sie stammen von einem anderen Teil der 
@@ -386,7 +383,6 @@
 								</div>
 								<div id="mischwesenRight" class="rightSideBox">
 									<h2>Pessmos – Mischwesen</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Die Pessmos sind Mischwesen aus Tier und 
 										Mensch. Mal Mensch und Fisch, Mensch und 
@@ -410,7 +406,6 @@
 							<div id="religionLeft">
 								<div id="thyrosRight" class="rightSideBox">
 									<h2>Thyros - Gott des Himmels</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Thyros gilt in dieser Welt als Gottvater aller 
 										bekannten und heiligen Götter, der Welt, 
@@ -428,7 +423,6 @@
 								</div>
 								<div id="arisRight" class="rightSideBox">
 									<h2>Aris – Göttin der Jagd</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Aris, Göttin der Jagd schützt all diejenigen, 
 										welche sich als Jäger von Tieren und Kreaturen 
@@ -443,7 +437,6 @@
 								</div>
 								<div id="begrendRight" class="rightSideBox">
 									<h2>Begrend – Gott des Weines und der Völlerei</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Begrend, der Gott des Weines und der Völlerei 
 										ist zuständig für allerlei Festivitäten, Weine und 
@@ -458,7 +451,6 @@
 								</div>
 								<div id="arphenRight" class="rightSideBox">
 									<h2>Arphen – Gott der Landwirtschaft und Tiere</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Die Landwirtschaft, Felder und Landwirte werden 
 										vom Gott der Landwirtschaft Arphen bewacht. 
@@ -476,7 +468,6 @@
 								</div>
 								<div id="trendirRight" class="rightSideBox">
 									<h2>Trendir – Gott des Handwerks</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Handwerker, Gebäude und allerlei von Hand 
 										geschaffene Dinge, vereinen sich unter Trendir, 
@@ -490,7 +481,6 @@
 								</div>
 								<div id="gilithRight" class="rightSideBox">
 									<h2>Gilith – Göttin der Musik und Kunst</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Musik, die Dichtkunst und allerlei künstlerisches 
 										Tun wurde von der Göttin Gilith für Astharos 
@@ -504,7 +494,6 @@
 								</div>
 								<div id="tradosRight" class="rightSideBox">
 									<h2>Trados – Gott des Handels und Reichtum</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Münzen, Stoffe, Lebensmittel oder andere 
 										Güter sind das tägliche Brot von Händler und 
@@ -527,7 +516,6 @@
 								</div>
 								<div id="koshkaRight" class="rightSideBox">
 									<h2>Koshka – Gott der Magie und des Wissens</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Laut den Gläubigen von Koshka, sei er der 
 										Weiseste unter den Göttern. Alle Magie und das 
@@ -543,7 +531,6 @@
 								</div>
 								<div id="seonoraRight" class="rightSideBox">
 									<h2>Seonora – Göttin der Liebe und Zuneigung</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Seonora, die Göttin der Liebe und Zuneigung, 
 										wird bei Hochzeiten angepriesen und segnet 
@@ -556,7 +543,6 @@
 								</div>
 								<div id="ferrumtisRight" class="rightSideBox">
 									<h2>Ferrumtis – Gott des Eisens und Silber</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Eisen, Silber, Spitzhacke und das sichere Arbeiten 
 										in der Tiefe werden durch Ferrumtis gesegnet. 
@@ -568,7 +554,6 @@
 								</div>
 								<div id="fanuinRight" class="rightSideBox">
 									<h2>Fanuin – Gott des Lichts</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Fanuin, der Gott des Lichtes, ist der heiligste 
 										und höchste Gott der Elben. Für ihn ist er der 
@@ -585,7 +570,6 @@
 								</div>
 								<div id="varrakisRight" class="rightSideBox">
 									<h2>Varrakis – Gott des Kampfes und Krieges</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Blut, Krieg und Kampf sind die Hauptaspekte im 
 										Leben eines Orks und dessen Gottheit Varrakis. 
@@ -598,7 +582,6 @@
 								</div>
 								<div id="danduleinRight" class="rightSideBox">
 									<h2>Dandulein – Gott des Glücks</h2>
-									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
 									<p>
 										Glück ist den kleinen Hold. Halblinge und Glück 
 										werden immer wieder in Verbindung gebracht. 
@@ -617,7 +600,7 @@
 								<div id="elementRight" class="rightSideBox">
 									<h2>Elementarmagie</h2>
 									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Elementar.svg">
-									<p>
+									<p class="iconMarginMagie">
 										Eine der einfachsten Magiearten ist das 
 										Beherrschen der Elemente. Dazu gehört das 
 										Beherrschen von Feuer, Wasser, Luft und Erde. 
@@ -633,7 +616,7 @@
 								<div id="naturRight" class="rightSideBox">
 									<h2>Natur<wbr>magie</h2>
 									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Natur.svg">
-									<p>
+									<p class="iconMarginMagie">
 										Die Naturmagie umschreibt alle Zauber und 
 										Rituale, welche die Natur beeinflussen. Darunter 
 										fallen allerlei Pflanzen und Tiere, Gifte und 
@@ -643,7 +626,7 @@
 								<div id="schutzRight" class="rightSideBox">
 									<h2>Schutz- & Verstärkungs<wbr>magie</h2>
 									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Schutz und Verstärkung.svg">
-									<p>
+									<p class="iconMarginMagie">
 										Schutz vor Magieangriffen oder normalen 
 										Angrffen und das Verstärken des Körpers bilden 
 										den Hauptteil des dieser Magie-Art.
@@ -652,7 +635,7 @@
 								<div id="beschwoerRight" class="rightSideBox">
 									<h2>Beschwörungs<wbr>magie</h2>
 									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Beschwörungsmagie.svg">
-									<p>
+									<p class="iconMarginMagie">
 										Zu der Beschwörungsmagie gehören das 
 										Beschwören von allerlei Geisterwesen, Untoten, 
 										Tierewesen, Feen oder sogar Waffen.
@@ -661,7 +644,7 @@
 								<div id="illusionRight" class="rightSideBox">
 									<h2>Illusions<wbr>magie</h2>
 									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Illusionsmagie.svg">
-									<p>
+									<p class="iconMarginMagie">
 										Illusionen, Unsichtbarkeit, Beeinflussen von 
 										geistigen Prozessen oder Geräusche vermindern 
 										sind Bestandteil der Illusionsmagie. Nicht jeder 
@@ -673,7 +656,7 @@
 								<div id="wiederherRight" class="rightSideBox">
 									<h2>Wieder<wbr>herstellungs<wbr>magie</h2>
 									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Wiederherstellungsmagie.svg">
-								  <p>
+								  <p class="iconMarginMagie">
 										Eine Vielzahl an Heilzaubern und 
 										Heilungen gehören zu dem Repertoire der 
 										Wiederherstellungsmagie.
@@ -684,7 +667,7 @@
 								<div id="bannmagieRight" class="rightSideBox">
 									<h2>Bannmagie und Flüche</h2>
 									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Bannmagie und Flüche.svg">
-									<p>
+									<p class="iconMarginMagie">
 										Das Werfen, Brechen und Annullieren von 
 										Flüchen, Bannkreisen und anderen Zauber sind 
 										Teil der Bann- und Fluchmagie.
@@ -693,7 +676,7 @@
 								<div id="fortbewegungRight" class="rightSideBox">
 									<h2>Fort<wbr>bewegungs<wbr>magie</h2>
 									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Fortbewegungsmagie.svg">
-									<p>
+									<p class="iconMarginMagie">
 										Mit diesen Zaubersprüchen kann die Bewegung 
 										von jeglichen Lebewesen erhöht werden. 
 										Ebenfalls können die Ausdauer und Sprungkraft 
@@ -703,7 +686,7 @@
 								<div id="wissensRight" class="rightSideBox">
 									<h2>Erkenntnis<wbr>magie</h2>
 									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Wissensmagie.svg">
-									<p>
+									<p class="iconMarginMagie">
 										Rätsel und Unerklärliches sind Teil der 
 										Erkenntnismagie. Mit dieser Art der Magie 
 										lassen sich Magische Sprachen und Runen 
@@ -714,13 +697,13 @@
 								<div id="veraenderungRight" class="rightSideBox">
 									<h2>Veränderungs<wbr>magie</h2>
 									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Veränderungsmagie.svg">
-									<p>
+									<p class="iconMarginMagie">
 									</p>
 								</div>
 								<div id="dunkleRight" class="rightSideBox">
 									<h2>Dunkle Magie</h2>
 									<img class="rightSideBoxIcon" src="assets/introWelt/Magie/Dunkle Magie.svg">
-									<p>
+									<p class="iconMarginMagie">
 										Dunkle Magie gehört in Astharos und den 
 										anderen Kontinenten zu dem verbotenen Zauber. 
 										Jegliche Zauber werden gesetzlich geahndet, 
@@ -774,7 +757,8 @@
 				</div>
 			</section>
 			<!-- Bereich: Karte -->
-			<section id="karte">
+			<section id="karte" class="posRelative">
+				<div id="karteHrefAnchor"></div>
 				<div class="sectionStart">
 					<h1>Karte</h1>
 				</div>
@@ -981,7 +965,8 @@
 				</div>
 			</section>
 			<!-- Bereich: Tools -->
-			<section id="tools">
+			<section id="tools" class="posRelative">
+				<div id="toolsHrefAnchor"></div>
 				<div class="sectionStart">
 					<h1>Tools</h1>
 					<div>
@@ -1094,7 +1079,8 @@
 				</div>
 			</section>
 			<!-- Bereich: Downloads -->
-			<section id="downloads">
+			<section id="downloads" class="posRelative">
+				<div id="downloadsHrefAnchor"></div>
 				<div class="sectionStart">
 					<h1>Downloads</h1>
 					<div id="downloadKachelBox">

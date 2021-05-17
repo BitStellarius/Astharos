@@ -10,7 +10,7 @@
 body {
   margin: 0;
   padding: 0;
-  margin-top: 45px;
+  margin-top: 112px;
   background-image: url("../assets/backgroundAnimated.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -55,4 +55,32 @@ p{
   font-family: Montserrat;
   font-size: 15px;
   line-height: 25px;
+}
+
+.posRelative{
+  position: relative;
+}
+#startFrameHrefAnchor{
+  position: absolute;
+  top: -112px;
+}
+#ttrpgHrefAnchor{
+  position: absolute;
+  top: -62px;
+}
+#weltHrefAnchor{
+  position: absolute;
+  top: -62px;
+}
+#karteHrefAnchor{
+  position: absolute;
+  top: -62px;
+}
+#toolsHrefAnchor{
+  position: absolute;
+  top: -62px;
+}
+#downloadsHrefAnchor{
+  position: absolute;
+  top: -62px;
 }
