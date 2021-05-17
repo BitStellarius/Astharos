@@ -62,7 +62,6 @@ loadKarte();
 
 /* Onload */
 function loadKarte(){
-    console.log("gfdsg");
     /* Click Listener Back Buttons */
     var backBtns = document.getElementsByClassName("backToMap");
     for(var i = 0; i <backBtns.length; i++){
