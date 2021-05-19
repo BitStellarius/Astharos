@@ -20,8 +20,8 @@
     width: 26%;
     position: absolute;
     
-    background-color: rgb(203, 187, 160, 0.7);
-    border-radius: 100%;
+    /*background-color: rgb(203, 187, 160, 0.7);
+    border-radius: 100%;*/
 }
 .kartenIcons img{
     transition: 0.3s ease-in-out;
