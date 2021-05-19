@@ -18,9 +18,16 @@
     transform: translateX(-50%);
     top: 0px;
 }
+#animationsfilmWelt{
+    height: 70%; /* gesamte Höhe Minus die Höhe der Navbar */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 23%;
+}
 /* ******************* */
 .backgroundWood{
-    background-image: url("../assets/platzhalterBackgroundWood.png");
+    background-image: url("../assets/Background.svg");
     width: 100vw;
     position: relative;
 }
