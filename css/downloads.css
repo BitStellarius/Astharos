@@ -1,6 +1,5 @@
 /* CSS File: Downloadbereich */
 #downloadKachelBox{
-    height: calc(100vh - var(--height-Navbar));
     width: 1400px;
     position: absolute;
     left: 50%;

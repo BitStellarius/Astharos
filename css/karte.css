@@ -3,6 +3,7 @@
 #kartenDiv{
     height: calc(100vh - var(--height-Navbar));
     width: 100vw;
+    position: relative;
 }
 #karteBild{
     position: absolute;
@@ -70,36 +71,58 @@
 .stadtDiv{
     display: none;
     position: relative;
-}
-#stadtMauerLinks{
     height: calc(100vh - var(--height-Navbar));
+}
+.stadtMauerLinks{
+    height: 100%;
     position: absolute;
     left: 0px;
-    top: 0px;
+    bottom: 0px;
 }
-#stadtMauerRechts{
-    height: calc(100vh - var(--height-Navbar));
+.stadtMauerRechts{
+    height: 100%;
     position: absolute;
     right: 0px;
-    top: 0px;
+    bottom: 0px;
 }
 .backToMap{
     position: absolute;
     right: 35%;
-    top: 80vh;
+    top: 80%;
+    z-index: 11;
 }
 .stadtTextBox{
-    height: 80vh;
-    width: 40vw;
+    height: 80%;
+    width: 40%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 10vh;
+    top: 10%;
 }
 .stadtText{
     margin: 50px;
     font-size: 24px;
     line-height: 36px;
     text-align: justify;
+}
+
+#stadtMiratan .stadtMauerLinks {
+    left: -1%;
+    bottom: -12%;
+}
+#stadtMiratan .stadtMauerRechts {
+    right: -8%;
+}
+
+#stadtFlostapor .stadtMauerLinks {
+    left: -5%;
+}
+
+#stadtNuberios .stadtMauerLinks {
+    left: -9%;
+}
+
+#stadtGlarius .stadtMauerRechts {
+    right: -8%;
 }
 /* ******************* */

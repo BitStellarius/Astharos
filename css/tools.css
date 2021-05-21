@@ -25,11 +25,10 @@
     z-index: 2;
 }
 #toolsSpeechTwo{
-    height: 400px;
-    width: 650px;
+    height: 50%;
     position: absolute;
     left: 35%;
-    top: 540px;
+    top: 50%;
     background-image: url("../assets/ttrpg/Intro\ TTRPG_Textbox.svg");
     background-repeat: no-repeat;
 }

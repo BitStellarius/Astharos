@@ -1,4 +1,7 @@
 /* Funktionen */
+function scrollIntoAnchor(id){
+    document.getElementById(id).querySelector(".anchor").scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 function hideAllCitys(){
     var staedte = document.getElementsByClassName("stadtDiv");
     for(var i = 0; i < staedte.length; i++){
@@ -9,6 +12,8 @@ function backToTheMap(){
     console.log("back");
     hideAllCitys();
     document.getElementById("karteBild").style.display ="block";
+
+    scrollIntoAnchor("kartenDiv");
 }
 
 
@@ -19,42 +24,56 @@ document.getElementById("iconAsthos").addEventListener("click", function(){
     hideAllCitys();
     document.getElementById("karteBild").style.display ="none";
     document.getElementById("stadtAsthos").style.display = "block";
+
+    scrollIntoAnchor("stadtAsthos");
 });
 document.getElementById("iconFlostapor").addEventListener("click", function(){
     console.log("iconFlostapor");
     hideAllCitys();
     document.getElementById("karteBild").style.display ="none";
     document.getElementById("stadtFlostapor").style.display = "block";
+    
+    scrollIntoAnchor("stadtFlostapor");
 });
 document.getElementById("iconGlarius").addEventListener("click", function(){
     console.log("iconGlarius");
     hideAllCitys();
     document.getElementById("karteBild").style.display ="none";
     document.getElementById("stadtGlarius").style.display = "block";
+    
+    scrollIntoAnchor("stadtGlarius");
 });
 document.getElementById("iconHerbanas").addEventListener("click", function(){
     console.log("iconHerbanas");
     hideAllCitys();
     document.getElementById("karteBild").style.display ="none";
     document.getElementById("stadtHerbanas").style.display = "block";
+    
+    scrollIntoAnchor("stadtHerbanas");
 });
 document.getElementById("iconMiratan").addEventListener("click", function(){
     console.log("iconMiratan");
     hideAllCitys();
     document.getElementById("karteBild").style.display ="none";
     document.getElementById("stadtMiratan").style.display = "block";
+    
+    scrollIntoAnchor("stadtMiratan");
 });
 document.getElementById("iconNuberios").addEventListener("click", function(){
     console.log("iconNuberios");
     hideAllCitys();
     document.getElementById("karteBild").style.display ="none";
     document.getElementById("stadtNuberios").style.display = "block";
+    
+    scrollIntoAnchor("stadtNuberios");
 });
 document.getElementById("iconThondbaren").addEventListener("click", function(){
     console.log("iconThondbaren");
     hideAllCitys();
     document.getElementById("karteBild").style.display ="none";
     document.getElementById("stadtThondbaran").style.display = "block";
+    
+    scrollIntoAnchor("stadtThondbaran");
 });
 
 
