@@ -6,7 +6,7 @@
     position: absolute;
     left: 25%;
     top: 200px;
-    background-image: url("../assets/ttrpg/Intro\ TTRPG_Textbox.svg");
+    background-image: url("../assets/ttrpg/Intro_TTRPG_Textbox.svg");
     background-repeat: no-repeat;
 }
 #toolsSpeechOne p{
@@ -29,7 +29,7 @@
     position: absolute;
     left: 35%;
     top: 50%;
-    background-image: url("../assets/ttrpg/Intro\ TTRPG_Textbox.svg");
+    background-image: url("../assets/ttrpg/Intro_TTRPG_Textbox.svg");
     background-repeat: no-repeat;
 }
 #toolsSpeechTwo p{

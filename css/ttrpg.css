@@ -23,7 +23,7 @@
     position: absolute;
     left: 25%;
     top: 200px;
-    background-image: url("../assets/ttrpg/Intro TTRPG_Textbox.svg");
+    background-image: url("../assets/ttrpg/Intro_TTRPG_Textbox.svg");
     background-repeat: no-repeat;
 
 }
@@ -47,7 +47,7 @@
     width: 80%;
     min-height: 120px;
     margin-left: 10%;
-    background-image: url("../assets/ttrpg/Intro\ TTRPG_NavBar.svg");
+    background-image: url("../assets/ttrpg/Intro_TTRPG_NavBar.svg");
     background-repeat: no-repeat;
     background-size: 100%;    
 }
@@ -94,7 +94,7 @@
 .ttrpgUnterseite{
     height: calc(100vh - 67px);
     max-width: 1400px;
-    width: 100%;
+    width: 80vw;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -115,7 +115,7 @@
 }
 #wasIstYtVideo{
     height: 44.4%;
-    width: 63%;
+    width: calc((44.4% * 16) / 9);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -132,7 +132,7 @@
     position: absolute;
     top: 20%;
     left: 2%;
-    background-image: url("../assets/ttrpg/Intro\ TTRPG_2_Textbox_2.svg");
+    background-image: url("../assets/ttrpg/Intro_TTRPG_2_Textbox_2.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -162,7 +162,7 @@
     position: absolute;
     top: -23%;
     left: 20%;
-    background-image: url("../assets/ttrpg/Intro TTRPG_Textbox.svg");
+    background-image: url("../assets/ttrpg/Intro_TTRPG_Textbox.svg");
     background-repeat: no-repeat;
 }
 #sprechblaseHousePara{

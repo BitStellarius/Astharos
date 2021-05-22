@@ -20,11 +20,11 @@ body {
 
 @font-face {
   font-family: "BreathFire";
-  src: url("../assets/Fonts/Breathe\ Fire\ II.otf") format("opentype");
+  src: url("../assets/Fonts/Breathe_Fire_II.otf") format("opentype");
 }
 @font-face{
   font-family: "PerpetuaTitlingMT";
-  src: url("../assets/Fonts/Perpetua\ Titling\ MT\ Std.otf") format("opentype");
+  src: url("../assets/Fonts/Perpetua_Titling_MT_Std.otf") format("opentype");
 }
 @font-face{
   font-family: "Montserrat";

@@ -21,10 +21,10 @@ function hideBoxesAndShowBox(id){
 }
 
 function allIconsWhite(){
-    document.getElementById("infoIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_Info_w.svg";
-    document.getElementById("rassenIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_Rassen_w.svg";
-    document.getElementById("religionIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_religion_w.svg";
-    document.getElementById("magieIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_magie_w.svg";
+    document.getElementById("infoIcon").src = "assets/introWelt/Intro_Welt_3_Lesezerichen_Info_w.svg";
+    document.getElementById("rassenIcon").src = "assets/introWelt/Intro_Welt_3_Lesezerichen_Rassen_w.svg";
+    document.getElementById("religionIcon").src = "assets/introWelt/Intro_Welt_3_Lesezerichen_religion_w.svg";
+    document.getElementById("magieIcon").src = "assets/introWelt/Intro_Welt_3_Lesezerichen_magie_w.svg";
 }
 
 function showIndex(){
@@ -33,7 +33,7 @@ function showIndex(){
     hideLeftBookSide();
     document.getElementById("indexLeft").style.display = "block";
     allIconsWhite();
-    document.getElementById("infoIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_Info_r.svg";
+    document.getElementById("infoIcon").src = "assets/introWelt/Intro_Welt_3_Lesezerichen_Info_r.svg";
 }
 function showReligion(){
     hideRightSideBoxes();
@@ -41,7 +41,7 @@ function showReligion(){
     hideLeftBookSide();
     document.getElementById("religionLeft").style.display = "block";
     allIconsWhite();
-    document.getElementById("religionIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_religion_r.svg";
+    document.getElementById("religionIcon").src = "assets/introWelt/Intro_Welt_3_Lesezerichen_religion_r.svg";
 }
 function showRassen(){
     hideRightSideBoxes();
@@ -49,7 +49,7 @@ function showRassen(){
     hideLeftBookSide();
     document.getElementById("rassenLeft").style.display = "block";
     allIconsWhite();
-    document.getElementById("rassenIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_Rassen_r.svg";
+    document.getElementById("rassenIcon").src = "assets/introWelt/Intro_Welt_3_Lesezerichen_Rassen_r.svg";
 }
 function showMagie(){
     hideRightSideBoxes();
@@ -57,7 +57,7 @@ function showMagie(){
     hideLeftBookSide();
     document.getElementById("elementarmagieLeft").style.display = "block";
     allIconsWhite();
-    document.getElementById("magieIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_magie_r.svg";
+    document.getElementById("magieIcon").src = "assets/introWelt/Intro_Welt_3_Lesezerichen_magie_r.svg";
 }
 /* *********************************************************************** */
 
@@ -196,6 +196,6 @@ function loadWelt(){
     hideRightSideBoxes();
     hideLeftBookSide();
     document.getElementById("indexLeft").style.display = "block";
-    document.getElementById("infoIcon").src = "assets/introWelt/Intro Welt_3_Lesezerichen_Info_r.svg";
+    document.getElementById("infoIcon").src = "assets/introWelt/Intro_Welt_3_Lesezerichen_Info_r.svg";
 }
 /* *********************************************************************** */
