@@ -113,13 +113,15 @@
     left: 50%;
     transform: translateX(-50%);
 }
-#videoTTRPG{
-    height: 45%;
+#wasIstYtVideo{
+    height: 44.4%;
+    width: 63%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 130px;
-    border: solid 5px black;
+    bottom: 14%;
+    border: solid black 6px;
+    background-color: black;
 }
 /* Zweiter Teil: Wie funktioniert ein TTRPG? */
 

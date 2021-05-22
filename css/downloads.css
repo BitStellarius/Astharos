@@ -20,3 +20,9 @@
 .kachel h3{
     color: black;
 }
+.downloadHover{
+    transition: 0.3s ease-in-out;
+}
+.downloadHover:hover{
+    transform: scale(1.1);
+}

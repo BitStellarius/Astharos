@@ -69,22 +69,22 @@ welche.addEventListener("click", function(){
 /* Change Picture in "Was brauche ich für ein TTRPG?" */
 var housePicture = document.getElementById("housePicture");
 document.getElementById("regelwerk").addEventListener("click", function(){
-    housePicture.src = "assets/PlatzhalterBlau.png";
+    housePicture.src = "assets/ttrpg/buch.jpg";
 });
 document.getElementById("charakterboegen").addEventListener("click", function(){
-    housePicture.src = "assets/PlatzhalterRot.png";
+    housePicture.src = "assets/ttrpg/game.jpg";
 });
 document.getElementById("wuerfel").addEventListener("click", function(){
-    housePicture.src = "assets/PlatzhalterGruen.png";
+    housePicture.src = "assets/ttrpg/dice.jpg";
 });
 document.getElementById("papier").addEventListener("click", function(){
-    housePicture.src = "assets/PlatzhalterBlau.png";
+    housePicture.src = "assets/ttrpg/bleistift.jpg";
 });
 document.getElementById("sichtschutz").addEventListener("click", function(){
     housePicture.src = "assets/PlatzhalterRot.png";
 });
 document.getElementById("geschichte").addEventListener("click", function(){
-    housePicture.src = "assets/PlatzhalterGruen.png";
+    housePicture.src = "assets/ttrpg/geschichte.jpg";
 });
 document.getElementById("leiter").addEventListener("click", function(){
     housePicture.src = "assets/PlatzhalterBlau.png";

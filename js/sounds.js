@@ -7,6 +7,7 @@ const pageFlip3 = document.getElementById("sfxPageFlip3"); // Sound für Umblät
 
 const pageFlip = [pageFlip1, pageFlip2, pageFlip3]; // Array aller Sounds für Umblättern einer Seite
 
+const backgroundMusic = document.getElementById("backgroundMusic");
 /* Random number generator für zufällige Sounds */
 
 let rng = num => {
@@ -190,3 +191,7 @@ veraenderungBtn.addEventListener("click", function(){
 dunkleBtn.addEventListener("click", function(){
   pageFlip[rng(3)].play();
 });
+
+function loadSound(){  //Onload Sound
+  //backgroundMusic.play();
+}
