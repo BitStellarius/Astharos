@@ -12,11 +12,6 @@
     transform: translateX(-50%);
     top: -5rem;
 }
-.anchor{
-    position: absolute;
-    left: 0;
-    top:  calc(var(--height-Navbar) * -1);
-}
 #sprechblase{
     height: 200px;
     width: auto;
