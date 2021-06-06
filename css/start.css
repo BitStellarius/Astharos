@@ -1,7 +1,7 @@
 /* CSS File: Startseite */
 
 #startframe {
-  width: 100%;
+  width: 100vw;
   height: calc(100vh - 112px); /* gesamte Höhe Minus die Höhe der Navbar */
   /*
   background-image: url("../assets/backgroundAnimated.svg");
@@ -12,11 +12,33 @@
 }
 
 .startframeRahmen {
-  height: calc(100vh - 112px); /* gesamte Höhe Minus die Höhe der Navbar */
+  height: 100%; /* gesamte Höhe Minus die Höhe der Navbar */
 }
 
 #startframeLogo img {
-  margin-top: 15%;
-  width: 75vh;
+  height: 100%;
+  width: 100%;
 }
 
+#middleSection{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  top: 30%;
+  width: 30%;
+}
+
+#startframeDecoRight{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+}
+
+#startframeDecoLeft{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+}
