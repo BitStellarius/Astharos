@@ -17,7 +17,7 @@
 	<body>
 		<header>
 		</header>
-		<nav>
+		<nav id="desktopNav">
 			<ul id="navbar">
 				<li><a href="#startFrameHrefAnchor">Home</a></li>
 				<li><a href="#ttrpgHrefAnchor">TTRPG</a></li>
@@ -26,7 +26,20 @@
 				<li><a href="#toolsHrefAnchor">Tools</a></li>
 				<li><a href="#downloadsHrefAnchor">Downloads</a></li>
 			</ul>
-			
+		</nav>
+		<nav id="mobileNav">
+			<div>
+				<input type="checkbox" />
+				<span></span>
+				<span></span>
+				<span></span>
+				<ul id="menu">
+					<li><a href="#startFrameHrefAnchor">Home</a></li>
+					<li><a href="#ttrpgHrefAnchor">TTRPG</a></li>
+					<li><a href="#diceRoller">Tools</a></li>
+					<li><a href="#downloadsHrefAnchor">Downloads</a></li>
+				</ul>
+			</div>
 		</nav>
 		<main>
 			<!-- Bereich: Startframe -->
@@ -1117,6 +1130,29 @@
 					</div>
 				</div>
 			</section>
+			<section id="diceRoller" class="backgroundWood">
+				<div id="diceBox">
+					<h1>Dice Roller</h1>
+					<div id="diceInnerBox">
+						<svg id="dice" version="1.1" xmlns="http://www.w3.org/2000/svg" width="174" height="200" viewbox="0 0 173.20508075688772 200">
+							<path fill="#754D24" d="M82.27241335952166 2.4999999999999996Q86.60254037844386 0 90.93266739736606 2.4999999999999996L168.87495373796554 47.5Q173.20508075688772 50 173.20508075688772 55L173.20508075688772 145Q173.20508075688772 150 168.87495373796554 152.5L90.93266739736606 197.5Q86.60254037844386 200 82.27241335952166 197.5L4.330127018922194 152.5Q0 150 0 145L0 55Q0 50 4.330127018922194 47.5Z">
+							</path>
+						</svg>
+						<p id="diceZahl"></p>
+					</div>
+					<button id="rollDiceBtn">roll dice</button>
+					<fieldset id="radioField">
+						<input type="radio" id="twenty" name="Seitenzahl" value="20" checked="checked">
+						<label for="twenty">20-seitig</label>
+						<input type="radio" id="six" name="Seitenzahl" value="6">
+						<label for="twenty">6-seitig</label>
+						<input type="radio" id="hundred" name="Seitenzahl" value="100">
+						<label for="twenty">100-seitig</label>
+					</fieldset>
+										
+					
+				</div>
+			</section>
 			<!-- Bereich: Downloads -->
 			<section id="downloads" class="posRelative">
 				<div id="downloadsHrefAnchor"></div>
@@ -1200,5 +1236,6 @@
 		<script src="js/karte.js"></script>
 		<script src="js/sounds.js"></script>
 		<script src="js/tools.js"></script>
+		<script src="js/diceRoller.js"></script>
 	</body>
 </html>

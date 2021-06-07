@@ -1,12 +1,29 @@
+#diceRoller{
+    display: none;
+}
+#mobileNav{
+    display: none;
+}
+
 @media (max-width: 75rem) { /* min 1200px */
-    nav{
+    #desktopNav{
         display: none;
+    }
+    #mobileNav{
+        display: block;
     }
     body{
         border: solid red 2px;
         margin-top: 0px;
     }
-    
+    h3{
+        font-size: 100px;
+    }
+    p{
+        font-size: 40px;
+        line-height: 60px;
+    }
+    /* Start Bereich */
     #startframe{
         height: 100vh;
         width: 100vw;
@@ -19,6 +36,74 @@
     }
     #middleSection{
         width: 95%;
+    }
+    /* Karte Bereich */
+    #karte{
+        display: none;
+    }
+    /* Welt Bereich */
+    #weltBook{
+        display: none;
+    }
+    /* Tools Bereich */
+    #tools{
+        display: none;
+    }
+    #diceRoller{
+        display: block;
+    }
+    #diceBox{
+        width: 90vw;
+        height: 100vh;
+        margin: auto;
+    }
+    #diceInnerBox{
+        width: 100%;
+        height: 50%;
+        position: relative;
+        background-color: var(--pergamentWhite);
+        padding-top: 10%;
+    }
+    #dice{
+        width: 80%;
+        height: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #diceZahl{
+        font-size: 1000%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30%;
+    }
+    #rollDiceBtn{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 75%;
+        width: 40%;
+        height: 10%;
+        font-size: 500%;
+        background-color: var(--pergamentWhite);
+    }
+    #radioField{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 90%;
+        width: 80%;
+        height: fit-content;
+        text-align: center;
+        font-size: 300%;
+    }
+    /* Download Bereich */
+    #downloadKachelBox{
+        width: 80%;
+    }
+    .kachel {
+        width: 100%;
     }
 }
 @media (min-width: 48rem) { /* min 768px */
