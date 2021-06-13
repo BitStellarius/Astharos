@@ -27,7 +27,6 @@ window.onload = function(){
   loadWelt();
   loadKarte();
   loadTools();
-  loadSound();
   loadRollDice();
 }
 /* *********************************************************************** */

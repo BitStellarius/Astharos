@@ -1,7 +1,7 @@
 /* CSS File: Navigationsleiste */
 
 #navbar {
-  height: calc(var(--height-Navbar) - 10px);
+  height: calc(var(--height-Navbar) - 0px);
   margin: 0;
   font-family: 'Montserrat';
   font-size: 20px;
@@ -62,4 +62,21 @@ ul li a:after {
 }
 ul li a:hover:after {
   width: 80%;
+}
+
+#sliderContainer{
+  position: absolute;
+  right: 80px;
+  top: 20px;
+  display: flex;
+}
+#navMuteBtn{
+  display: none;
+}
+.soundBtn{
+  height: calc(var(--height-Navbar) / 2);
+  margin-right: 25px;
+}
+.soundBtn:hover{
+  transform: scale(1.1);
 }

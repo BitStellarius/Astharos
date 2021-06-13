@@ -62,7 +62,58 @@ const religionIconBtn = document.getElementById("religionIcon");
 const magieIconBtn = document.getElementById("magieIcon");
 
 
+const volumeSlider = document.getElementById("volumeSlider");
+var volume;
+const volButton = document.getElementById("navVolBtn");
+const muteButton = document.getElementById("navMuteBtn");
+
+function setVolume(){
+  chapterFlip.volume = volume;
+  pageFlip1.volume = volume;
+  pageFlip2.volume = volume;
+  pageFlip3.volume = volume;
+  backgroundMusic.volume = volume;
+}
+
+function muteSound(){
+  chapterFlip.muted = true;
+  pageFlip1.muted = true;
+  pageFlip2.muted = true;
+  pageFlip3.muted = true;
+  backgroundMusic.muted = true;
+  volButton.style.display = "none";
+  muteButton.style.display = "block";
+}
+function unmuteSound(){
+  chapterFlip.muted = false;
+  pageFlip1.muted = false;
+  pageFlip2.muted = false;
+  pageFlip3.muted = false;
+  backgroundMusic.muted = false;
+  volButton.style.display = "block";
+  muteButton.style.display = "none";
+}
+
+function playBackgroundMusic(){
+  backgroundMusic.play();
+}
+
+
 /* Event Listener */
+//Mute/Unmute Button
+volButton.addEventListener("click",function(){
+  muteSound();
+});
+muteButton.addEventListener("click",function(){
+  unmuteSound();
+});
+
+//Input Slider
+volumeSlider.addEventListener("input", function(){
+  volume = (volumeSlider.value / 100);
+  setVolume(); 
+  unmuteSound();
+});
 
 //TTRPG
 ttrpgBtn1.addEventListener("click", function(){
@@ -191,7 +242,3 @@ veraenderungBtn.addEventListener("click", function(){
 dunkleBtn.addEventListener("click", function(){
   pageFlip[rng(3)].play();
 });
-
-function loadSound(){  //Onload Sound
-  //backgroundMusic.play();
-}
