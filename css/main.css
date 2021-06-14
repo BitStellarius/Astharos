@@ -55,7 +55,7 @@ body{
   src: url("../assets/Fonts/Montserrat/Montserrat-Regular.otf") format("opentype");
 }
 h1 {
-  font-size: 8rem;
+  font-size: 7rem;
   color: black;
   text-align: center;
   font-family: BreathFire;
@@ -63,22 +63,22 @@ h1 {
 }
 h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: PerpetuaTitlingMT;
   color: white;
   font-weight: 100;
 }
 h3 {
   text-align: center;
-  font-size: 42px;
+  font-size: 2.5rem;
   font-family: Montserrat;
   color: white;
   font-weight: 100;
 }
 p{
   font-family: Montserrat;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 1.25rem;
+  line-height: 30px;
 }
 
 .anchor{

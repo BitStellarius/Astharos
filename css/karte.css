@@ -73,6 +73,9 @@
     position: relative;
     height: calc(100vh - var(--height-Navbar));
 }
+.stadtDiv h2{
+    color: black;
+}
 .stadtMauerLinks{
     height: 100%;
     position: absolute;
@@ -119,8 +122,6 @@
 }
 .stadtText{
     margin: 50px;
-    font-size: 24px;
-    line-height: 36px;
     text-align: justify;
 }
 
