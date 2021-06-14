@@ -19,14 +19,15 @@ function changeVals(){
     inputMB = parseInt(document.getElementById("MB").getElementsByTagName("input")[0].value);
     inputMA = parseInt(document.getElementById("MA").getElementsByTagName("input")[0].value);
 
-    valAtkNah = inputST + inputAU;
-    valAtkDist = inputIN + inputST;
-    valParade = inputCH + inputAU - inputGE;
-    valInitiative = inputST + inputAU - inputGE;
-    valLebensenergie = (5 * inputAU) + (3 * inputST) + inputGE;
-    valMentaleGesundheit = (5 * inputMB) + (5 * inputMA);
-    valMentaleKraft = inputMB + inputMA + (2 * inputIN);
-
+    
+    valAtkNah = Math.floor((inputST + inputST + inputAU) / 3);
+    valAtkDist = Math.floor((inputST + inputGE + inputAU) / 3);
+    valParade = Math.floor((inputGE + inputGE + inputAU) / 3);
+    valInitiative = Math.floor((inputST + 5) - (inputGE / 2));
+    valLebensenergie = Math.floor((inputST + inputST + inputAU) * 3);
+    valMentaleGesundheit = Math.floor((inputAU + inputIN + inputMB + inputMB) * 3);
+    valMentaleKraft = Math.floor(inputMA * 3 + inputIN);
+    
     printVals();
 }
 
