@@ -1,5 +1,6 @@
 /* CSS File: Tools-Bereich */
 
+
 #toolsSpeechOne{
     height: 300px;
     width: 450px;
@@ -109,7 +110,7 @@
 #inputContainer{
     position: absolute;
     width: 440px;
-    top: 350px;
+    top: 250px;
     left: 70px;
 }
 #ST{
@@ -173,14 +174,14 @@
 #statsDescription{
     width: 400px;
     position: absolute;
-    top: 280px;
+    top: 100px;
     right: 90px;
     font-size: 1.4em;
 }
 #statsContainer{
     width: 400px;
     position: absolute;
-    top: 280px;
+    top: 100px;
     right: 180px;
     font-size: 1.4em;
     text-align: end;
