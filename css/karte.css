@@ -147,5 +147,12 @@
 
 #stadtAsthos {
     display: block;
+    left: -1%;
 }
+
+#stadtAsthos .stadtMauerRechts {
+    right: -6%;
+}
+
+
 /* ******************* */

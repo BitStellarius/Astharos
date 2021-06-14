@@ -175,14 +175,14 @@
     width: 400px;
     position: absolute;
     top: 100px;
-    right: 90px;
+    right: 25px;
     font-size: 1.4em;
 }
 #statsContainer{
     width: 400px;
     position: absolute;
     top: 100px;
-    right: 180px;
+    right: 150px;
     font-size: 1.4em;
     text-align: end;
     color: #9c150b;
