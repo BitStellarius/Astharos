@@ -75,6 +75,10 @@ function setVolume(){
   backgroundMusic.volume = volume;
 }
 
+function getVolume(){
+  volume = (volumeSlider.value / 100);
+}
+
 function muteSound(){
   chapterFlip.muted = true;
   pageFlip1.muted = true;
@@ -90,12 +94,39 @@ function unmuteSound(){
   pageFlip2.muted = false;
   pageFlip3.muted = false;
   backgroundMusic.muted = false;
+  fadeInBackgroundMusic();
   volButton.style.display = "block";
   muteButton.style.display = "none";
 }
 
+function fadeInBackgroundMusic(){
+  getVolume();
+  backgroundMusic.volume = 0;
+  var fadeInAudio = setInterval(function(){
+    if(backgroundMusic.volume < volume){
+      backgroundMusic.volume += 0.1;
+    }
+    else{
+      clearInterval(fadeInAudio);
+    }
+  },200);
+}
+
 function playBackgroundMusic(){
   backgroundMusic.play();
+  fadeInBackgroundMusic();
+}
+
+function pauseBackgroundMusic(){
+  var fadeOutAudio = setInterval(function(){
+    if(backgroundMusic.volume > 0.0){
+      backgroundMusic.volume -= 0.1;
+    }
+    else{
+      clearInterval(fadeOutAudio);
+    }
+  },200);
+  backgroundMusic.pause();
 }
 
 
@@ -110,9 +141,17 @@ muteButton.addEventListener("click",function(){
 
 //Input Slider
 volumeSlider.addEventListener("input", function(){
-  volume = (volumeSlider.value / 100);
+  getVolume();
   setVolume(); 
   unmuteSound();
+});
+
+//Animationsfilm
+document.getElementById("animationsfilmWelt").addEventListener("play",function(){
+  pauseBackgroundMusic();
+});
+document.getElementById("animationsfilmWelt").addEventListener("pause",function(){
+  playBackgroundMusic();
 });
 
 //TTRPG
