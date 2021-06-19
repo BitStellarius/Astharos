@@ -4,6 +4,7 @@
     height: calc(100vh - var(--height-Navbar));
     width: 100vw;
     position: relative;
+    padding-bottom: 5%;
 }
 #karteBild{
     position: absolute;
@@ -141,8 +142,17 @@
     left: -9%;
 }
 
+#stadtNuberios .stadtMauerRechts {
+    bottom: -0.2%;
+}
+
+#stadtGlarius .stadtMauerLinks {
+    bottom: -2.9%;
+}
+
 #stadtGlarius .stadtMauerRechts {
     right: -8%;
+    bottom: -2.5%;
 }
 
 #stadtAsthos {
@@ -152,6 +162,10 @@
 
 #stadtAsthos .stadtMauerRechts {
     right: -6%;
+}
+
+#stadtThondbaran .stadtMauerLinks {
+    bottom: -0.2%;
 }
 
 

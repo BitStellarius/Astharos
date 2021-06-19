@@ -27,7 +27,8 @@
 }
 /* ******************* */
 .backgroundWood{
-    background-image: url("../assets/platzhalterBackgroundWood.png");
+    /*background-image: url("../assets/platzhalterBackgroundWood.png");*/
+    background-image: url("../assets/Background.svg");
     width: 100vw;
     position: relative;
 }
