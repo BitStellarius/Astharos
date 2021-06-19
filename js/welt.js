@@ -107,26 +107,18 @@ document.getElementById("aris").addEventListener("click", function(){
 document.getElementById("begrend").addEventListener("click", function(){
     hideBoxesAndShowBox("begrendRight");
 });
-document.getElementById("arphen").addEventListener("click", function(){
-    hideBoxesAndShowBox("arphenRight");
-});
 document.getElementById("trendir").addEventListener("click", function(){
     hideBoxesAndShowBox("trendirRight");
 });
 document.getElementById("gilith").addEventListener("click", function(){
     hideBoxesAndShowBox("gilithRight");
 });
-document.getElementById("trados").addEventListener("click", function(){
-    hideBoxesAndShowBox("tradosRight");
-});
+
 document.getElementById("koshka").addEventListener("click", function(){
     hideBoxesAndShowBox("koshkaRight");
 });
 document.getElementById("seonora").addEventListener("click", function(){
     hideBoxesAndShowBox("seonoraRight");
-});
-document.getElementById("ferrumtis").addEventListener("click", function(){
-    hideBoxesAndShowBox("ferrumtisRight");
 });
 document.getElementById("fanuin").addEventListener("click", function(){
     hideBoxesAndShowBox("fanuinRight");
@@ -134,9 +126,7 @@ document.getElementById("fanuin").addEventListener("click", function(){
 document.getElementById("varrakis").addEventListener("click", function(){
     hideBoxesAndShowBox("varrakisRight");
 });
-document.getElementById("dandulein").addEventListener("click", function(){
-    hideBoxesAndShowBox("danduleinRight");
-});
+
 /* *********************************************************************** */
 
 /* Magie Click Listener */
@@ -166,9 +156,6 @@ document.getElementById("fortbewegung").addEventListener("click", function(){
 });
 document.getElementById("wissens").addEventListener("click", function(){
     hideBoxesAndShowBox("wissensRight");
-});
-document.getElementById("veraenderung").addEventListener("click", function(){
-    hideBoxesAndShowBox("veraenderungRight");
 });
 document.getElementById("dunkle").addEventListener("click", function(){
     hideBoxesAndShowBox("dunkleRight");
