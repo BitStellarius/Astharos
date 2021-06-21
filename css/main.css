@@ -55,11 +55,11 @@ body{
   src: url("../assets/Fonts/Montserrat/Montserrat-Regular.otf") format("opentype");
 }
 h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   color: black;
   text-align: center;
-  font-family: BreathFire;
-  font-weight: 400;
+  font-family: PerpetuaTitlingMT;
+  font-weight: 200;
 }
 h2 {
   text-align: center;

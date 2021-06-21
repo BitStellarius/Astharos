@@ -86,6 +86,11 @@
     color: white;
 }
 
+#erklaertext {
+    padding: 3rem;
+    background-color: #00000075;
+}
+
 .ttrpgUnterseite{
     height: calc(100vh - 67px);
     max-width: 1400px;
