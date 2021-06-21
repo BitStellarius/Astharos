@@ -268,24 +268,25 @@
     width: 50%;
     height: 8%;
 
-    box-shadow:inset 0px 0px 0px 0px #91b8b3;
-	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
-	background-color:#768d87;
-	border-radius:5px;
+	background-color:#CBBBA0;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
+	color:#black;
+	font-family:Montserrat;
+    font-weight:700;
 	font-size:15px;
-	font-weight:bold;
 	padding:10px 45px;
-	text-decoration:none;
-	text-shadow:0px 0px 0px #2b665e;
+    border-width:2px;
+    border-color:#CC8F22;
+
+    transition-duration:0.5s;
 }
 
 #weltDownloadBtn:hover {
-	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
-	background-color:#6c7c7c;
+	background-color:#767088;
+    color: white;
+    border-color: #823E36;
+    border-width:2px;
 }
 
 
