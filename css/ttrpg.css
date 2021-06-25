@@ -1,6 +1,9 @@
 /* CSS File: TTRPG-Bereich */
 
 /* Erster Teil: Navigation */
+#mobileTTRPG{
+    display: none;
+}
 #ttrpgNav{
     margin-top: 0px;   
     position: relative; 
@@ -86,7 +89,7 @@
     color: white;
 }
 
-#erklaertext {
+.erklaertext {
     padding: 3rem;
     background-color: #00000075;
 }

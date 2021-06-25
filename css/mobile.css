@@ -4,6 +4,11 @@
 #mobileNav{
     display: none;
 }
+body{
+    position: absolute;
+    width: 100vw;
+    overflow-x: hidden;
+}
 
 @media (max-width: 75rem) { /* min 1200px */
     #desktopNav{
@@ -13,8 +18,10 @@
         display: block;
     }
     body{
-        border: solid red 2px;
         margin-top: 0px;
+    }
+    h1{
+        font-size: 3rem;
     }
     h3{
         font-size: 100px;
@@ -22,6 +29,9 @@
     p{
         font-size: 40px;
         line-height: 60px;
+    }
+    .rahmenUebergang{
+        display: none;
     }
     /* Start Bereich */
     #startframe{
@@ -37,6 +47,99 @@
     #middleSection{
         width: 95%;
     }
+    /* TTRPG Bereich */
+    #sprechblase{
+        background-image: none;
+        left: 0px;
+        top: 0px;
+    }
+    #sprechblase > p {        
+        max-width: 80%;
+        margin: 10%;
+        padding: 0px;
+    }
+    #crowTTRPG {
+        position: relative;
+        right: 0px;
+        bottom: 0px;
+        width: 80%;
+        margin: 10%;
+    }
+
+
+    #ttrpgNavbar, #contentDesktopTTRPG{
+        display: none;
+    }
+    #mobileTTRPG{
+        display: block;
+    }
+
+    .accordion {
+        background-color: var(--woodBrown);
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
+    .accordion:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: black;
+        float: right;
+        margin-left: 5px;
+    }
+    .active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }    
+    .active {
+        opacity: 0.8;
+        color: black;
+    }    
+    .accPanel {
+        padding: 0 18px;
+        background-color: var(--pergamentWhite);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .accPanel > h2{
+        color: black;
+    }
+    .accPanel > p{
+        font-size: 18px;
+        line-height: normal;
+        text-align: center;
+    }
+    #mobileWasIstVideo{
+        width: 96%;
+        margin: 2%;
+        height: 54vw;
+    }
+    #mobileWasIstFragen{
+        padding-top: 40px;
+        padding-bottom: 30px;
+        background-image: url("../assets/ttrpg/Intro_TTRPG_2_Textbox_2.svg");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #mobileWasIstFragen > p{
+        font-size: 18px;
+        line-height: normal;
+        margin: 20px;
+        text-align: center;
+    }
+    #mobileWasBraucheBild{
+        width: 96%;
+        margin: 2%;
+        height: auto;
+    }
+
     /* Karte Bereich */
     #karte{
         display: none;
@@ -44,6 +147,57 @@
     /* Welt Bereich */
     #weltBook{
         display: none;
+    }
+    #weltStart{
+        height: auto;
+    }
+    #weltStart h1{
+        position: relative;
+        top: 0px;
+    }
+    #weltAnimationsfilmTafel{
+        display: none;       
+    }
+    #animationsfilmWelt{
+        width: 96%;
+        margin: 2%;
+        height: 54vw;
+        position: relative; 
+        top: 0px;
+        left: 0px;
+        transform: none;
+        margin-bottom: 50px;
+    }
+    .threeHigh{
+        height: auto;
+    }
+    #weltEinstieg{
+        height: auto;
+        width: 100%;
+        position: relative;
+        left: 0px;
+        transform: none;
+    }
+    #abenteuerEinstieg{
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 0px;
+        transform: none;
+        padding-top: 10px;
+    }
+    #firstRedBox{
+        margin-top: 0px;
+    }
+    .redFrame{
+        margin: 10px;
+        width: calc(100% - 30px);
+    }
+    .yellowBoxPara{
+        margin: 20px;
+        font-size: 18px;
+        line-height: normal;
+        text-align: center;
     }
     /* Tools Bereich */
     #tools{
@@ -55,7 +209,8 @@
     #diceBox{
         width: 90vw;
         height: 100vh;
-        margin: auto;
+        margin: auto;        
+        padding-top: 10px;
     }
     #diceInnerBox{
         width: 100%;
@@ -76,16 +231,16 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: 30%;
+        top: 3%;
     }
     #rollDiceBtn{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         top: 75%;
-        width: 40%;
-        height: 10%;
-        font-size: 500%;
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
         background-color: var(--pergamentWhite);
     }
     #radioField{
@@ -96,14 +251,24 @@
         width: 80%;
         height: fit-content;
         text-align: center;
-        font-size: 300%;
+        font-size: 18px;
+        border: none;
     }
     /* Download Bereich */
     #downloadKachelBox{
         width: 80%;
     }
     .kachel {
-        width: 100%;
+        width: 90%;
+        margin: 5%;
+    }
+    .kachel p{
+        font-size: 18px;
+        line-height: normal;
+    }
+    .kachel h2{
+        font-size: 1.5rem;
+        text-align: center;
     }
 }
 @media (min-width: 48rem) { /* min 768px */
