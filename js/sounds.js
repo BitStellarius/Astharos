@@ -67,6 +67,10 @@ var volume;
 const volButton = document.getElementById("navVolBtn");
 const muteButton = document.getElementById("navMuteBtn");
 
+const mobileVolButton = document.getElementById("mobilenavVolBtn");
+const mobileMuteButton = document.getElementById("mobilenavMuteBtn");
+
+
 function setVolume(){
   chapterFlip.volume = volume;
   pageFlip1.volume = volume;
@@ -87,6 +91,9 @@ function muteSound(){
   backgroundMusic.muted = true;
   volButton.style.display = "none";
   muteButton.style.display = "block";
+
+  mobileVolButton.style.display = "none";
+  mobileMuteButton.style.display = "block";
 }
 function unmuteSound(){
   chapterFlip.muted = false;
@@ -97,6 +104,9 @@ function unmuteSound(){
   fadeInBackgroundMusic();
   volButton.style.display = "block";
   muteButton.style.display = "none";
+
+  mobileVolButton.style.display = "block";
+  mobileMuteButton.style.display = "none";
 }
 
 function fadeInBackgroundMusic(){
@@ -137,6 +147,13 @@ volButton.addEventListener("click",function(){
 });
 muteButton.addEventListener("click",function(){
   unmuteSound();
+});
+
+mobileMuteButton.addEventListener("click",function(){
+  unmuteSound();
+});
+mobileVolButton.addEventListener("click",function(){
+  muteSound();
 });
 
 //Input Slider

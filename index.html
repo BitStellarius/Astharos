@@ -17,13 +17,11 @@
 		<link rel="stylesheet" href="css/mobile.css">
 	</head>
 	<body>
-		<!--
 		<div id="preloader">
 			<img id="preloaderLogo" src="assets/Logo.svg" alt="Astahros Logo">
 			<img id="preloaderGif" src="assets/Preloader/preloader3.gif" alt="Preloader konnte nicht geladen werden">
 			<button id="preloaderButton">Start</button>
 		</div>
-	-->
 	
 	<div class="hero"></div>
 		<div id="notPreloader">
@@ -42,22 +40,26 @@
 					</li>
 				</ul>
 			</nav>
-			<!--
-			<nav id="mobileNav">				
-						  <div id="menuToggle">
-							<input type="checkbox" />
-							  <span></span>
-							  <span></span>
-							  <span></span>
-						  <ul id="menu">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Info</a></li>
-							<li><a href="#">Contact</a></li>
-						  </ul>
-						 </div>
-			</nav> 
-			-->
+
+			<nav id="mobileNav">
+				<div id="menuToggle">
+				  <input id="menuToggleCheckbox" type="checkbox" />
+					<span id="span1"></span>
+					<span id="span2"></span>
+					<span id="span3"></span>
+				<ul id="menu">
+				  <li><a class="mobileLink" href="#startframe">Home</a></li>
+				  <li><a class="mobileLink" href="#ttrpgHrefAnchor">TTRPG</a></li>
+				  <li><a class="mobileLink" href="#weltHrefAnchor">Welt</a></li>
+				  <li><a class="mobileLink" href="#diceRollerHrefAnchor">Tools</a></li>
+				  <li><a class="mobileLink" href="#downloadsHrefAnchor">Downloads</a></li>
+				</ul>
+				<div id="mobileVolumeDiv">
+					<img id="mobilenavVolBtn" src="assets/Navbar/volume.png" alt="Volume">
+					<img id="mobilenavMuteBtn" src="assets/Navbar/mute.png" alt="Mute">
+				</div>
+			   </div>
+			  </nav>
 			<main>
 				<!-- Bereich: Startframe -->
 				<section id="startframe" class="posRelative">
@@ -1197,6 +1199,7 @@
 					</div>
 				</section>
 				<section id="diceRoller">
+					<div id="diceRollerHrefAnchor"></div>
 					<h1>Tools</h1>
 					<div class="backgroundWood">
 						<div id="diceBox">

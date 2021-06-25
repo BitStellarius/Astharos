@@ -40,3 +40,10 @@ document.getElementById("mobSpieler").addEventListener("click", function(){
     mobileWasBraucheBild.src = "assets/PlatzhalterRot.png";
 });
 /* *********************************************************************** */
+
+var mobileNavLinks = document.getElementsByClassName("mobileLink");
+for(var i = 0; i < mobileNavLinks.length; i++){
+    mobileNavLinks[i].addEventListener("click", function(){
+        document.getElementById("menuToggleCheckbox").checked = false;
+    });
+}
