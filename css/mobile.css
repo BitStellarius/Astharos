@@ -9,6 +9,9 @@ body{
     width: 100vw;
     overflow-x: hidden;
 }
+#atmos{
+    display: none;
+  }
 
 @media (max-width: 75rem) { /* min 1200px */
     #desktopNav{
@@ -194,6 +197,7 @@ body{
         left: 0px;
         transform: none;
         padding-top: 10px;
+        padding-bottom: 10px;
     }
     #firstRedBox{
         margin-top: 0px;
@@ -262,6 +266,42 @@ body{
         text-align: center;
         font-size: 18px;
         border: none;
+    }
+
+    /* Atmos Bereich */
+    #atmos{
+        display: block;
+        position: relative;
+    }
+    #atmosBeschreibungContainer{
+        padding-top: 10px;
+    }
+    #atmosBeschreibungPara{
+        font-size: 18px;
+        line-height: normal;
+        text-align: center;
+    }
+    #staedteAtmosContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .stadtKachel{
+        flex-basis: 45%;
+        margin: 2.5%;
+        height: 50vw;
+        position: relative;
+    }
+    .stadtKachel > audio{
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .stadtKachel > h3{
+        font-size: 18px;
+        line-height: normal;
     }
     /* Download Bereich */
     #downloadKachelBox{
@@ -393,24 +433,6 @@ body{
       #menuToggle input:checked ~ ul{
         transform: none;
       }
-
-      #diceRoller{
-          position: relative;
-      }
-      #diceRollerHrefAnchor{
-        position: absolute;
-        top: -100px;
-      }
-      #ttrpgHrefAnchor{
-        top: -140px;
-      }
-      #weltHrefAnchor{
-        top: -120px;
-      }
-      #downloadsHrefAnchor{
-          top: -100px;
-      }
-      
       #mobileVolumeDiv{
           position: fixed;
           right: 25px;
@@ -424,6 +446,29 @@ body{
         height: 100%;
         display: none;
       }
+
+      /* Href Nav Anchors */
+      #diceRoller{
+        position: relative;
+    }
+        #diceRollerHrefAnchor{
+        position: absolute;
+        top: -100px;
+        }
+        #ttrpgHrefAnchor{
+        top: -140px;
+        }
+        #weltHrefAnchor{
+        top: -120px;
+        }
+        #downloadsHrefAnchor{
+            top: -100px;
+        }
+        
+    #atmosHrefAnchor{
+        position: absolute;
+        top: -100px;
+    }
 }
 @media (min-width: 48rem) { /* min 768px */
 
