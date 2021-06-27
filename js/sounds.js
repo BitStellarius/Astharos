@@ -15,52 +15,73 @@ let rng = num => {
 }
 
 /* Deklaration aller Variablen für Buttons */
-
+/*
 // TTRPG
 const ttrpgBtn1 = document.getElementsByClassName("questionBox")[0];
 const ttrpgBtn2 = document.getElementsByClassName("questionBox")[1];
 const ttrpgBtn3 = document.getElementsByClassName("questionBox")[2];
 const ttrpgBtn4 = document.getElementsByClassName("questionBox")[3];
-
+*/
 // Welt
-const indexRassenBtn = document.getElementById("indexRassen");
-const indexReligionBtn = document.getElementById("indexReligion");
-const indexMagieBtn = document.getElementById("indexMagie");
-const orksBtn = document.getElementById("orks");
-const elbenBtn = document.getElementById("elben");
-const halbElbenBtn = document.getElementById("halbElben");
-const halblingBtn = document.getElementById("halbling");
-const zwergeBtn = document.getElementById("zwerge");
-const katzenmenschenMagieBtn = document.getElementById("katzenmenschen");
-const mischwesenBtn = document.getElementById("mischwesen");
-const thyrosBtn = document.getElementById("thyros");
-const arisBtn = document.getElementById("aris");
-const begrendBtn = document.getElementById("begrend");
-const arphenBtn = document.getElementById("arphen");
-const trendirBtn = document.getElementById("trendir");
-const tradosBtn = document.getElementById("trados");
-const koshkaBtn = document.getElementById("koshka");
-const seonoraBtn = document.getElementById("seonora");
-const ferrumtisBtn = document.getElementById("ferrumtis");
-const fanuinBtn = document.getElementById("fanuin");
-const varrakisBtn = document.getElementById("varrakis");
-const danduleinBtn = document.getElementById("dandulein");
-const elementBtn = document.getElementById("element");
-const naturBtn = document.getElementById("natur");
-const schutzBtn = document.getElementById("schutz");
-const beschwoerBtn = document.getElementById("beschwoer");
-const illusionBtn = document.getElementById("illusion");
-const wiederherBtn = document.getElementById("wiederher");
-const bannmagieBtn = document.getElementById("bannmagie");
-const fortbewegungBtn = document.getElementById("fortbewegung");
-const wissensBtn = document.getElementById("wissens");
-const veraenderungBtn = document.getElementById("veraenderung");
-const dunkleBtn = document.getElementById("dunkle");
-const infoIconBtn = document.getElementById("infoIcon");
-const rassenIconBtn = document.getElementById("rassenIcon");
-const religionIconBtn = document.getElementById("religionIcon");
-const magieIconBtn = document.getElementById("magieIcon");
+const buttonsArray = [];
+buttonsArray.push(document.getElementsByClassName("questionBox")[0]);
+buttonsArray.push(document.getElementsByClassName("questionBox")[1]);
+buttonsArray.push(document.getElementsByClassName("questionBox")[2]);
+buttonsArray.push(document.getElementsByClassName("questionBox")[3]);
 
+
+buttonsArray.push(document.getElementById("orks"));
+buttonsArray.push(document.getElementById("elben"));
+buttonsArray.push(document.getElementById("halbElben"));
+buttonsArray.push(document.getElementById("halbling"));
+buttonsArray.push(document.getElementById("zwerge"));
+buttonsArray.push(document.getElementById("katzenmenschen"));
+buttonsArray.push(document.getElementById("mischwesen"));
+buttonsArray.push(document.getElementById("thyros"));
+buttonsArray.push(document.getElementById("aris"));
+buttonsArray.push(document.getElementById("begrend"));
+/*buttonsArray.push(document.getElementById("arphen"));*/
+buttonsArray.push(document.getElementById("trendir"));
+buttonsArray.push(document.getElementById("gilith"));
+/*buttonsArray.push(document.getElementById("trados"));*/
+buttonsArray.push(document.getElementById("koshka"));
+buttonsArray.push(document.getElementById("seonora"));
+/*buttonsArray.push(document.getElementById("ferrumtis"));*/
+buttonsArray.push(document.getElementById("fanuin"));
+buttonsArray.push(document.getElementById("varrakis"));
+/*buttonsArray.push(document.getElementById("dandulein"));*/
+buttonsArray.push(document.getElementById("element"));
+buttonsArray.push(document.getElementById("natur"));
+buttonsArray.push(document.getElementById("schutz"));
+buttonsArray.push(document.getElementById("beschwoer"));
+buttonsArray.push(document.getElementById("illusion"));
+buttonsArray.push(document.getElementById("wiederher"));
+buttonsArray.push(document.getElementById("bannmagie"));
+buttonsArray.push(document.getElementById("fortbewegung"));
+buttonsArray.push(document.getElementById("wissens"));
+/*buttonsArray.push(document.getElementById("veraenderung"));*/
+buttonsArray.push(document.getElementById("dunkle"));
+
+buttonsArray.forEach(function(item, index){
+  item.addEventListener("click", function(){
+    pageFlip[rng(3)].play();
+  });
+});
+
+const chapterFlipButtons = [];
+chapterFlipButtons.push(document.getElementById("infoIcon"));
+chapterFlipButtons.push(document.getElementById("rassenIcon"));
+chapterFlipButtons.push(document.getElementById("religionIcon"));
+chapterFlipButtons.push(document.getElementById("magieIcon"));
+chapterFlipButtons.push(document.getElementById("indexRassen"));
+chapterFlipButtons.push(document.getElementById("indexReligion"));
+chapterFlipButtons.push(document.getElementById("indexMagie"));
+
+chapterFlipButtons.forEach(function(item, index){
+  item.addEventListener("click", function(){
+    chapterFlip.play();
+  });
+});
 
 const volumeSlider = document.getElementById("volumeSlider");
 var volume;
@@ -171,6 +192,49 @@ document.getElementById("animationsfilmWelt").addEventListener("pause",function(
   playBackgroundMusic();
 });
 
+
+/*
+const infoIconBtn = document.getElementById("infoIcon");
+const rassenIconBtn = document.getElementById("rassenIcon");
+const religionIconBtn = document.getElementById("religionIcon");
+const magieIconBtn = document.getElementById("magieIcon");
+*/
+/*
+const indexRassenBtn = document.getElementById("indexRassen");
+const indexReligionBtn = document.getElementById("indexReligion");
+const indexMagieBtn = document.getElementById("indexMagie");
+const orksBtn = document.getElementById("orks");
+const elbenBtn = document.getElementById("elben");
+const halbElbenBtn = document.getElementById("halbElben");
+const halblingBtn = document.getElementById("halbling");
+const zwergeBtn = document.getElementById("zwerge");
+const katzenmenschenMagieBtn = document.getElementById("katzenmenschen");
+const mischwesenBtn = document.getElementById("mischwesen");
+const thyrosBtn = document.getElementById("thyros");
+const arisBtn = document.getElementById("aris");
+const begrendBtn = document.getElementById("begrend");
+const arphenBtn = document.getElementById("arphen");
+const trendirBtn = document.getElementById("trendir");
+const tradosBtn = document.getElementById("trados");
+const koshkaBtn = document.getElementById("koshka");
+const seonoraBtn = document.getElementById("seonora");
+const ferrumtisBtn = document.getElementById("ferrumtis");
+const fanuinBtn = document.getElementById("fanuin");
+const varrakisBtn = document.getElementById("varrakis");
+const danduleinBtn = document.getElementById("dandulein");
+const elementBtn = document.getElementById("element");
+const naturBtn = document.getElementById("natur");
+const schutzBtn = document.getElementById("schutz");
+const beschwoerBtn = document.getElementById("beschwoer");
+const illusionBtn = document.getElementById("illusion");
+const wiederherBtn = document.getElementById("wiederher");
+const bannmagieBtn = document.getElementById("bannmagie");
+const fortbewegungBtn = document.getElementById("fortbewegung");
+const wissensBtn = document.getElementById("wissens");
+const veraenderungBtn = document.getElementById("veraenderung");
+const dunkleBtn = document.getElementById("dunkle");
+ */
+/*
 //TTRPG
 ttrpgBtn1.addEventListener("click", function(){
   pageFlip[rng(3)].play();
@@ -184,7 +248,8 @@ ttrpgBtn3.addEventListener("click", function(){
 ttrpgBtn4.addEventListener("click", function(){
   pageFlip[rng(3)].play();
 });
-
+*/
+/*
 //Welt
 indexRassenBtn.addEventListener("click", function(){
   chapterFlip.play();
@@ -207,7 +272,8 @@ religionIconBtn.addEventListener("click", function(){
 magieIconBtn.addEventListener("click", function(){
   chapterFlip.play();
 });
-
+*/
+/*
 orksBtn.addEventListener("click", function(){
   pageFlip[rng(3)].play();
 });
@@ -298,3 +364,4 @@ veraenderungBtn.addEventListener("click", function(){
 dunkleBtn.addEventListener("click", function(){
   pageFlip[rng(3)].play();
 });
+*/
