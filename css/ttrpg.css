@@ -7,7 +7,7 @@
 #ttrpgNav{
     margin-top: 0px;   
     position: relative; 
-    min-height: 200px;
+    min-height: 650px;
 }
 #ttrpgNav > h1{
     position: absolute;
@@ -39,7 +39,6 @@
     right: -28%;
     bottom: -90px;
     z-index: 10;
-    display: none;
 }
 #ttrpgNavbar{
     position: absolute;
@@ -207,4 +206,10 @@
         top: -6%;
     }    
 
+}
+
+@media only screen and (max-width: 400px) {
+    #crowTTRPG {
+        display: none;
+    }
 }
