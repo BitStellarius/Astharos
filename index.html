@@ -134,9 +134,11 @@
 								oder scheitert, entscheidet sich durch deren 
 								Talente und das geworfene Würfelergebnis.
 							</p>
-							<object id="videoFrame" data="assets/ttrpg/Intro_TTRPG_3.svg" type="image/svg+xml"></object>
-							<iframe id="wasIstYtVideo" src="https://www.youtube.com/embed/1VxCl3vacA8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
+							<!--<object id="videoFrame" data="assets/ttrpg/Intro_TTRPG_3.svg" type="image/svg+xml"></object>-->
+							<div id="ytVideoFrame">
+								<iframe id="wasIstYtVideo" src="https://www.youtube.com/embed/1VxCl3vacA8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							</div>
 						<div id="wieFunktioniert" class="ttrpgUnterseite">
 							<div class="anchor"></div>
 							<h2>Wie funktioniert ein TTRPG&#x202f;?</h2>
@@ -654,6 +656,18 @@
 												<audio class="audioControls" controls>
 													<source src="assets/audio/SoundFX/chapter-flip.mp3" type="audio/mp3">
 												</audio>
+												<div class="audioControlsContainer">
+													<div class="audioControlsPlayPauseBtn">
+														<img class="playBtn" src="assets/Controls/play-button-arrowhead.png" alt="Bild konnte nicht geladen werden">
+														<img class="pauseBtn" src="assets/Controls/pause.png" alt="Bild konnte nicht geladen werden">
+													</div>
+													<div class="audioControlsTimeInfo">
+														
+													</div>
+													<div class="audioControlsTimeProgress">
+
+													</div>
+												</div>
 											</div>
 										</div>
 										<div id="naturRight" class="rightSideBox">
@@ -1299,7 +1313,7 @@
 						<h1>Downloads</h1>
 						<div id="downloadKachelBox">
 							<div class="kachel">
-								<a href="/assets/downloads/donwloadPlatzhalter.txt" download>
+								<a href="/assets/downloads/Der Almanach Astharos und dessen Welt_Stand-11.01.2021.pdf" download>
 									<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Karte.svg" alt="Bild konnte nicht geladen werden">
 								</a>
 								<h2>Welt</h2>
@@ -1309,7 +1323,7 @@
 								</p>
 							</div>
 							<div class="kachel">
-								<a href="/assets/downloads/donwloadPlatzhalter.txt" download>
+								<a href="/assets/downloads/Astharos Regelwerk - Simple_Booklet.pdf" download>
 									<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Regelwerk.svg" alt="Bild konnte nicht geladen werden">
 								</a>
 								<h2>Regelwerk</h2>
@@ -1320,7 +1334,7 @@
 								</p>
 							</div>
 							<div class="kachel">
-								<a href="/assets/downloads/donwloadPlatzhalter.txt" download>
+								<a href="/assets/downloads/Die Höhen und Tiefen Astharos - Teil 1.pdf" download>
 									<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Story.svg" alt="Bild konnte nicht geladen werden">
 								</a>
 								<h2>Story</h2>
