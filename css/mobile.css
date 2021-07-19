@@ -13,7 +13,7 @@ body{
     display: none;
   }
 
-@media (max-width: 75rem) { /* min 1200px */
+@media only screen and (max-width: 75rem) and (orientation: portrait){ /* min 1200px */
     #desktopNav{
         display: none;
     }

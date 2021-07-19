@@ -26,3 +26,8 @@
 .downloadHover:hover{
     transform: scale(1.1);
 }
+.kachel h2{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}

@@ -69,6 +69,7 @@ ul li a:hover:after {
   right: 80px;
   top: 20px;
   display: flex;
+  padding: 22px 75px;
 }
 #navMuteBtn{
   display: none;
@@ -79,4 +80,7 @@ ul li a:hover:after {
 }
 .soundBtn:hover{
   transform: scale(1.1);
+}
+.audioControlsContainer{
+  display: none ;
 }
