@@ -1,9 +1,16 @@
 /* CSS File: Welt-Bereich */
 /* Welt Startseite */
+
+#welt {
+    padding-top: 50px;
+}
+
 .sectionStart{
     height: calc(100vh - var(--height-Navbar)); /* gesamte Höhe Minus die Höhe der Navbar */
     position: relative;
 }
+
+
 #weltStart h1{
     width: 70%;
     position: absolute;
@@ -12,11 +19,13 @@
     top: -5rem;
 }
 #weltAnimationsfilmTafel{
-    height: calc(95vh - var(--height-Navbar)); /* gesamte Höhe Minus die Höhe der Navbar */
+    height: calc(175vh - var(--height-Navbar)); /* gesamte Höhe Minus die Höhe der Navbar */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 0px;
+    top: -770px;
+    z-index: -1;
+    padding-top: 80px;
 }
 #animationsfilmWelt{
     height: 70%; /* gesamte Höhe Minus die Höhe der Navbar */
@@ -24,7 +33,10 @@
     left: 50%;
     transform: translateX(-50%);
     top: 23%;
+    padding-top: 80px;
 }
+
+
 /* ******************* */
 .backgroundWood{
     /*background-image: url("../assets/platzhalterBackgroundWood.png");*/
@@ -306,3 +318,14 @@
     color: rgba(0, 0, 0, 0.527);
     padding-left: 1rem;
 }
+
+/* Media Query */
+
+@media only screen and (min-width: 720px) {
+    
+    #weltMain {
+        margin-top: 250px;
+    }    
+
+}
+

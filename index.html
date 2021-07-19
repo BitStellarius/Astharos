@@ -106,7 +106,7 @@
 							</div>
 							<div class="questionBox">
 								<object class="navbarQuestionsImg" data="assets/ttrpg/Intro_TTRPG_Textbox_2.svg" type="image/svg+xml"></object>
-								<p>Welche Aufgaben hat der Spielmeister&#x202f;?</p>
+								<p id="ttrpgQ4">Welche Aufgaben hat der Spielmeister&#x202f;?</p>
 							</div>
 						</div>
 					</div>
@@ -314,19 +314,24 @@
 							</p>
 						</div>
 					</div>
+					<div class="rahmenUebergang">
+						<img src="assets/rahmenUebergang.svg" alt="Rahmen konnte nicht angezeigt werden">
+					</div>
 				</section>
 				<!-- Bereich: Welt -->
 				<section id="welt" class="posRelative">
 					<div id="weltHrefAnchor"></div>
 					<div id="weltStart" class="sectionStart">
-						<h1>Die Welt von Astharos</h1>
-						<img id="weltAnimationsfilmTafel" src="assets/introWelt/Intro_Welt_1.svg" alt="Bild konnte nicht geladen werden">
-						<video id="animationsfilmWelt" controls>
-							<source src="assets/Animationsfilm/Animation_15MB.mp4" type="video/mp4" />
-							<source src="assets/Animationsfilm/Animation_35MB..mp4" type="video/mp4" />
-						</video>
+						<h1>Die Welt von <br> Astharos</h1>
+						<div id="animationsfilmWeltBox">
+							<img id="weltAnimationsfilmTafel" src="assets/introWelt/Intro_Welt_1.svg" alt="Bild konnte nicht geladen werden">
+							<video id="animationsfilmWelt" controls>
+								<source src="assets/Animationsfilm/Animation_15MB.mp4" type="video/mp4" />
+								<source src="assets/Animationsfilm/Animation_35MB..mp4" type="video/mp4" />
+							</video>
+						</div>
 					</div>
-					<div class="backgroundWood threeHigh">
+					<div id="weltMain" class="backgroundWood threeHigh">
 						<div id="weltEinstieg">
 							<div id="abenteuerEinstieg">
 								<h2>Dann wollen wir mal in das Abenteuer einsteigen</h2>
