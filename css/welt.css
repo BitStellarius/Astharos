@@ -92,6 +92,7 @@
     margin-top: 10%;
 }
 
+
 /* BuchBox */
 #weltBook{
     height: calc(100vh - var(--height-Navbar)); /* gesamte Höhe Minus die Höhe der Navbar */
@@ -247,7 +248,7 @@
     margin-left: 1%;
 }
 #weltHochTief #hoehenUndTiefen h2 {
-    color: white;
+    color: black;
 }
 #secondRedBox{
     margin-top: 5%;
@@ -310,9 +311,7 @@
 
 
 /*Buch Typo*/
-#weltBook h2{
-    color: rgb(0, 0, 0);
-}
+
 #leftBookSide p {
     color: rgb(0, 0, 0);
     transition-duration: .5s;
