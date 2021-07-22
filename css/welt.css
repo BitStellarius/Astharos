@@ -39,7 +39,6 @@
 
 /* ******************* */
 .backgroundWood{
-    /*background-image: url("../assets/platzhalterBackgroundWood.png");*/
     background-image: url("../assets/Background.svg");
     background-size: cover;
     background-repeat: no-repeat;

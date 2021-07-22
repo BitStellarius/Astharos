@@ -81,6 +81,10 @@ p{
   line-height: 30px;
 }
 
+.fontHover:hover{
+  transform: scale(1.1);
+}
+
 .anchor{
   position: absolute;
   left: 0;

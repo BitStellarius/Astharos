@@ -6,6 +6,17 @@
     position: relative;
     padding-bottom: 5%;
 }
+
+/*
+#karteBackground{
+    width: 95%;
+    position: relative;
+    top: 1170px;
+    left: 40px;
+
+}
+*/
+
 #karteBild{
     position: absolute;
     left: 50%;

@@ -31,3 +31,7 @@
     display: flex;
     justify-content: center;
 }
+
+.quest:hover{
+    transform: scale(1.1);
+}
