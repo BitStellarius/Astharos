@@ -1,59 +1,34 @@
 /* CSS File: Tools-Bereich */
 
 
-#toolsSpeechOne{
+#toolsSpeech{
     height: 300px;
     width: 450px;
     position: absolute;
-    left: 25%;
+    left: 24%;
     top: 200px;
     background-image: url("../assets/ttrpg/Intro_TTRPG_Textbox.svg");
     background-repeat: no-repeat;
 }
-#toolsSpeechOne p{
+#toolsSpeech p{
     height: calc(100% - 70px);
     width: calc(100% - 100px);
     margin: 30px;
     text-align: center;
 }
 #toolsCrow{
-    height: 20vh;
+    height: 25vh;
     position: absolute;
     left: calc(25% + 450px);
-    top: 350px;
+    top: 340px;
     z-index: 2;
-}
-#toolsSpeechTwo{
-    height: 50%;
-    position: absolute;
-    left: 35%;
-    top: 50%;
-    background-image: url("../assets/ttrpg/Intro_TTRPG_Textbox.svg");
-    background-repeat: no-repeat;
-}
-#toolsSpeechTwo p{
-    height: calc(100% - 70px);
-    width: calc(100% - 140px);
-    margin: 30px;
-}
-
-#werteRechnerBeschreibungsBox{
-    height: 15vh;
-    width: 1200px;
-    position: absolute;
-    left: 50%;
-    top: 4vh;
-    transform: translateX(-50%);
-}
-#werteRechnerBeschreibungsBox p{
-    padding: 10px 50px;
-    text-align: center;
 }
 
 /* Werterechner */
 #werterechner{
-    height: 100vh;
+    height: 50vh;
     position: relative;
+    bottom: 600px;
 }
 .bookDiv{
     height: calc(80vh - var(--height-Navbar));
@@ -71,7 +46,7 @@
     margin-bottom: 10px;
     margin-left: 100px;
     margin-right: 100px;
-    background-color: #333333;
+    background-color: #47271a;
     position: relative;
 }
 .bookLeftBack{

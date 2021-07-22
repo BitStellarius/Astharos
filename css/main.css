@@ -85,6 +85,10 @@ p{
   transform: scale(1.03);
 }
 
+.ravenHover:hover{
+  transform: scale(1.05);
+}
+
 .anchor{
   position: absolute;
   left: 0;

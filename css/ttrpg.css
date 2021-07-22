@@ -25,19 +25,22 @@
     background-repeat: no-repeat;
 
 }
-#sprechblase > p{
-    font-size: 1.25rem;
+#sprechblase  p{
+    font-size: 1.5rem;
     text-align: center;
     padding-left: 12px;
     padding-top: 15px;
     max-width: 45%;
+    position: relative;
+    right: .5%;
+    top: 15px;
 
 }
 #crowTTRPG{
     height: 200px;
     position: absolute;
-    right: -28%;
-    bottom: -90px;
+    right: -7%;
+    bottom: -82px;
     z-index: 10;
 }
 #ttrpgNavbar{
