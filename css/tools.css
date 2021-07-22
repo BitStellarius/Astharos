@@ -9,13 +9,17 @@
     top: 200px;
     background-image: url("../assets/ttrpg/Intro_TTRPG_Textbox.svg");
     background-repeat: no-repeat;
+    visibility: hidden;
 }
+
 #toolsSpeech p{
     height: calc(100% - 70px);
     width: calc(100% - 100px);
     margin: 30px;
     text-align: center;
+    visibility: hidden;
 }
+
 #toolsCrow{
     height: 25vh;
     position: absolute;

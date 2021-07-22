@@ -1,4 +1,4 @@
-var preloader = document.getElementById("preloader");
+let preloader = document.getElementById("preloader");
 
 document.getElementById("preloaderButton").addEventListener("click", function(){
     preloader.classList.add("disappear");
