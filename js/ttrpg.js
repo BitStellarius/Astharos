@@ -9,6 +9,10 @@ var wieBox = document.getElementById("wieFunktioniert");
 var wasBrauchtBox = document.getElementById("wasBraucheIch");
 var welcheBox = document.getElementById("welcheAufgabe");
 
+let ttrpgCrow = document.getElementById("crowTTRPG");
+let sprechblase = document.getElementById("sprechblase");
+let sprechblaseText = document.getElementById("sprechblaseText");
+
 function hideAll(){
     wasIst.children[0].style.visibility = "hidden";
     wie.children[0].style.visibility = "hidden";
@@ -104,3 +108,15 @@ function loadTTRPG(){
     welcheBox.style.display = "none";
 }
 /* *********************************************************************** */
+
+/* Mouseover Krähe */
+
+ttrpgCrow.onmouseover=function(){
+    sprechblase.style.visibility = "visible";
+    sprechblaseText.style.visibility = "visible";
+}
+
+ttrpgCrow.onmouseleave=function(){
+    sprechblase.style.visibility = "hidden";
+    sprechblaseText.style.visibility = "hidden";
+}

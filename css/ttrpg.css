@@ -23,6 +23,7 @@
     top: 150px;
     background-image: url("../assets/ttrpg/Intro_TTRPG_Textbox.svg");
     background-repeat: no-repeat;
+    visibility: hidden;
 
 }
 #sprechblase  p{
@@ -34,13 +35,14 @@
     position: relative;
     right: .5%;
     top: 15px;
+    visibility: hidden;
 
 }
 #crowTTRPG{
     height: 200px;
     position: absolute;
-    right: -7%;
-    bottom: -82px;
+    right: 40%;
+    bottom: 215px;
     z-index: 10;
 }
 #ttrpgNavbar{
