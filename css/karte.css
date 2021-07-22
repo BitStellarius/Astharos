@@ -1,26 +1,32 @@
 /* CSS File: Interaktive Karte */
 /* Karte */
 #kartenDiv{
-    height: calc(100vh - var(--height-Navbar));
+    height: calc(170vh - var(--height-Navbar));
     width: 100vw;
     position: relative;
     padding-bottom: 5%;
 }
 
-/*
-#karteBackground{
-    width: 95%;
-    position: relative;
-    top: 1170px;
-    left: 40px;
 
+#karteBackground{
+    width: 94%;
+    position: relative;
+    top: 6%;
+    left: 2.7%;
 }
-*/
+
+#karteAnchor {
+    position: absolute;
+    top: 290px;
+    
+}
+
 
 #karteBild{
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 25%;
+    left: 18%;
+
 }
 #kartePNG{
     max-width: 100vw;
