@@ -10,6 +10,12 @@
     position: relative;
 }
 
+.magicAudio {
+    position: relative;
+    left: 15%;
+    top: 10px;
+}
+
 
 #weltStart h1{
     width: 70%;
