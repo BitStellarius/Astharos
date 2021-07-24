@@ -32,13 +32,13 @@
 #startframeDecoRight{
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: -500px;
   height: 100%;
 }
 
 #startframeDecoLeft{
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: -500px;
   height: 100%;
 }
