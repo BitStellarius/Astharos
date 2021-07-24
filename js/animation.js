@@ -1,5 +1,5 @@
 /* Animationen */
-/*
+
 // Start: Deco Frame links
 let animFrameDecoLeft = anime({
   targets: '#startframeDecoLeft',
@@ -17,7 +17,7 @@ function playAnimLeft() {
 }
 
 document.getElementById('preloaderButton').addEventListener("click", playAnimLeft);
-*/
+
 
 /* Welt: Ketten */
 let triggerCheck = 0;
