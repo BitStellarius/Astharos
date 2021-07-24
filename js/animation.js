@@ -18,20 +18,27 @@ function playAnimLeft() {
 
 document.getElementById('preloaderButton').addEventListener("click", playAnimLeft);
 
-// Start: Deco Frame links
+// Welt: Ketten
+let triggerCheck = 0;
+
 let animKetten = anime({
   targets: '#animationsfilmWeltBox',
   translateY: [
-    {value: -570, duration: 4000},
+    {value: -570, duration: 2500},
   ],
-  //easing: 'easeOutSine',
+  easing: 'easeOutSine',
   loop: false,
   autoplay: false
 });
 
-function playAnimKetten() {
-  animKetten.play();
-  document.getElementById('testUber').removeEventListener("click", playAnimKetten);
-}
 
-document.getElementById('testUber').addEventListener("click", playAnimKetten);
+var kettenWP = new Waypoint({
+  element: document.getElementById('rahmen2'),
+  handler: function() {
+    if (triggerCheck === 0) {
+      animKetten.play();
+      triggerCheck++;
+    }
+  },
+  offset: 2600
+});
