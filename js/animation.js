@@ -19,7 +19,7 @@ function playAnimLeft() {
 document.getElementById('preloaderButton').addEventListener("click", playAnimLeft);
 */
 
-// Welt: Ketten
+/* Welt: Ketten */
 let triggerCheck = 0;
 
 let animKetten = anime({
@@ -44,7 +44,9 @@ var kettenWP = new Waypoint({
   offset: -200
 });
 
-// Karte Deco Frames Links
+/* Karte Deco Frames Links */
+
+//Asthos
 
 let animAsthosDecoLeft = anime({
   targets: '#asthosMauerLinks',
