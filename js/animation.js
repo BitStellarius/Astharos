@@ -40,5 +40,5 @@ var kettenWP = new Waypoint({
       triggerCheck++;
     }
   },
-  offset: 2600
+  offset: -200
 });

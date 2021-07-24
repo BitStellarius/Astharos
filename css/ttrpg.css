@@ -114,6 +114,8 @@
     margin-right: 80px;
 }
 /* Zweiter Teil: Was ist ein TTRPG? */
+
+
 #videoFrame{
     height: 60%;
     position: absolute;
@@ -141,12 +143,20 @@
 /* Zweiter Teil: Wie funktioniert ein TTRPG? */
 
 /* Zweiter Teil: Was Brauche Ich */
+#wasBraucheIchH2.yellowFrame {
+    position: absolute;
+    left: 280px;
+    height: 50px;
+    width: 800px;
+    padding: 20px;
+}
+
 #questionsFrame{
     height: 70%;
     width: 40%;
     position: absolute;
     top: 20%;
-    left: 2%;
+    left: -6%;
     background-image: url("../assets/ttrpg/Intro_TTRPG_2_Textbox_2.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -164,15 +174,17 @@
     width: 60%;
     
 }
-#houseContainer{
+#rolleContainer{
     position: absolute;
-    bottom: 2%;
-    right: 0px;
-    height: 60%;
+    bottom: 10%;
+    left: 32%;
+    height: 70%;
 }
-#house{
-    height: 90%;
+
+#rolle{
+    height: 100%;
 }
+
 #sprechblaseHouse{
     height: 30%;
     width: auto;
@@ -195,12 +207,13 @@
     right: 35%;
     top: 45%;
 }
-#housePicture{
-    height: 46%;
+#rollePicture{
+    height: 62%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 13%;
+    bottom: 19%;
+    border: solid rgb(92, 60, 40) 2px;
 }
 /* Zweiter Teil: Welche Aufgaben hat der Spielmeister */
 
@@ -209,7 +222,29 @@
     
     #ttrpgQ4 {
         top: -6%;
-    }    
+    }   
+
+    #contentDesktopTTRPG {
+        height: 1100px;
+    }
+
+    #wasIst {
+        height: 900px;
+        top: 50px;
+    }
+
+    #wieFunktioniert {
+        height: 900px;
+        top: 50px;
+    }
+
+    #welcheAufgabe {
+        height: 900px;
+        top: 50px;
+    }
+
+
+    
 
 }
 

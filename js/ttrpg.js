@@ -71,30 +71,30 @@ welche.addEventListener("click", function(){
 /* *********************************************************************** */
 
 /* Change Picture in "Was brauche ich für ein TTRPG?" */
-var housePicture = document.getElementById("housePicture");
+var rollePicture = document.getElementById("rollePicture");
 document.getElementById("regelwerk").addEventListener("click", function(){
-    housePicture.src = "assets/ttrpg/buch.jpg";
+    rollePicture.src = "assets/ttrpg/buch.jpg";
 });
 document.getElementById("charakterboegen").addEventListener("click", function(){
-    housePicture.src = "assets/ttrpg/game.jpg";
+    rollePicture.src = "assets/ttrpg/game.jpg";
 });
 document.getElementById("wuerfel").addEventListener("click", function(){
-    housePicture.src = "assets/ttrpg/dice.jpg";
+    rollePicture.src = "assets/ttrpg/dice.jpg";
 });
 document.getElementById("papier").addEventListener("click", function(){
-    housePicture.src = "assets/ttrpg/bleistift.jpg";
+    rollePicture.src = "assets/ttrpg/bleistift.jpg";
 });
 document.getElementById("sichtschutz").addEventListener("click", function(){
-    housePicture.src = "assets/PlatzhalterRot.png";
+    rollePicture.src = "assets/ttrpg/sichtschutz.webp";
 });
 document.getElementById("geschichte").addEventListener("click", function(){
-    housePicture.src = "assets/ttrpg/geschichte.jpg";
+    rollePicture.src = "assets/ttrpg/geschichte.jpg";
 });
 document.getElementById("leiter").addEventListener("click", function(){
-    housePicture.src = "assets/PlatzhalterBlau.png";
+    rollePicture.src = "assets/ttrpg/dungeonmaster.jpg";
 });
 document.getElementById("multiplayer").addEventListener("click", function(){
-    housePicture.src = "assets/PlatzhalterRot.png";
+    rollePicture.src = "assets/ttrpg/party.png";
 });
 /* *********************************************************************** */
 
