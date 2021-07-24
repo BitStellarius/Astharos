@@ -1,5 +1,5 @@
 /* Parallele Animationen */
-/*
+
 // Start: Deco Frame rechts
 let animFrameDecoRight = anime({
   targets: '#startframeDecoRight',
@@ -16,7 +16,7 @@ function playAnimRight() {
 }
 
 document.getElementById('preloaderButton').addEventListener("click", playAnimRight);
-*/
+
 
 /* Karte Deco Frames Rechts */
 
