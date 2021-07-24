@@ -143,20 +143,20 @@
     text-align: justify;
 }
 
+.stadtMauerRechts {
+    position: absolute;
+    right: -1000px;
+    z-index: 2;
+}
+
+.stadtMauerLinks {
+    position: absolute;
+    left: -1000px;
+    z-index: 2;
+}
+
 #stadtMiratan .stadtMauerLinks {
-    left: -1%;
     bottom: -12%;
-}
-#stadtMiratan .stadtMauerRechts {
-    right: -8%;
-}
-
-#stadtFlostapor .stadtMauerLinks {
-    left: -5%;
-}
-
-#stadtNuberios .stadtMauerLinks {
-    left: -9%;
 }
 
 #stadtNuberios .stadtMauerRechts {
@@ -168,18 +168,15 @@
 }
 
 #stadtGlarius .stadtMauerRechts {
-    right: -8%;
+
     bottom: -2.5%;
 }
 
 #stadtAsthos {
     display: block;
-    left: -1%;
 }
 
-#stadtAsthos .stadtMauerRechts {
-    right: -6%;
-}
+
 
 #stadtThondbaran .stadtMauerLinks {
     bottom: -0.2%;
