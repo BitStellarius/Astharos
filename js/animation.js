@@ -22,9 +22,9 @@ document.getElementById('preloaderButton').addEventListener("click", playAnimLef
 let animKetten = anime({
   targets: '#animationsfilmWeltBox',
   translateY: [
-    {value: -600, duration: 2000},
+    {value: -570, duration: 4000},
   ],
-  easing: 'easeOutSine',
+  //easing: 'easeOutSine',
   loop: false,
   autoplay: false
 });
