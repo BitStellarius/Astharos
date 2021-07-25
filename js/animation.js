@@ -25,7 +25,7 @@ let triggerCheck = 0;
 let animKetten = anime({
   targets: '#animationsfilmWeltBox',
   translateY: [
-    {value: -570, duration: 2500},
+    {value: -570, duration: 2100},
   ],
   easing: 'easeOutSine',
   loop: false,
@@ -41,7 +41,7 @@ var kettenWP = new Waypoint({
       triggerCheck++;
     }
   },
-  offset: -200
+  offset: -170
 });
 
 /* Karte Deco Frames Links */
