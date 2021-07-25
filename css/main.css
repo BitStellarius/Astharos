@@ -83,11 +83,24 @@ p{
 }
 
 .fontHover:hover{
+  transition: 0.3s ease-in-out;
   transform: scale(1.03);
 }
 
+.fontHover:hover{
+  transition: 0.3s ease-in-out;
+  color: rgba(255, 0, 0, 0.932) !important;
+}
+
 .ravenHover:hover{
+  transition: 0.3s ease-in-out;
   transform: scale(1.05);
+}
+
+.iconHover:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.2);
+  
 }
 
 
