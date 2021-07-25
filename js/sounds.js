@@ -150,11 +150,12 @@ function playBackgroundMusic(){
 
 function pauseBackgroundMusic(){
   var fadeOutAudio = setInterval(function(){
-    if(backgroundMusic.volume > 0.0){
-      backgroundMusic.volume -= 0.1;
+    if(backgroundMusic.volume <= 0.1){
+      backgroundMusic.volume = 0;
+      clearInterval(fadeOutAudio);
     }
     else{
-      clearInterval(fadeOutAudio);
+      backgroundMusic.volume -= 0.1;
     }
   },200);
   backgroundMusic.pause();
@@ -175,6 +176,7 @@ mobileMuteButton.addEventListener("click",function(){
 });
 mobileVolButton.addEventListener("click",function(){
   muteSound();
+  pauseAtmos();
 });
 
 //Input Slider
@@ -191,6 +193,50 @@ document.getElementById("animationsfilmWelt").addEventListener("play",function()
 document.getElementById("animationsfilmWelt").addEventListener("pause",function(){
   playBackgroundMusic();
 });
+
+//Mobile Version
+const atmosAudio = [];
+atmosAudio.push(document.getElementById("atmosAudioAsthos"));
+atmosAudio.push(document.getElementById("atmosAudioFlostapor"));
+atmosAudio.push(document.getElementById("atmosAudioGlarius"));
+atmosAudio.push(document.getElementById("atmosAudioHerbanas"));
+atmosAudio.push(document.getElementById("atmosAudioMiratan"));
+atmosAudio.push(document.getElementById("atmosAudioNuberios"));
+atmosAudio.push(document.getElementById("atmosAudioThondbaren"));
+
+atmosAudio.forEach(function(item, index){
+  item.onplay = function(){
+    pauseAtmos(item);
+    pauseBackgroundMusic();
+  };
+});
+atmosAudio.forEach(function(item, index){
+  item.onpause = function(){
+    playBackgroundMusic();
+  };
+});
+
+function pauseAtmos(atmo){
+  atmosAudio.forEach(function(item, index){
+    if(item !== atmo){
+      item.pause();
+    }    
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
