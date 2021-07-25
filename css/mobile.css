@@ -77,7 +77,15 @@ body{
         width: 80%;
         margin: 10%;
     }
-
+    #ttrpgCrowandSpeech{
+        display: none;
+    }
+    #ttrpgNav {
+        min-height: 150px;
+    }
+    #ttrpgNav > h1 {
+        top: 0px;
+    }
 
     #ttrpgNavbar, #contentDesktopTTRPG{
         display: none;
@@ -171,9 +179,9 @@ body{
         display: none;       
     }
     #animationsfilmWelt{
-        width: 96%;
+        width: 93%;
         margin: 2%;
-        height: 54vw;
+        height: auto;
         position: relative; 
         top: 0px;
         left: 0px;
@@ -191,7 +199,7 @@ body{
         transform: none;
     }
     #abenteuerEinstieg{
-        width: 100%;
+        width: calc(100% - 16px);
         height: auto;
         position: relative;
         left: 0px;
@@ -211,6 +219,9 @@ body{
         font-size: 18px;
         line-height: normal;
         text-align: center;
+    }
+    #weltHochTief{
+        display: none;
     }
     /* Tools Bereich */
     #tools{
@@ -255,6 +266,25 @@ body{
         height: 50px;
         font-size: 18px;
         background-color: var(--pergamentWhite);
+        display: none;
+    }
+    .rollDiceBtn{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+        background-color: var(--pergamentWhite);
+    }
+    #roll20{
+        top: 75%;
+    }
+    #roll6{
+        top: 82.5%;
+    }
+    #roll100{
+        top: 90%;
     }
     #radioField{
         position: absolute;
