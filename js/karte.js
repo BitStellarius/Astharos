@@ -8,14 +8,33 @@ function hideAllCitys(){
         staedte[i].style.display = "none";
     }
 }
+
+const mapAtmos = [];
+mapAtmos.push(document.getElementById("soundAsthos"));
+mapAtmos.push(document.getElementById("soundFlostapor"));
+mapAtmos.push(document.getElementById("soundGlarius"));
+mapAtmos.push(document.getElementById("soundHerbanas"));
+mapAtmos.push(document.getElementById("soundMiratan"));
+mapAtmos.push(document.getElementById("soundNuberios"));
+mapAtmos.push(document.getElementById("sounThondbaren"));
+
+function pauseMapAtmos(){
+    mapAtmos.forEach(function(item, index){
+        item.pause();
+    });
+}
+
 function backToTheMap(){
-    console.log("back");
+    //console.log("back");
     /*hideAllCitys();
     document.getElementById("karteBild").style.display ="block";
     document.getElementById("kartenDiv").classList.add("backgroundWood");*/
 
+    pauseMapAtmos();
+    playBackgroundMusic();
     scrollIntoAnchor("kartenDiv");
 }
+
 
 
 
@@ -27,6 +46,9 @@ document.getElementById("iconAsthos").addEventListener("click", function(){
     document.getElementById("kartenDiv").classList.remove("backgroundWood");*/
     document.getElementById("stadtAsthos").style.display = "block";
 
+    pauseBackgroundMusic();
+    mapAtmos[0].play();
+
     scrollIntoAnchor("stadtAsthos");
 });
 document.getElementById("iconFlostapor").addEventListener("click", function(){
@@ -35,6 +57,9 @@ document.getElementById("iconFlostapor").addEventListener("click", function(){
     /*document.getElementById("karteBild").style.display ="none";
     document.getElementById("kartenDiv").classList.remove("backgroundWood");*/
     document.getElementById("stadtFlostapor").style.display = "block";
+
+    pauseBackgroundMusic();
+    mapAtmos[1].play();
     
     scrollIntoAnchor("stadtFlostapor");
 });
@@ -44,6 +69,9 @@ document.getElementById("iconGlarius").addEventListener("click", function(){
     /*document.getElementById("karteBild").style.display ="none";
     document.getElementById("kartenDiv").classList.remove("backgroundWood");*/
     document.getElementById("stadtGlarius").style.display = "block";
+
+    pauseBackgroundMusic();
+    mapAtmos[2].play();
     
     scrollIntoAnchor("stadtGlarius");
 });
@@ -53,6 +81,9 @@ document.getElementById("iconHerbanas").addEventListener("click", function(){
     /*document.getElementById("karteBild").style.display ="none";
     document.getElementById("kartenDiv").classList.remove("backgroundWood");*/
     document.getElementById("stadtHerbanas").style.display = "block";
+
+    pauseBackgroundMusic();
+    mapAtmos[3].play();
     
     scrollIntoAnchor("stadtHerbanas");
 });
@@ -62,6 +93,9 @@ document.getElementById("iconMiratan").addEventListener("click", function(){
     /*document.getElementById("karteBild").style.display ="none";
     document.getElementById("kartenDiv").classList.remove("backgroundWood");*/
     document.getElementById("stadtMiratan").style.display = "block";
+
+    pauseBackgroundMusic();
+    mapAtmos[4].play();
     
     scrollIntoAnchor("stadtMiratan");
 });
@@ -71,6 +105,9 @@ document.getElementById("iconNuberios").addEventListener("click", function(){
     /*document.getElementById("karteBild").style.display ="none";
     document.getElementById("kartenDiv").classList.remove("backgroundWood");*/
     document.getElementById("stadtNuberios").style.display = "block";
+
+    pauseBackgroundMusic();
+    mapAtmos[5].play();
     
     scrollIntoAnchor("stadtNuberios");
 });
@@ -80,6 +117,9 @@ document.getElementById("iconThondbaren").addEventListener("click", function(){
     /*document.getElementById("karteBild").style.display ="none";
     document.getElementById("kartenDiv").classList.remove("backgroundWood");*/
     document.getElementById("stadtThondbaran").style.display = "block";
+
+    pauseBackgroundMusic();
+    mapAtmos[6].play();
     
     scrollIntoAnchor("stadtThondbaran");
 });

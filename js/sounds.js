@@ -166,6 +166,7 @@ function pauseBackgroundMusic(){
 //Mute/Unmute Button
 volButton.addEventListener("click",function(){
   muteSound();
+  pauseMapAtmos();
 });
 muteButton.addEventListener("click",function(){
   unmuteSound();
@@ -223,18 +224,6 @@ function pauseAtmos(atmo){
     }    
   });
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
