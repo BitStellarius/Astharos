@@ -1,27 +1,34 @@
 /* Deklaration aller Variablen für Sounds */
+const allAudio = [];
+allAudio.push(document.getElementById("sfxChapterFlip"));//0
+allAudio.push(document.getElementById("sfxPageFlip1"));//1
+allAudio.push(document.getElementById("sfxPageFlip2"));//2
+allAudio.push(document.getElementById("sfxPageFlip3"));//3
+allAudio.push(document.getElementById("backgroundMusic"));//4
+allAudio.push(document.getElementById("atmosAudioAsthos"));//5
+allAudio.push(document.getElementById("atmosAudioFlostapor"));//6
+allAudio.push(document.getElementById("atmosAudioGlarius"));//7
+allAudio.push(document.getElementById("atmosAudioHerbanas"));//8
+allAudio.push(document.getElementById("atmosAudioMiratan"));//9
+allAudio.push(document.getElementById("atmosAudioNuberios"));//10
+allAudio.push(document.getElementById("atmosAudioThondbaren"));//11
+allAudio.push(document.getElementById("soundAsthos"));//12
+allAudio.push(document.getElementById("soundFlostapor"));//13
+allAudio.push(document.getElementById("soundGlarius"));//14
+allAudio.push(document.getElementById("soundHerbanas"));//15
+allAudio.push(document.getElementById("soundMiratan"));//16
+allAudio.push(document.getElementById("soundNuberios"));//17
+allAudio.push(document.getElementById("sounThondbaren"));//18
 
-const chapterFlip = document.getElementById("sfxChapterFlip"); // Sound für Umblättern eines Kapitels
-const pageFlip1 = document.getElementById("sfxPageFlip1"); // Sound für Umblättern einer Seite 1
-const pageFlip2 = document.getElementById("sfxPageFlip2"); // Sound für Umblättern einer Seite 2
-const pageFlip3 = document.getElementById("sfxPageFlip3"); // Sound für Umblättern einer Seite 3
+function random(min, max){
+  return (Math.floor(Math.random() * max) + min);
+}
 
-const pageFlip = [pageFlip1, pageFlip2, pageFlip3]; // Array aller Sounds für Umblättern einer Seite
-
-const backgroundMusic = document.getElementById("backgroundMusic");
-/* Random number generator für zufällige Sounds */
-
-let rng = num => {
-  return Math.floor(Math.random() * num);
+function randomPageflip(){
+  allAudio[random(1, 3)].play();
 }
 
 /* Deklaration aller Variablen für Buttons */
-/*
-// TTRPG
-const ttrpgBtn1 = document.getElementsByClassName("questionBox")[0];
-const ttrpgBtn2 = document.getElementsByClassName("questionBox")[1];
-const ttrpgBtn3 = document.getElementsByClassName("questionBox")[2];
-const ttrpgBtn4 = document.getElementsByClassName("questionBox")[3];
-*/
 // Welt
 const buttonsArray = [];
 buttonsArray.push(document.getElementsByClassName("questionBox")[0]);
@@ -64,7 +71,7 @@ buttonsArray.push(document.getElementById("dunkle"));
 
 buttonsArray.forEach(function(item, index){
   item.addEventListener("click", function(){
-    pageFlip[rng(3)].play();
+    randomPageflip();
   });
 });
 
@@ -79,7 +86,7 @@ chapterFlipButtons.push(document.getElementById("indexMagie"));
 
 chapterFlipButtons.forEach(function(item, index){
   item.addEventListener("click", function(){
-    chapterFlip.play();
+    allAudio[0].play();
   });
 });
 
@@ -93,23 +100,22 @@ const mobileMuteButton = document.getElementById("mobilenavMuteBtn");
 
 
 function setVolume(){
-  chapterFlip.volume = volume;
-  pageFlip1.volume = volume;
-  pageFlip2.volume = volume;
-  pageFlip3.volume = volume;
-  backgroundMusic.volume = volume;
+  allAudio.forEach(function(item, index){
+    item.volume = volume;
+  });
 }
 
 function getVolume(){
   volume = (volumeSlider.value / 100);
+  if(volume > 0.99){
+    volume = 0.99;
+  }
 }
 
 function muteSound(){
-  chapterFlip.muted = true;
-  pageFlip1.muted = true;
-  pageFlip2.muted = true;
-  pageFlip3.muted = true;
-  backgroundMusic.muted = true;
+  allAudio.forEach(function(item, index){
+    item.pause();
+  });
   volButton.style.display = "none";
   muteButton.style.display = "block";
 
@@ -117,11 +123,6 @@ function muteSound(){
   mobileMuteButton.style.display = "block";
 }
 function unmuteSound(){
-  chapterFlip.muted = false;
-  pageFlip1.muted = false;
-  pageFlip2.muted = false;
-  pageFlip3.muted = false;
-  backgroundMusic.muted = false;
   fadeInBackgroundMusic();
   volButton.style.display = "block";
   muteButton.style.display = "none";
@@ -132,10 +133,17 @@ function unmuteSound(){
 
 function fadeInBackgroundMusic(){
   getVolume();
-  backgroundMusic.volume = 0;
+  allAudio[4].volume = 0;
+  allAudio[4].play();
   var fadeInAudio = setInterval(function(){
-    if(backgroundMusic.volume < volume){
-      backgroundMusic.volume += 0.1;
+    if(allAudio[4].volume < volume){
+      if(allAudio[4].volume >= 1){
+        allAudio[4].volume = 1;
+        clearInterval(fadeInAudio);
+      }
+      else{
+        allAudio[4].volume += 0.01;
+      }
     }
     else{
       clearInterval(fadeInAudio);
@@ -144,21 +152,20 @@ function fadeInBackgroundMusic(){
 }
 
 function playBackgroundMusic(){
-  backgroundMusic.play();
   fadeInBackgroundMusic();
 }
 
 function pauseBackgroundMusic(){
   var fadeOutAudio = setInterval(function(){
-    if(backgroundMusic.volume <= 0.1){
-      backgroundMusic.volume = 0;
+    if(allAudio[4].volume <= 0.1){
+      allAudio[4].volume = 0;
       clearInterval(fadeOutAudio);
     }
     else{
-      backgroundMusic.volume -= 0.1;
+      allAudio[4].volume -= 0.1;
     }
   },200);
-  backgroundMusic.pause();
+  allAudio[4].pause();
 }
 
 
@@ -166,7 +173,6 @@ function pauseBackgroundMusic(){
 //Mute/Unmute Button
 volButton.addEventListener("click",function(){
   muteSound();
-  pauseMapAtmos();
 });
 muteButton.addEventListener("click",function(){
   unmuteSound();
@@ -177,7 +183,6 @@ mobileMuteButton.addEventListener("click",function(){
 });
 mobileVolButton.addEventListener("click",function(){
   muteSound();
-  pauseAtmos();
 });
 
 //Input Slider
@@ -196,207 +201,30 @@ document.getElementById("animationsfilmWelt").addEventListener("pause",function(
 });
 
 //Mobile Version
-const atmosAudio = [];
-atmosAudio.push(document.getElementById("atmosAudioAsthos"));
-atmosAudio.push(document.getElementById("atmosAudioFlostapor"));
-atmosAudio.push(document.getElementById("atmosAudioGlarius"));
-atmosAudio.push(document.getElementById("atmosAudioHerbanas"));
-atmosAudio.push(document.getElementById("atmosAudioMiratan"));
-atmosAudio.push(document.getElementById("atmosAudioNuberios"));
-atmosAudio.push(document.getElementById("atmosAudioThondbaren"));
-
-atmosAudio.forEach(function(item, index){
-  item.onplay = function(){
-    pauseAtmos(item);
+for(let i = 5; i <= 11; i++){
+  allAudio[i].onplay = function(){
+    pauseAtmos(allAudio[i]);
     pauseBackgroundMusic();
-  };
-});
-atmosAudio.forEach(function(item, index){
-  item.onpause = function(){
-    playBackgroundMusic();
-  };
-});
-
-function pauseAtmos(atmo){
-  atmosAudio.forEach(function(item, index){
-    if(item !== atmo){
-      item.pause();
-    }    
-  });
+    console.log(i);
+  }
+}
+for(let i = 5; i <= 11; i++){
+  allAudio[i].onpause = function(){
+    //playBackgroundMusic();
+  }
 }
 
+//Map Atmos
+function pauseAtmos(atmo){
+  for(let i = 5; i <= 11; i++){
+    if(atmo !== allAudio[i]){
+      allAudio[i].pause();
+    }
+  }
+}
 
-
-
-/*
-const infoIconBtn = document.getElementById("infoIcon");
-const rassenIconBtn = document.getElementById("rassenIcon");
-const religionIconBtn = document.getElementById("religionIcon");
-const magieIconBtn = document.getElementById("magieIcon");
-*/
-/*
-const indexRassenBtn = document.getElementById("indexRassen");
-const indexReligionBtn = document.getElementById("indexReligion");
-const indexMagieBtn = document.getElementById("indexMagie");
-const orksBtn = document.getElementById("orks");
-const elbenBtn = document.getElementById("elben");
-const halbElbenBtn = document.getElementById("halbElben");
-const halblingBtn = document.getElementById("halbling");
-const zwergeBtn = document.getElementById("zwerge");
-const katzenmenschenMagieBtn = document.getElementById("katzenmenschen");
-const mischwesenBtn = document.getElementById("mischwesen");
-const thyrosBtn = document.getElementById("thyros");
-const arisBtn = document.getElementById("aris");
-const begrendBtn = document.getElementById("begrend");
-const arphenBtn = document.getElementById("arphen");
-const trendirBtn = document.getElementById("trendir");
-const tradosBtn = document.getElementById("trados");
-const koshkaBtn = document.getElementById("koshka");
-const seonoraBtn = document.getElementById("seonora");
-const ferrumtisBtn = document.getElementById("ferrumtis");
-const fanuinBtn = document.getElementById("fanuin");
-const varrakisBtn = document.getElementById("varrakis");
-const danduleinBtn = document.getElementById("dandulein");
-const elementBtn = document.getElementById("element");
-const naturBtn = document.getElementById("natur");
-const schutzBtn = document.getElementById("schutz");
-const beschwoerBtn = document.getElementById("beschwoer");
-const illusionBtn = document.getElementById("illusion");
-const wiederherBtn = document.getElementById("wiederher");
-const bannmagieBtn = document.getElementById("bannmagie");
-const fortbewegungBtn = document.getElementById("fortbewegung");
-const wissensBtn = document.getElementById("wissens");
-const veraenderungBtn = document.getElementById("veraenderung");
-const dunkleBtn = document.getElementById("dunkle");
- */
-/*
-//TTRPG
-ttrpgBtn1.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-ttrpgBtn2.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-ttrpgBtn3.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-ttrpgBtn4.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-*/
-/*
-//Welt
-indexRassenBtn.addEventListener("click", function(){
-  chapterFlip.play();
-});
-indexReligionBtn.addEventListener("click", function(){
-  chapterFlip.play();
-});
-indexMagieBtn.addEventListener("click", function(){
-  chapterFlip.play();
-});
-infoIconBtn.addEventListener("click", function(){
-  chapterFlip.play();
-});
-rassenIconBtn.addEventListener("click", function(){
-  chapterFlip.play();
-});
-religionIconBtn.addEventListener("click", function(){
-  chapterFlip.play();
-});
-magieIconBtn.addEventListener("click", function(){
-  chapterFlip.play();
-});
-*/
-/*
-orksBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-elbenBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-halbElbenBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-halblingBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-zwergeBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-katzenmenschenMagieBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-mischwesenBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-thyrosBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-arisBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-begrendBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-arphenBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-trendirBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-tradosBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-koshkaBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-seonoraBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-ferrumtisBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-fanuinBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-varrakisBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-danduleinBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-elementBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-naturBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-schutzBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-beschwoerBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-illusionBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-wiederherBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-bannmagieBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-fortbewegungBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-wissensBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-veraenderungBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-dunkleBtn.addEventListener("click", function(){
-  pageFlip[rng(3)].play();
-});
-*/
+function pauseMapAtmos(){
+  for(let i = 12; i <= 18; i++){
+    allAudio[i].pause();
+  }
+}
