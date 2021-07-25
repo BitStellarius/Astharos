@@ -9,6 +9,7 @@ function hideAllCitys(){
     }
 }
 
+/*
 const mapAtmos = [];
 mapAtmos.push(document.getElementById("soundAsthos"));
 mapAtmos.push(document.getElementById("soundFlostapor"));
@@ -17,13 +18,14 @@ mapAtmos.push(document.getElementById("soundHerbanas"));
 mapAtmos.push(document.getElementById("soundMiratan"));
 mapAtmos.push(document.getElementById("soundNuberios"));
 mapAtmos.push(document.getElementById("sounThondbaren"));
-
+*/
+/*
 function pauseMapAtmos(){
     mapAtmos.forEach(function(item, index){
         item.pause();
     });
 }
-
+*/
 function backToTheMap(){
     //console.log("back");
     /*hideAllCitys();
@@ -47,7 +49,7 @@ document.getElementById("iconAsthos").addEventListener("click", function(){
     document.getElementById("stadtAsthos").style.display = "block";
 
     pauseBackgroundMusic();
-    mapAtmos[0].play();
+    allAudio[12].play();
 
     scrollIntoAnchor("stadtAsthos");
 });
@@ -59,7 +61,7 @@ document.getElementById("iconFlostapor").addEventListener("click", function(){
     document.getElementById("stadtFlostapor").style.display = "block";
 
     pauseBackgroundMusic();
-    mapAtmos[1].play();
+    allAudio[13].play();
     
     scrollIntoAnchor("stadtFlostapor");
 });
@@ -71,7 +73,7 @@ document.getElementById("iconGlarius").addEventListener("click", function(){
     document.getElementById("stadtGlarius").style.display = "block";
 
     pauseBackgroundMusic();
-    mapAtmos[2].play();
+    allAudio[14].play();
     
     scrollIntoAnchor("stadtGlarius");
 });
@@ -83,7 +85,7 @@ document.getElementById("iconHerbanas").addEventListener("click", function(){
     document.getElementById("stadtHerbanas").style.display = "block";
 
     pauseBackgroundMusic();
-    mapAtmos[3].play();
+    allAudio[15].play();
     
     scrollIntoAnchor("stadtHerbanas");
 });
@@ -95,7 +97,7 @@ document.getElementById("iconMiratan").addEventListener("click", function(){
     document.getElementById("stadtMiratan").style.display = "block";
 
     pauseBackgroundMusic();
-    mapAtmos[4].play();
+    allAudio[16].play();
     
     scrollIntoAnchor("stadtMiratan");
 });
@@ -107,7 +109,7 @@ document.getElementById("iconNuberios").addEventListener("click", function(){
     document.getElementById("stadtNuberios").style.display = "block";
 
     pauseBackgroundMusic();
-    mapAtmos[5].play();
+    allAudio[17].play();
     
     scrollIntoAnchor("stadtNuberios");
 });
@@ -119,7 +121,7 @@ document.getElementById("iconThondbaren").addEventListener("click", function(){
     document.getElementById("stadtThondbaran").style.display = "block";
 
     pauseBackgroundMusic();
-    mapAtmos[6].play();
+    allAudio[18].play();
     
     scrollIntoAnchor("stadtThondbaran");
 });
