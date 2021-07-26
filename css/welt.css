@@ -112,13 +112,13 @@
 /* Buchrahmen */
 #weltbookFrame{
     width: 1200px;
-    height: calc(80vh - var(--height-Navbar) + 20px); /* gesamte Höhe Minus die Höhe der Navbar - Höhe Margin top and bottom */
+    height: calc(76vh - var(--height-Navbar) + 20px); /* gesamte Höhe Minus die Höhe der Navbar - Höhe Margin top and bottom */
     border: 4px solid black;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 100px;
     margin-right: 100px;
-    background-color: #333333;
+    background-color: #47271a;
     position: relative;
 }
 /* Buch */
