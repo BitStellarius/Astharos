@@ -89,7 +89,7 @@ p{
 
 .fontHover:hover{
   transition: 0.3s ease-in-out;
-  color: rgba(255, 0, 0, 0.932) !important;
+  color: #9c150b !important;
 }
 
 .ravenHover:hover{

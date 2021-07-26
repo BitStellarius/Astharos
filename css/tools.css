@@ -133,6 +133,7 @@
 }
 .inputBox {
     width: 105px;
+    
 }
 .inputBox label{
     display: flex;
@@ -147,6 +148,7 @@
     text-align: center;
     margin: 0px 1px 0px 1px;
     font-size: 1.1em;
+    color: #9c150b;
 }
 
 /* Rechte Buchseite */
@@ -166,3 +168,8 @@
     text-align: end;
     color: #9c150b;
 }
+
+.stats{ 
+    color: #9c150b;
+}
+
