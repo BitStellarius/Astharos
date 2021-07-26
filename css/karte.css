@@ -7,12 +7,22 @@
     padding-bottom: 5%;
 }
 
+#h1Karte {
+    padding: 10px;
+    border: 5px solid #CC8F22;
+    background-color: var(--pergamentWhite);
+    width: 400px;
+    position: relative;
+    margin: auto;
+    margin-top: 8%;
+}
 
 #karteBackground{
     width: 94%;
     position: relative;
     top: 6%;
     left: 2.7%;
+    z-index: -3;
 }
 
 #karteAnchor {
@@ -20,7 +30,6 @@
     top: 290px;
     
 }
-
 
 #karteBild{
     position: absolute;

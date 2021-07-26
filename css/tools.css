@@ -1,5 +1,14 @@
 /* CSS File: Tools-Bereich */
 
+#h1Tools {
+    padding: 10px;
+    border: 5px solid #CC8F22;
+    background-color: var(--pergamentWhite);
+    width: 400px;
+    position: relative;
+    margin: auto;
+    margin-top: 8%;
+}
 
 #toolsSpeech{
     height: 300px;

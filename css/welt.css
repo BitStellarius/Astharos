@@ -5,6 +5,7 @@
     padding-top: 50px;
 }
 
+
 .sectionStart{
     height: calc(100vh - var(--height-Navbar)); /* gesamte Höhe Minus die Höhe der Navbar */
     position: relative;
@@ -23,13 +24,22 @@
     z-index: -2;
 }
 
-#weltStart h1{
-    width: 70%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -5rem;
+@media only screen and (min-width: 720px) {
+    
+    #weltStart h1{
+        width: 35%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -5rem;
+        padding: 10px;
+        border: 5px solid #CC8F22;
+        background-color: var(--pergamentWhite);
+    
+    }
+
 }
+
 #weltAnimationsfilmTafel{
     height: calc(175vh - var(--height-Navbar)); /* gesamte Höhe Minus die Höhe der Navbar */
     position: absolute;
@@ -78,6 +88,11 @@
     background-color: var(--pergamentWhite);
     width: calc(100% - 10px);
     height: calc(100% - 10px);
+}
+.h1Frame{
+    padding: 10px;
+    width: 24%;
+    height: 16%;
 }
 #abenteuerEinstieg{
     width: 1000px;

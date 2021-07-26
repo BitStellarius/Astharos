@@ -1,6 +1,18 @@
 /* CSS File: TTRPG-Bereich */
 
 /* Erster Teil: Navigation */
+
+@media only screen and (min-width: 720px) {
+    #h1TTRPG {
+        padding: 10px;
+        border: 5px solid #CC8F22;
+        background-color: var(--pergamentWhite);
+        width: 400px;
+        height: 100px;
+    }
+}
+
+
 #mobileTTRPG{
     display: none;
 }
