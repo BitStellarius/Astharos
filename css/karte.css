@@ -108,8 +108,8 @@
 }
 .backToMap{
     position: absolute;
-    right: 35%;
-    top: 80%;
+    right: 44%;
+    top: 84%;
     z-index: 11;
 
     box-shadow:inset 0px 0px 0px 0px #91b8b3;
@@ -141,6 +141,9 @@
 .stadtText{
     margin: 50px;
     text-align: justify;
+    padding: 1rem;
+    background-color: #00000075;
+    color: white;
 }
 
 .stadtMauerRechts {

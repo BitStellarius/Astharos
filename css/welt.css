@@ -95,7 +95,8 @@
 }
 
 #weltEinstiegText {
-    margin-top: 10%;
+    margin-top: 5%;
+    color: white;
 }
 
 
@@ -241,28 +242,27 @@
 }
 /* Welt Hoch Tief */
 #weltHochTief{
-    height: calc(120vh - var(--height-Navbar)); /* gesamte Höhe Minus die Höhe der Navbar */
+    height: calc(130vh - var(--height-Navbar)); /* gesamte Höhe Minus die Höhe der Navbar */
     width: 1400px;
     position: absolute;
     left: 62%;
     top: 190vh;
     transform: translateX(-50%);
+
 }
 #hoehenUndTiefen{
     width: 65%;
-    height: 75%;
+    height: 80%;
     margin-left: 1%;
 }
 #weltHochTief #hoehenUndTiefen h2 {
     color: black;
 }
-#secondRedBox{
-    margin-top: 5%;
-}
+
 #weltHochTiefCrowBox{
     position: absolute;
     right: 0%;
-    top: 25%;
+    top: 30%;
     width: 33%;
     height: 50%;
 }
