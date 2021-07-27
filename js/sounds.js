@@ -79,7 +79,7 @@ buttonsArray.push(document.getElementById("wissens"));
 /*buttonsArray.push(document.getElementById("veraenderung"));*/
 buttonsArray.push(document.getElementById("dunkle"));
 
-buttonsArray.forEach(function(item, index){
+buttonsArray.forEach(function(item){
   item.addEventListener("click", function(){
     randomPageflip();
   });
@@ -94,7 +94,7 @@ chapterFlipButtons.push(document.getElementById("indexRassen"));
 chapterFlipButtons.push(document.getElementById("indexReligion"));
 chapterFlipButtons.push(document.getElementById("indexMagie"));
 
-chapterFlipButtons.forEach(function(item, index){
+chapterFlipButtons.forEach(function(item){
   item.addEventListener("click", function(){
     allAudio[0].play();
   });
@@ -110,7 +110,7 @@ ttrpgWasBraucheIchButtons.push(document.getElementById("geschichte"));
 ttrpgWasBraucheIchButtons.push(document.getElementById("leiter"));
 ttrpgWasBraucheIchButtons.push(document.getElementById("multiplayer"));
 
-ttrpgWasBraucheIchButtons.forEach(function(item, index){
+ttrpgWasBraucheIchButtons.forEach(function(item){
   item.addEventListener("click", function(){
     randomPageflip();
   });
@@ -126,7 +126,7 @@ const mobileMuteButton = document.getElementById("mobilenavMuteBtn");
 
 
 function setVolume(){
-  allAudio.forEach(function(item, index){
+  allAudio.forEach(function(item){
     item.volume = volume;
   });
 }
@@ -139,7 +139,7 @@ function getVolume(){
 }
 
 function muteSound(){
-  allAudio.forEach(function(item, index){
+  allAudio.forEach(function(item){
     item.pause();
   });
   volButton.style.display = "none";
@@ -215,7 +215,6 @@ mobileVolButton.addEventListener("click",function(){
 volumeSlider.addEventListener("input", function(){
   getVolume();
   setVolume(); 
-  unmuteSound();
 });
 
 //Animationsfilm
@@ -231,12 +230,12 @@ for(let i = 5; i <= 11; i++){
   allAudio[i].onplay = function(){
     pauseAtmos(allAudio[i]);
     pauseBackgroundMusic();
-  }
+  };
 }
 for(let i = 5; i <= 11; i++){
   allAudio[i].onpause = function(){
     //playBackgroundMusic();
-  }
+  };
 }
 
 //Map Atmos
@@ -258,10 +257,10 @@ function pauseMapAtmos(){
 for(let i = 20; i <= 29; i++){
   allAudio[i].onplay = function(){
     pauseBackgroundMusic();
-  }
+  };
 }
 for(let i = 20; i <= 29; i++){
   allAudio[i].onended = function(){
     fadeInBackgroundMusic();
-  }
+  };
 }
