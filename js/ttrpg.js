@@ -71,7 +71,7 @@ welche.addEventListener("click", function(){
 /* *********************************************************************** */
 
 /* Change Picture in "Was brauche ich für ein TTRPG?" */
-var rollePicture = document.getElementById("rolleFunktionPicture");
+var rollePicture = document.getElementById("rolleBrauchePicture");
 document.getElementById("regelwerk").addEventListener("click", function(){
     rollePicture.src = "assets/ttrpg/buch.jpg";
 });
