@@ -662,7 +662,7 @@
 												zugehörigen Elementes befinden. 
 											</p>
 											<div>
-												<audio class="audioControls magicAudio" controls>
+												<audio id="elementRightSound" class="audioControls magicAudio" controls>
 													<source src="assets/audio/Magie/elementarmagie.mp3" type="audio/mp3">
 												</audio>										
 											</div>
@@ -677,7 +677,7 @@
 												Extrakte und dem Verändern von Holz.
 											</p>
 											<div>
-												<audio class="audioControls magicAudio" controls>
+												<audio id="naturRightSound" class="audioControls magicAudio" controls>
 													<source src="assets/audio/Magie/naturmagie(1).mp3" type="audio/mp3">
 												</audio>
 											</div>
@@ -691,7 +691,7 @@
 												den Hauptteil des dieser Magie-Art.
 											</p>
 											<div>
-												<audio class="audioControls magicAudio" controls>
+												<audio id="schutzRightSound" class="audioControls magicAudio" controls>
 													<source src="assets/audio/Magie/schutzmagie.mp3" type="audio/mp3">
 												</audio>
 											</div>
@@ -705,7 +705,7 @@
 												Tierwesen, Feen oder sogar Waffen.
 											</p>
 											<div>
-												<audio class="audioControls magicAudio" controls>
+												<audio id="beschwoerRightSound" class="audioControls magicAudio" controls>
 													<source src="assets/audio/Magie/beschwörung.mp3" type="audio/mp3">
 												</audio>
 											</div>
@@ -722,7 +722,7 @@
 												Fügung.
 											</p>
 											<div>
-												<audio class="audioControls magicAudio" controls>
+												<audio id="illusionRightSound" class="audioControls magicAudio" controls>
 													<source src="assets/audio/Magie/Illusionsmagie.mp3" type="audio/mp3">
 												</audio>
 											</div>
@@ -738,7 +738,7 @@
 												Magie leicht zu erlernen. 
 											</p>
 											<div>
-												<audio class="audioControls magicAudio" controls>
+												<audio id="wiederherRightSound" class="audioControls magicAudio" controls>
 													<source src="assets/audio/Magie/wiederherstellungsmagie.mp3" type="audio/mp3">
 												</audio>
 											</div>
@@ -752,7 +752,7 @@
 												Teil der Bann- und Fluchmagie.
 											</p>
 											<div>
-												<audio class="audioControls magicAudio" controls>
+												<audio id="bannmagieRightSound" class="audioControls magicAudio" controls>
 													<source src="assets/audio/Magie/Bannmagie.mp3" type="audio/mp3">
 												</audio>
 											</div>
@@ -767,7 +767,7 @@
 												erhöht werden.
 											</p>
 											<div>
-												<audio class="audioControls magicAudio" controls>
+												<audio id="fortbewegungRightSound" class="audioControls magicAudio" controls>
 													<source src="assets/audio/Magie/fortbewegungsmagie.mp3" type="audio/mp3">
 												</audio>
 											</div>
@@ -783,7 +783,7 @@
 												nutzen. 
 											</p>
 											<div>
-												<audio class="audioControls magicAudio" controls>
+												<audio id="wissensRightSound" class="audioControls magicAudio" controls>
 													<source src="assets/audio/Magie/erkenntnismagie.mp3" type="audio/mp3">
 												</audio>
 											</div>
@@ -800,7 +800,7 @@
 												oder ein Leben in Dunkelheit führen.
 											</p>
 											<div>
-												<audio class="audioControls magicAudio" controls>
+												<audio id="dunkleRightSound" class="audioControls magicAudio" controls>
 													<source src="assets/audio/Magie/dunklemagie.mp3" type="audio/mp3">
 												</audio>
 											</div>
@@ -846,7 +846,7 @@
 								<div id="weltHochTiefCrowBox">
 									<div id="weltHochTiefTextContainer">
 										<img id="weltHochTiefCrow" src="assets/Copy_of_crow-v2_sit.png" alt="Bild konnte nicht geladen werden">
-										<a href="/assets/downloads/Die Höhen und Tiefen Astharos - Teil 1.pdf" download>
+										<a href="/assets/downloads/Die_Höhen_und_Tiefen_Astharos-Teil1.pdf" download>
 											<button type="button" id="weltDownloadBtn">Download PDF</button>
 										</a>								
 									</div>							
@@ -864,7 +864,7 @@
 					<div id="karteContainer">
 						<h1 id="h1Karte">Karte</h1>
 						<div id="kartenDiv">
-							<img id="karteBackground" src="assets/karte/background_maps_2.svg">
+							<img id="karteBackground" src="assets/karte/background_maps_2.svg" alt="Bild konnte nicht geladen werden">
 							<div id="karteAnchor" class="anchor"></div>
 							<div id="karteBild">
 								<div id="mapContainer">
@@ -1303,7 +1303,7 @@
 						<h1 id="h1Downloads">Downloads</h1>
 						<div id="downloadKachelBox">
 							<div class="kachel">
-								<a href="/assets/downloads/Der Almanach Astharos und dessen Welt_Stand-11.01.2021.pdf" download>
+								<a href="/assets/downloads/Der_Almanach_Astharos_und_dessen_Welt.pdf" download>
 									<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Karte.svg" alt="Bild konnte nicht geladen werden">
 								</a>
 								<h2>Welt</h2>
@@ -1313,7 +1313,7 @@
 								</p>
 							</div>
 							<div class="kachel">
-								<a href="/assets/downloads/Astharos Regelwerk - Simple_Booklet.pdf" download>
+								<a href="/assets/downloads/Astharos_Regelwerk-Simple_Booklet.pdf" download>
 									<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Regelwerk.svg" alt="Bild konnte nicht geladen werden">
 								</a>
 								<h2>Regelwerk</h2>
@@ -1324,7 +1324,7 @@
 								</p>
 							</div>
 							<div class="kachel">
-								<a href="/assets/downloads/Die Höhen und Tiefen Astharos - Teil 1.pdf" download>
+								<a href="/assets/downloads/Die_Höhen_und_Tiefen_Astharos-Teil1.pdf" download>
 									<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Story.svg" alt="Bild konnte nicht geladen werden">
 								</a>
 								<h2>Story</h2>
@@ -1335,7 +1335,7 @@
 								</p>
 							</div>
 							<div class="kachel">
-								<a href="/assets/downloads/donwloadPlatzhalter.txt" download>
+								<a href="/assets/downloads/Charakterbogen.pdf" download>
 									<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Charakterbogen.svg" alt="Bild konnte nicht geladen werden">
 								</a>
 								<h2>Charakter</h2>
