@@ -188,14 +188,14 @@
     width: 60%;
     
 }
-#rolleContainer{
+#rolleFunktionContainer{
     position: absolute;
     bottom: 10%;
     left: 32%;
     height: 70%;
 }
 
-#rolle{
+#rolleFunktion{
     height: 100%;
 }
 
@@ -221,7 +221,7 @@
     right: 35%;
     top: 45%;
 }
-#rollePicture{
+#rolleFunktionPicture{
     height: 62%;
     position: absolute;
     left: 50%;
