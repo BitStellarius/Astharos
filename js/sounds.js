@@ -244,3 +244,4 @@ function pauseMapAtmos(){
     allAudio[i].pause();
   }
 }
+
