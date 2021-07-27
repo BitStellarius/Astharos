@@ -20,7 +20,7 @@ document.getElementById('preloaderButton').addEventListener("click", playAnimLef
 
 
 /* Welt: Ketten */
-let triggerCheck = 0;
+let kettenTriggerCheck = 0;
 
 let animKetten = anime({
   targets: '#animationsfilmWeltBox',
@@ -36,9 +36,9 @@ let animKetten = anime({
 var kettenWP = new Waypoint({
   element: document.getElementById('rahmen2'),
   handler: function() {
-    if (triggerCheck === 0) {
+    if (kettenTriggerCheck === 0) {
       animKetten.play();
-      triggerCheck++;
+      kettenTriggerCheck++;
     }
   },
   offset: -170

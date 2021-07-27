@@ -2,6 +2,10 @@
 
 /* Erster Teil: Navigation */
 
+#ttrpg {
+    z-index: 1;
+}
+
 @media only screen and (min-width: 720px) {
     #h1TTRPG {
         padding: 10px;
