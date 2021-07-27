@@ -141,7 +141,7 @@ body{
     .accPanel > p{
         font-size: 18px;
         line-height: normal;
-        text-align: center;
+        text-align: left;
     }
     #mobileWasIstVideo{
         width: 96%;
@@ -154,13 +154,13 @@ body{
         background-image: url("../assets/ttrpg/Intro_TTRPG_2_Textbox_2.svg");
         background-size: auto;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: left;
     }
     #mobileWasIstFragen > p{
         font-size: 18px;
         line-height: normal;
         margin: 20px;
-        text-align: center;
+        text-align: left;
     }
     #mobileWasBraucheBild{
         width: 96%;
@@ -226,7 +226,7 @@ body{
         margin: 20px;
         font-size: 18px;
         line-height: normal;
-        text-align: center;
+        text-align: left;
     }
     #weltHochTief{
         display: none;
