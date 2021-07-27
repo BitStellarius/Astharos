@@ -189,7 +189,7 @@ document.getElementById("magieIcon").addEventListener("click", function(){
 
 /* Onload */
 function loadWelt(){
-    console.log("Onload Welt.js")
+    //console.log("Onload Welt.js")
     hideRightSideBoxes();
     hideLeftBookSide();
     document.getElementById("indexLeft").style.display = "block";

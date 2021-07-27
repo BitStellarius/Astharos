@@ -20,6 +20,16 @@ allAudio.push(document.getElementById("soundMiratan"));//16
 allAudio.push(document.getElementById("soundNuberios"));//17
 allAudio.push(document.getElementById("sounThondbaren"));//18
 allAudio.push(document.getElementById("diceSound"));//19 Dice Sound
+allAudio.push(document.getElementById("elementRightSound"));//20 Magie Sounds
+allAudio.push(document.getElementById("naturRightSound"));//21
+allAudio.push(document.getElementById("schutzRightSound"));//22
+allAudio.push(document.getElementById("beschwoerRightSound"));//23
+allAudio.push(document.getElementById("illusionRightSound"));//24
+allAudio.push(document.getElementById("wiederherRightSound"));//25
+allAudio.push(document.getElementById("bannmagieRightSound"));//26
+allAudio.push(document.getElementById("fortbewegungRightSound"));//27
+allAudio.push(document.getElementById("wissensRightSound"));//28
+allAudio.push(document.getElementById("dunkleRightSound"));//29
 
 function random(min, max){
   return (Math.floor(Math.random() * max) + min);
@@ -221,7 +231,6 @@ for(let i = 5; i <= 11; i++){
   allAudio[i].onplay = function(){
     pauseAtmos(allAudio[i]);
     pauseBackgroundMusic();
-    console.log(i);
   }
 }
 for(let i = 5; i <= 11; i++){
@@ -245,3 +254,14 @@ function pauseMapAtmos(){
   }
 }
 
+//Welt Magie Sounds
+for(let i = 20; i <= 29; i++){
+  allAudio[i].onplay = function(){
+    pauseBackgroundMusic();
+  }
+}
+for(let i = 20; i <= 29; i++){
+  allAudio[i].onended = function(){
+    fadeInBackgroundMusic();
+  }
+}
