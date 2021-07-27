@@ -102,13 +102,11 @@
 /* Zweiter Teil */
 
 .ttrpgUnterseite p {
-    color: white;
+    color: black;
 }
 
 .erklaertext {
     padding: 2rem;
-    background-color: #00000075;
-    color: white;
 }
 
 .ttrpgUnterseite{
