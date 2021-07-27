@@ -112,16 +112,11 @@ function loadTTRPG(){
 /* Mouseover Krähe */
 
 ttrpgCrow.onmouseover=function(){
-    sprechblase.style.transition = "0.3s ease-in-out";
-    sprechblase.style.visibility = "visible";
-    sprechblaseText.style.transition = "0.3s ease-in-out";
-    sprechblaseText.style.visibility = "visible";
+    unfade(sprechblase);
+    unfade(sprechblaseText);  
 }
 
 ttrpgCrow.onmouseleave=function(){
-    sprechblase.style.transition = "0.3s ease-in-out";
-    sprechblase.style.visibility = "hidden";
-    sprechblaseText.style.transition = "0.3s ease-in-out";
-    sprechblaseText.style.visibility = "hidden";
+    fade(sprechblase);
+    fade(sprechblaseText);
 }
-

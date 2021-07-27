@@ -18,7 +18,7 @@
     top: 200px;
     background-image: url("../assets/ttrpg/Intro_TTRPG_Textbox.svg");
     background-repeat: no-repeat;
-    visibility: hidden;
+    opacity: 0;
 }
 
 #toolsSpeech p{
@@ -26,7 +26,7 @@
     width: calc(100% - 100px);
     margin: 30px;
     text-align: center;
-    visibility: hidden;
+    opacity: 0;
 }
 
 #toolsCrow{

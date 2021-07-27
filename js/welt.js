@@ -17,7 +17,17 @@ function hideRightSideBoxes(){
 function hideBoxesAndShowBox(id){
     hideRightSideBoxes();
     console.log(id);
-    document.getElementById(id).style.display = "block";
+    var op = 0.1;  // initial opacity
+    document.getElementById(id).style.opacity = 0;
+    document.getElementById(id).style.display = 'block';
+    var timer = setInterval(function () {
+      if (op >= 1){
+          clearInterval(timer);
+      }
+      document.getElementById(id).style.opacity = op;
+      document.getElementById(id).style.filter = 'alpha(opacity=' + op * 100 + ")";
+      op += op * 0.2;
+  }, 10);
 }
 
 function allIconsWhite(){

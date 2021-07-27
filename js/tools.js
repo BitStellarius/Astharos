@@ -62,15 +62,11 @@ document.getElementById("MB").getElementsByTagName("input")[0].onchange = functi
 document.getElementById("MA").getElementsByTagName("input")[0].onchange = function() {changeVals()};
 
 toolsCrow.onmouseover=function(){
-    toolsSpeech.style.transition = "0.3s ease-in-out";
-    toolsSpeech.style.visibility = "visible";
-    toolsSpeechText.style.transition = "0.3s ease-in-out";
-    toolsSpeechText.style.visibility = "visible";
+    unfade(toolsSpeech);
+    unfade(toolsSpeechText);  
 }
 
 toolsCrow.onmouseleave=function(){
-    toolsSpeech.style.transition = "0.3s ease-in-out";
-    toolsSpeech.style.visibility = "hidden";
-    toolsSpeechText.style.transition = "0.3s ease-in-out";
-    toolsSpeechText.style.visibility = "hidden";
+    fade(toolsSpeech);
+    fade(toolsSpeechText);
 }
