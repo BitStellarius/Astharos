@@ -155,6 +155,9 @@ body{
         background-size: auto;
         background-repeat: no-repeat;
         background-position: left;
+        position: relative;
+        left: 10%;
+        margin-bottom: 20px;
     }
     #mobileWasIstFragen > p{
         font-size: 18px;
@@ -165,7 +168,9 @@ body{
     #mobileWasBraucheBild{
         width: 96%;
         margin: 2%;
+        margin-bottom: 20px;
         height: auto;
+        border: solid rgb(92, 60, 40) 2px;
     }
 
     /* Karte Bereich */
