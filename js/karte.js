@@ -31,7 +31,7 @@ function backToTheMap(){
     /*hideAllCitys();
     document.getElementById("karteBild").style.display ="block";
     document.getElementById("kartenDiv").classList.add("backgroundWood");*/
-
+    randomPageflip();
     pauseMapAtmos();
     playBackgroundMusic();
     scrollIntoAnchor("kartenDiv");

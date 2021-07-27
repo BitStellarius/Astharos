@@ -28,16 +28,16 @@ document.getElementById("mobPapier").addEventListener("click", function(){
     mobileWasBraucheBild.src = "assets/ttrpg/bleistift.jpg";
 });
 document.getElementById("mobSichtschutz").addEventListener("click", function(){
-    mobileWasBraucheBild.src = "assets/PlatzhalterRot.png";
+    mobileWasBraucheBild.src = "assets/ttrpg/sichtschutz.webp";
 });
 document.getElementById("mobGeschichte").addEventListener("click", function(){
     mobileWasBraucheBild.src = "assets/ttrpg/geschichte.jpg";
 });
 document.getElementById("mobSpielleiter").addEventListener("click", function(){
-    mobileWasBraucheBild.src = "assets/PlatzhalterBlau.png";
+    mobileWasBraucheBild.src = "assets/ttrpg/dungeonmaster.jpg";
 });
 document.getElementById("mobSpieler").addEventListener("click", function(){
-    mobileWasBraucheBild.src = "assets/PlatzhalterRot.png";
+    mobileWasBraucheBild.src = "assets/ttrpg/party.png";
 });
 /* *********************************************************************** */
 
