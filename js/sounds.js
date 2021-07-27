@@ -79,6 +79,20 @@ buttonsArray.push(document.getElementById("wissens"));
 /*buttonsArray.push(document.getElementById("veraenderung"));*/
 buttonsArray.push(document.getElementById("dunkle"));
 
+buttonsArray.push(document.getElementById("navHome"));
+buttonsArray.push(document.getElementById("navTTRPG"));
+buttonsArray.push(document.getElementById("navWelt"));
+buttonsArray.push(document.getElementById("navKarte"));
+buttonsArray.push(document.getElementById("navTools"));
+buttonsArray.push(document.getElementById("navDownloads"));
+buttonsArray.push(document.getElementById("iconAsthos"));
+buttonsArray.push(document.getElementById("iconFlostapor"));
+buttonsArray.push(document.getElementById("iconGlarius"));
+buttonsArray.push(document.getElementById("iconHerbanas"));
+buttonsArray.push(document.getElementById("iconMiratan"));
+buttonsArray.push(document.getElementById("iconNuberios"));
+buttonsArray.push(document.getElementById("iconThondbaren"));
+
 buttonsArray.forEach(function(item){
   item.addEventListener("click", function(){
     randomPageflip();

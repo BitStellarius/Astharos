@@ -18,23 +18,21 @@
 		<link rel="stylesheet" href="css/mobile.css">
 	</head>
 	<body>
-
 		<div id="preloader">
 			<img id="preloaderLogo" src="assets/Logo.svg" alt="Astahros Logo">
 			<img id="preloaderGif" src="assets/Preloader/preloader3.gif" alt="Preloader konnte nicht geladen werden">
 			<button id="preloaderButton">Start</button>
 		</div>
-	
-	<div class="hero"></div>
+		<div class="hero"></div>
 		<div id="notPreloader">
 			<nav id="desktopNav">
 				<ul id="navbar">
-					<li><a href="#startFrameHrefAnchor">Home</a></li>
-					<li><a href="#ttrpgHrefAnchor">TTRPG</a></li>
-					<li><a href="#weltHrefAnchor">Welt</a></li>
-					<li><a href="#karteHrefAnchor">Karte</a></li>
-					<li><a href="#toolsHrefAnchor">Tools</a></li>
-					<li><a href="#downloadsHrefAnchor">Downloads</a></li>
+					<li><a id="navHome" href="#startFrameHrefAnchor">Home</a></li>
+					<li><a id="navTTRPG" href="#ttrpgHrefAnchor">TTRPG</a></li>
+					<li><a id="navWelt" href="#weltHrefAnchor">Welt</a></li>
+					<li><a id="navKarte" href="#karteHrefAnchor">Karte</a></li>
+					<li><a id="navTools" href="#toolsHrefAnchor">Tools</a></li>
+					<li><a id="navDownloads" href="#downloadsHrefAnchor">Downloads</a></li>
 					<li id="sliderContainer">
 						<img id="navVolBtn" class="soundBtn" src="assets/Navbar/volume.png" alt="Volume">
 						<img id="navMuteBtn" class="soundBtn" src="assets/Navbar/mute.png" alt="Mute">
@@ -42,27 +40,26 @@
 					</li>
 				</ul>
 			</nav>
-
 			<nav id="mobileNav">
 				<div id="menuToggle">
-				  <input id="menuToggleCheckbox" type="checkbox" />
+					<input id="menuToggleCheckbox" type="checkbox" />
 					<span id="span1"></span>
 					<span id="span2"></span>
 					<span id="span3"></span>
-				<ul id="menu">
-				  <li><a class="mobileLink" href="#startframe">Home</a></li>
-				  <li><a class="mobileLink" href="#ttrpgHrefAnchor">TTRPG</a></li>
-				  <li><a class="mobileLink" href="#weltHrefAnchor">Welt</a></li>
-				  <li><a class="mobileLink" href="#diceRollerHrefAnchor">Tools</a></li>
-				  <li><a class="mobileLink" href="#atmosHrefAnchor">Atmos</a></li>
-				  <li><a class="mobileLink" href="#downloadsHrefAnchor">Downloads</a></li>
-				</ul>
-				<div id="mobileVolumeDiv">
-					<img id="mobilenavVolBtn" src="assets/Navbar/volume.png" alt="Volume">
-					<img id="mobilenavMuteBtn" src="assets/Navbar/mute.png" alt="Mute">
+					<ul id="menu">
+						<li><a class="mobileLink" href="#startframe">Home</a></li>
+						<li><a class="mobileLink" href="#ttrpgHrefAnchor">TTRPG</a></li>
+						<li><a class="mobileLink" href="#weltHrefAnchor">Welt</a></li>
+						<li><a class="mobileLink" href="#diceRollerHrefAnchor">Tools</a></li>
+						<li><a class="mobileLink" href="#atmosHrefAnchor">Atmos</a></li>
+						<li><a class="mobileLink" href="#downloadsHrefAnchor">Downloads</a></li>
+					</ul>
+					<div id="mobileVolumeDiv">
+						<img id="mobilenavVolBtn" src="assets/Navbar/volume.png" alt="Volume">
+						<img id="mobilenavMuteBtn" src="assets/Navbar/mute.png" alt="Mute">
+					</div>
 				</div>
-			   </div>
-			  </nav>
+			</nav>
 			<main>
 				<!-- Bereich: Startframe -->
 				<section id="startframe" class="posRelative">
@@ -140,7 +137,7 @@
 							<div id="ytVideoFrame">
 								<iframe id="wasIstYtVideo" src="https://www.youtube.com/embed/1VxCl3vacA8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
-							</div>
+						</div>
 						<div id="wieFunktioniert" class="ttrpgUnterseite yellowFrame">
 							<div class="anchor"></div>
 							<h2>Wie funktioniert ein TTRPG&#x202f;?</h2>
@@ -212,12 +209,10 @@
 							</p>
 						</div>
 					</div>
-
-
 					<div id="mobileTTRPG">
 						<button class="accordion">Was ist ein TTRPG&#x202f;?</button>
 						<div class="accPanel">
-							<h2>Was ist ein TTRPG&#x202f;?</h2>							
+							<h2>Was ist ein TTRPG&#x202f;?</h2>
 							<!--<object data="assets/ttrpg/Intro_TTRPG_3.svg" type="image/svg+xml"></object>-->
 							<iframe id="mobileWasIstVideo" src="https://www.youtube.com/embed/1VxCl3vacA8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							<p>
@@ -241,7 +236,6 @@
 								Talente und das geworfene Würfelergebnis.
 							</p>
 						</div>
-
 						<button class="accordion">Wie funktioniert ein TTRPG&#x202f;?</button>
 						<div class="accPanel">
 							<h2>Wie funktioniert ein TTRPG&#x202f;?</h2>
@@ -266,7 +260,6 @@
 								zwischen den Spielern und dem Spielleiter.
 							</p>
 						</div>
-
 						<button class="accordion">Was brauche ich für ein TTRPG&#x202f;?</button>
 						<div class="accPanel">
 							<h2>Was brauche ich für ein TTRPG&#x202f;?</h2>
@@ -284,7 +277,6 @@
 								<img id="mobileWasBraucheBild" src="assets/ttrpg/buch.jpg" alt="Bild konnte nicht geladen werden">
 							</div>
 						</div>
-
 						<button class="accordion">Welche Aufgaben hat der Spielmeister&#x202f;?</button>
 						<div class="accPanel">
 							<h2>Welche Aufgaben hat der Spielmeister&#x202f;?</h2>
@@ -425,7 +417,7 @@
 										<img id="religionIcon" class="iconsBoxIcons iconHover" src="assets/introWelt/Intro_Welt_3_Lesezerichen_religion_w.svg" alt="Bild konnte nicht geladen werden">
 										<img id="magieIcon" class="iconsBoxIcons iconHover" src="assets/introWelt/Intro_Welt_3_Lesezerichen_magie_w.svg" alt="Bild konnte nicht geladen werden">
 									</div>
-					<!-- Beginn right side Rassen -->
+									<!-- Beginn right side Rassen -->
 									<div>
 										<div id="orksRight" class="rightSideBox">
 											<h2>Orgrosh – Orks</h2>
@@ -516,13 +508,13 @@
 												Helle Magie aufeinander prallten und einen Riss 
 												in der Realität bildeten. Aufgrund 
 												ihres Ursprungs und deren Aussehen werden 
-											  eher als eine einfache Abscheulichkeiten 
+												eher als eine einfache Abscheulichkeiten 
 												angesehen.
 											</p>
 										</div>
 									</div>
-					<!-- Ende right side Rassen -->
-					<!-- Beginn right side Religion -->
+									<!-- Ende right side Rassen -->
+									<!-- Beginn right side Religion -->
 									<div>
 										<div id="thyrosRight" class="rightSideBox">
 											<h2>Thyros - Gott des Himmels</h2>
@@ -641,8 +633,8 @@
 											</p>
 										</div>
 									</div>
-					<!-- Ende right side Religion -->
-					<!-- Beginn right side Magie -->
+									<!-- Ende right side Religion -->
+									<!-- Beginn right side Magie -->
 									<div id="magieRight">
 										<div id="elementRight" class="rightSideBox">
 											<h2>Elementarmagie</h2>
@@ -658,7 +650,7 @@
 											<div>
 												<audio id="elementRightSound" class="audioControls magicAudio" controls>
 													<source src="assets/audio/Magie/elementarmagie.mp3" type="audio/mp3">
-												</audio>										
+												</audio>
 											</div>
 										</div>
 										<div id="naturRight" class="rightSideBox">
@@ -782,7 +774,6 @@
 												</audio>
 											</div>
 										</div>
-
 										<div id="dunkleRight" class="rightSideBox">
 											<h2>Dunkle Magie</h2>
 											<img class="rightSideBoxIcon" src="assets/introWelt/Magie/DunkleMagie.svg" alt="Bild konnte nicht geladen werden">
@@ -800,7 +791,7 @@
 											</div>
 										</div>
 									</div>
-					<!-- Ende right side Magie -->
+									<!-- Ende right side Magie -->
 								</div>
 							</div>
 						</div>
@@ -841,9 +832,9 @@
 									<div id="weltHochTiefTextContainer">
 										<img id="weltHochTiefCrow" src="assets/Copy_of_crow-v2_sit.png" alt="Bild konnte nicht geladen werden">
 										<a href="/assets/downloads/Die_Höhen_und_Tiefen_Astharos-Teil1.pdf" download>
-											<button type="button" id="weltDownloadBtn">Download PDF</button>
+										<button type="button" id="weltDownloadBtn">Download PDF</button>
 										</a>								
-									</div>							
+									</div>
 								</div>
 							</div>
 						</div>
@@ -886,10 +877,9 @@
 											<img src="assets/karte/Icons_Staedte/Thondbaren.svg" alt="Bild konnte nicht geladen werden">
 										</div>
 									</div>
-								</div>						
+								</div>
 							</div>
-						</div>					
-
+						</div>
 						<div>
 							<div>
 								<audio id="soundAsthos">
@@ -914,7 +904,6 @@
 									<source src="assets/audio/StadtSound/thondbaran.mp3">
 								</audio>
 							</div>
-
 							<div id="stadtAsthos" class="stadtDiv">
 								<div class="anchor"></div>
 								<img id="asthosMauerLinks" class="stadtMauerLinks" src="assets/karte/Rahmen/Asthos_Links.svg" alt="Bild konnte nicht geladen werden">
@@ -948,7 +937,6 @@
 								<button class="backToMap">Zurück zur Karte</button>
 								<img id="asthosMauerRechts" class="stadtMauerRechts" src="assets/karte/Rahmen/Asthos_Rechts.svg" alt="Bild konnte nicht geladen werden">
 							</div>
-
 							<div id="stadtFlostapor" class="stadtDiv">
 								<div class="anchor"></div>
 								<img id="flostaporMauerLinks" class="stadtMauerLinks" src="assets/karte/Rahmen/flostapor_Links.svg" alt="Bild konnte nicht geladen werden">
@@ -974,7 +962,6 @@
 								<button class="backToMap">Zurück zur Karte</button>
 								<img id="flostaporMauerRechts" class="stadtMauerRechts" src="assets/karte/Rahmen/flostapor_rechts.svg" alt="Bild konnte nicht geladen werden">
 							</div>
-
 							<div id="stadtGlarius" class="stadtDiv">
 								<div class="anchor"></div>
 								<img id="glariusMauerLinks" class="stadtMauerLinks" src="assets/karte/Rahmen/Glarius_links.svg" alt="Bild konnte nicht geladen werden">
@@ -999,7 +986,6 @@
 								<button class="backToMap">Zurück zur Karte</button>
 								<img id="glariusMauerRechts" class="stadtMauerRechts" src="assets/karte/Rahmen/Glarius_rechts.svg" alt="Bild konnte nicht geladen werden">
 							</div>
-
 							<div id="stadtHerbanas" class="stadtDiv">
 								<div class="anchor"></div>
 								<img id="herbanasMauerLinks" class="stadtMauerLinks" src="assets/karte/Rahmen/Herbanas_links.svg" alt="Bild konnte nicht geladen werden">
@@ -1028,7 +1014,6 @@
 								<button class="backToMap">Zurück zur Karte</button>
 								<img id="herbanasMauerRechts" class="stadtMauerRechts" src="assets/karte/Rahmen/Herbanas_rechts.svg" alt="Bild konnte nicht geladen werden">
 							</div>
-
 							<div id="stadtMiratan" class="stadtDiv">
 								<div class="anchor"></div>
 								<img id="miratanMauerLinks" class="stadtMauerLinks" src="assets/karte/Rahmen/Miratan_Links.svg" alt="Bild konnte nicht geladen werden">
@@ -1058,7 +1043,6 @@
 								<button class="backToMap">Zurück zur Karte</button>
 								<img id="miratanMauerRechts" class="stadtMauerRechts" src="assets/karte/Rahmen/Miratan_Rechts.svg" alt="Bild konnte nicht geladen werden">
 							</div>
-
 							<div id="stadtNuberios" class="stadtDiv">
 								<div class="anchor"></div>
 								<img id="nuberiosMauerLinks" class="stadtMauerLinks" src="assets/karte/Rahmen/Huberios_Links.svg" alt="Bild konnte nicht geladen werden">
@@ -1081,7 +1065,6 @@
 								<button class="backToMap">Zurück zur Karte</button>
 								<img id="nuberiosMauerRechts" class="stadtMauerRechts" src="assets/karte/Rahmen/Huberios_Rechts.svg" alt="Bild konnte nicht geladen werden">
 							</div>
-
 							<div id="stadtThondbaran" class="stadtDiv">
 								<div class="anchor"></div>
 								<img id="thondbaranMauerLinks" class="stadtMauerLinks" src="assets/karte/Rahmen/Chondbaran_links.svg" alt="Bild konnte nicht geladen werden">
@@ -1127,7 +1110,7 @@
 									dass du das mühselig in den Taschenrechner eingeben
 									musst!
 								</p>
-							</div>	
+							</div>
 							<img id="toolsCrow" class="ravenHover" src="assets/Copy_of_crow-v2_sit.png" alt="Bild konnte nicht geladen werden">						
 						</div>
 					</div>
@@ -1147,31 +1130,31 @@
 											<div id="ST" class="inputBox">
 												<label>ST</label>
 												<input type="number" value="12">
-												</div>
-												<div id="AU" class="inputBox">
+											</div>
+											<div id="AU" class="inputBox">
 												<label>AU</label>
 												<input type="number" value="11">
-												</div>
-												<div id="GE" class="inputBox">
+											</div>
+											<div id="GE" class="inputBox">
 												<label>GE</label>
 												<input type="number" value="11">
-												</div>
-												<div id="IN" class="inputBox">
+											</div>
+											<div id="IN" class="inputBox">
 												<label>IN</label>
 												<input type="number" value="8">
-												</div>
-												<div id="CH" class="inputBox">
+											</div>
+											<div id="CH" class="inputBox">
 												<label>CH</label>
 												<input type="number" value="8">
-												</div>
-												<div id="MB" class="inputBox">
+											</div>
+											<div id="MB" class="inputBox">
 												<label>MB</label>
 												<input type="number" value="11">
-												</div>
-												<div id="MA" class="inputBox">
+											</div>
+											<div id="MA" class="inputBox">
 												<label>MA</label>
 												<input type="number" value="7">
-												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -1187,7 +1170,6 @@
 											<p>Mentale Gesundheit:</p>
 											<p>Mentale Kraft:</p>
 										</div>
-							
 										<div id="statsContainer">
 											<p id="AtkNah" class="stats"></p>
 											<p id="AtkDist" class="stats"></p>
@@ -1195,7 +1177,7 @@
 											<p id="Initiative" class="stats"></p>
 											<p id="Lebensenergie" class="stats"></p>
 											<p id="MentaleGesundheit" class="stats"></p>
-											<p id="MentaleKraft" class="stats"></p> 
+											<p id="MentaleKraft" class="stats"></p>
 										</div>
 									</div>
 								</div>
@@ -1298,7 +1280,7 @@
 						<div id="downloadKachelBox">
 							<div class="kachel">
 								<a href="/assets/downloads/Der_Almanach_Astharos_und_dessen_Welt.pdf" download>
-									<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Karte.svg" alt="Bild konnte nicht geladen werden">
+								<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Karte.svg" alt="Bild konnte nicht geladen werden">
 								</a>
 								<h2>Welt</h2>
 								<p>
@@ -1308,7 +1290,7 @@
 							</div>
 							<div class="kachel">
 								<a href="/assets/downloads/Astharos_Regelwerk-Simple_Booklet.pdf" download>
-									<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Regelwerk.svg" alt="Bild konnte nicht geladen werden">
+								<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Regelwerk.svg" alt="Bild konnte nicht geladen werden">
 								</a>
 								<h2>Regelwerk</h2>
 								<p>
@@ -1319,18 +1301,17 @@
 							</div>
 							<div class="kachel">
 								<a href="/assets/downloads/Die_Höhen_und_Tiefen_Astharos-Teil1.pdf" download>
-									<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Story.svg" alt="Bild konnte nicht geladen werden">
+								<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Story.svg" alt="Bild konnte nicht geladen werden">
 								</a>
 								<h2>Story</h2>
 								<p>
 									Hier findest du alles zur aktuellen 
 									Geschichte!
-
 								</p>
 							</div>
 							<div class="kachel">
 								<a href="/assets/downloads/Charakterbogen.pdf" download>
-									<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Charakterbogen.svg" alt="Bild konnte nicht geladen werden">
+								<img class="downloadHover" src="assets/downloads/svg/Downloadbereich_Charakterbogen.svg" alt="Bild konnte nicht geladen werden">
 								</a>
 								<h2>Charakter</h2>
 								<p>
@@ -1338,48 +1319,44 @@
 									individuellen Charakter erstellen.
 								</p>
 							</div>
-													
-						</div>					
+						</div>
 					</div>
 				</section>
 			</main>
-			</div>
-
-			<!-- Audio -->
-			<audio id="sfxChapterFlip">
-				<source src="assets/audio/SoundFX/chapter-flip.wav">
-				<source src="assets/audio/SoundFX/chapter-flip.mp3">
-			</audio>
-			<audio id="sfxPageFlip1">
-				<source src="assets/audio/SoundFX/page-flip-01.wav">
-				<source src="assets/audio/SoundFX/page-flip-01.mp3">
-			</audio>
-			<audio id="sfxPageFlip2">
-				<source src="assets/audio/SoundFX/page-flip-02.wav">
-				<source src="assets/audio/SoundFX/page-flip-02.mp3">
-			</audio>
-			<audio id="sfxPageFlip3">
-				<source src="assets/audio/SoundFX/page-flip-03.wav">
-				<source src="assets/audio/SoundFX/page-flip-03.mp3">
-			</audio>
-			<audio id="backgroundMusic" loop>
-				<source src="assets/audio/bensound-ofeliasdream.mp3">
-			</audio>
-
-
-			<!-- Scripts -->
-			<script src="js/lib/anime.min.js"></script>
-			<script src="js/lib/noframework.waypoints.min.js"></script>
-			<script src="js/ttrpg.js"></script>
-			<script src="js/navbar.js"></script>
-			<script src="js/welt.js"></script>
-			<script src="js/karte.js"></script>
-			<script src="js/sounds.js"></script>
-			<script src="js/tools.js"></script>
-			<script src="js/diceRoller.js"></script>
-			<script src="js/mobile.js"></script>
-			<script src="js/preloader.js"></script>
-			<script src="js/animation.js"></script>
-			<script src="js/animation2.js"></script>
+		</div>
+		<!-- Audio -->
+		<audio id="sfxChapterFlip">
+			<source src="assets/audio/SoundFX/chapter-flip.wav">
+			<source src="assets/audio/SoundFX/chapter-flip.mp3">
+		</audio>
+		<audio id="sfxPageFlip1">
+			<source src="assets/audio/SoundFX/page-flip-01.wav">
+			<source src="assets/audio/SoundFX/page-flip-01.mp3">
+		</audio>
+		<audio id="sfxPageFlip2">
+			<source src="assets/audio/SoundFX/page-flip-02.wav">
+			<source src="assets/audio/SoundFX/page-flip-02.mp3">
+		</audio>
+		<audio id="sfxPageFlip3">
+			<source src="assets/audio/SoundFX/page-flip-03.wav">
+			<source src="assets/audio/SoundFX/page-flip-03.mp3">
+		</audio>
+		<audio id="backgroundMusic" loop>
+			<source src="assets/audio/bensound-ofeliasdream.mp3">
+		</audio>
+		<!-- Scripts -->
+		<script src="js/lib/anime.min.js"></script>
+		<script src="js/lib/noframework.waypoints.min.js"></script>
+		<script src="js/ttrpg.js"></script>
+		<script src="js/navbar.js"></script>
+		<script src="js/welt.js"></script>
+		<script src="js/karte.js"></script>
+		<script src="js/sounds.js"></script>
+		<script src="js/tools.js"></script>
+		<script src="js/diceRoller.js"></script>
+		<script src="js/mobile.js"></script>
+		<script src="js/preloader.js"></script>
+		<script src="js/animation.js"></script>
+		<script src="js/animation2.js"></script>
 	</body>
 </html>
