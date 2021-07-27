@@ -1,24 +1,25 @@
 /* Deklaration aller Variablen für Sounds */
 const allAudio = [];
-allAudio.push(document.getElementById("sfxChapterFlip"));//0
-allAudio.push(document.getElementById("sfxPageFlip1"));//1
+allAudio.push(document.getElementById("sfxChapterFlip"));//0 ChapterFlip
+allAudio.push(document.getElementById("sfxPageFlip1"));//1 Page Flip
 allAudio.push(document.getElementById("sfxPageFlip2"));//2
 allAudio.push(document.getElementById("sfxPageFlip3"));//3
-allAudio.push(document.getElementById("backgroundMusic"));//4
-allAudio.push(document.getElementById("atmosAudioAsthos"));//5
+allAudio.push(document.getElementById("backgroundMusic"));//4 Background Music
+allAudio.push(document.getElementById("atmosAudioAsthos"));//5 Atmos Mobile Version
 allAudio.push(document.getElementById("atmosAudioFlostapor"));//6
 allAudio.push(document.getElementById("atmosAudioGlarius"));//7
 allAudio.push(document.getElementById("atmosAudioHerbanas"));//8
 allAudio.push(document.getElementById("atmosAudioMiratan"));//9
 allAudio.push(document.getElementById("atmosAudioNuberios"));//10
 allAudio.push(document.getElementById("atmosAudioThondbaren"));//11
-allAudio.push(document.getElementById("soundAsthos"));//12
+allAudio.push(document.getElementById("soundAsthos"));//12 Atmos Map
 allAudio.push(document.getElementById("soundFlostapor"));//13
 allAudio.push(document.getElementById("soundGlarius"));//14
 allAudio.push(document.getElementById("soundHerbanas"));//15
 allAudio.push(document.getElementById("soundMiratan"));//16
 allAudio.push(document.getElementById("soundNuberios"));//17
 allAudio.push(document.getElementById("sounThondbaren"));//18
+allAudio.push(document.getElementById("diceSound"));//19 Dice Sound
 
 function random(min, max){
   return (Math.floor(Math.random() * max) + min);
@@ -35,7 +36,6 @@ buttonsArray.push(document.getElementsByClassName("questionBox")[0]);
 buttonsArray.push(document.getElementsByClassName("questionBox")[1]);
 buttonsArray.push(document.getElementsByClassName("questionBox")[2]);
 buttonsArray.push(document.getElementsByClassName("questionBox")[3]);
-
 
 buttonsArray.push(document.getElementById("orks"));
 buttonsArray.push(document.getElementById("elben"));
@@ -87,6 +87,22 @@ chapterFlipButtons.push(document.getElementById("indexMagie"));
 chapterFlipButtons.forEach(function(item, index){
   item.addEventListener("click", function(){
     allAudio[0].play();
+  });
+});
+
+const ttrpgWasBraucheIchButtons = [];
+ttrpgWasBraucheIchButtons.push(document.getElementById("regelwerk"));
+ttrpgWasBraucheIchButtons.push(document.getElementById("charakterboegen"));
+ttrpgWasBraucheIchButtons.push(document.getElementById("wuerfel"));
+ttrpgWasBraucheIchButtons.push(document.getElementById("papier"));
+ttrpgWasBraucheIchButtons.push(document.getElementById("sichtschutz"));
+ttrpgWasBraucheIchButtons.push(document.getElementById("geschichte"));
+ttrpgWasBraucheIchButtons.push(document.getElementById("leiter"));
+ttrpgWasBraucheIchButtons.push(document.getElementById("multiplayer"));
+
+ttrpgWasBraucheIchButtons.forEach(function(item, index){
+  item.addEventListener("click", function(){
+    randomPageflip();
   });
 });
 
