@@ -32,3 +32,33 @@ window.onload = function(){
   loadRollDice();
 }
 /* *********************************************************************** */
+/*
+let heightTarget = [];  
+heightTarget.push($('#startframe'));
+heightTarget.push($('#ttrpfTest'));
+heightTarget.push($('#welt'));
+heightTarget.push($('#karte'));
+heightTarget.push($('#tools'));
+heightTarget.push($('#downloads'));
+
+let wH;
+let wS;
+
+
+$(window).scroll(function() {
+  wH = $(window).height();
+  wS = $(this).scrollTop();
+
+  heightTarget.forEach(function(item){
+    let hT = item.offset().top;
+    let hH = item.outerHeight();
+
+
+    //console.log(item.prop('id') + ' test!');
+
+    if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+      console.log(item.prop('id') + ' on the view!');
+    }
+  });
+});
+*/
